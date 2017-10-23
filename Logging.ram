@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_UeWxYLgzEeevxsfq8kXl4Q" name="Logging">
+  <realizes href="DataCollection.core#_C15X0LgxEeevxsfq8kXl4Q"/>
+  <coreConcern href="DataCollection.core#__f990LgwEeevxsfq8kXl4Q"/>
+  <structuralView xmi:id="_UeWxYbgzEeevxsfq8kXl4Q">
+    <classes xsi:type="ram:Class" xmi:id="_UeWxZLgzEeevxsfq8kXl4Q" name="Event" abstract="true"/>
+    <classes xsi:type="ram:Class" xmi:id="_vybmkLgzEeevxsfq8kXl4Q" name="LoggableEvent" superTypes="_UeWxZLgzEeevxsfq8kXl4Q">
+      <attributes xmi:id="_p22cILg3Eeevxsfq8kXl4Q" name="level" type="_YGxswLg3Eeevxsfq8kXl4Q"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_1StYQLgzEeevxsfq8kXl4Q" name="ErrorLoggableEvent" superTypes="_vybmkLgzEeevxsfq8kXl4Q"/>
+    <classes xsi:type="ram:Class" xmi:id="_FKZCoLg0Eeevxsfq8kXl4Q" name="TextLoggableEvent" superTypes="_vybmkLgzEeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RVoid" xmi:id="_UeWxZbgzEeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RAny" xmi:id="_UeWxZrgzEeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_UeWxZ7gzEeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RInt" xmi:id="_UeWxaLgzEeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RChar" xmi:id="_UeWxabgzEeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RString" xmi:id="_UeWxargzEeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RDouble" xmi:id="_UeWxa7gzEeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RFloat" xmi:id="_UeWxbLgzEeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RLong" xmi:id="_UeWxbbgzEeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RByte" xmi:id="_UeWxbrgzEeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:REnum" xmi:id="_YGxswLg3Eeevxsfq8kXl4Q" name="EventLevel">
+      <literals xmi:id="_m0al4Lg3Eeevxsfq8kXl4Q" name="Debug"/>
+      <literals xmi:id="_m0cbELg3Eeevxsfq8kXl4Q" name="Info"/>
+      <literals xmi:id="_m0dCILg3Eeevxsfq8kXl4Q" name="Warning"/>
+      <literals xmi:id="_m0dCIbg3Eeevxsfq8kXl4Q" name="Error"/>
+    </types>
+  </structuralView>
+  <instantiations xmi:id="_UeWxb7gzEeevxsfq8kXl4Q">
+    <source xsi:type="ram:Aspect" href="DataCollection.ram#__CrvcLgxEeevxsfq8kXl4Q"/>
+  </instantiations>
+  <layout xmi:id="_UeWxcLgzEeevxsfq8kXl4Q">
+    <containers xmi:id="_UeWxcbgzEeevxsfq8kXl4Q" key="_UeWxYbgzEeevxsfq8kXl4Q">
+      <value xmi:id="_UeWxdrgzEeevxsfq8kXl4Q" key="_UeWxZLgzEeevxsfq8kXl4Q">
+        <value xmi:id="_UeWxd7gzEeevxsfq8kXl4Q" x="220.52686" y="134.00334"/>
+      </value>
+      <value xmi:id="_vycNoLgzEeevxsfq8kXl4Q" key="_vybmkLgzEeevxsfq8kXl4Q">
+        <value xmi:id="_vydbwLgzEeevxsfq8kXl4Q" x="218.52658" y="301.98233"/>
+      </value>
+      <value xmi:id="_1StYQbgzEeevxsfq8kXl4Q" key="_1StYQLgzEeevxsfq8kXl4Q">
+        <value xmi:id="_1StYQrgzEeevxsfq8kXl4Q" x="328.00012" y="463.99805"/>
+      </value>
+      <value xmi:id="_FKZpsLg0Eeevxsfq8kXl4Q" key="_FKZCoLg0Eeevxsfq8kXl4Q">
+        <value xmi:id="_FKZpsbg0Eeevxsfq8kXl4Q" x="63.727337" y="463.99805"/>
+      </value>
+      <value xmi:id="_YG0JALg3Eeevxsfq8kXl4Q" key="_YGxswLg3Eeevxsfq8kXl4Q">
+        <value xmi:id="_YG0JAbg3Eeevxsfq8kXl4Q" x="479.0" y="144.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

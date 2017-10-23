@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_URTakLg4Eeevxsfq8kXl4Q" name="Monitoring">
+  <realizes href="DataCollection.core#_CbbCULgxEeevxsfq8kXl4Q"/>
+  <coreConcern href="DataCollection.core#__f990LgwEeevxsfq8kXl4Q"/>
+  <structuralView xmi:id="_URUBoLg4Eeevxsfq8kXl4Q">
+    <classes xsi:type="ram:Class" xmi:id="_URUBobg4Eeevxsfq8kXl4Q" name="AccessEvent" superTypes="_URUBo7g4Eeevxsfq8kXl4Q"/>
+    <classes xsi:type="ram:Class" xmi:id="_URUBorg4Eeevxsfq8kXl4Q" name="TimeEvent" superTypes="_URUBo7g4Eeevxsfq8kXl4Q"/>
+    <classes xsi:type="ram:Class" xmi:id="_URUBo7g4Eeevxsfq8kXl4Q" name="MonitorableEvent" superTypes="_URUBpLg4Eeevxsfq8kXl4Q"/>
+    <classes xsi:type="ram:Class" xmi:id="_URUBpLg4Eeevxsfq8kXl4Q" name="Event" abstract="true"/>
+    <types xsi:type="ram:RVoid" xmi:id="_URUBpbg4Eeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RAny" xmi:id="_URUBprg4Eeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_URUBp7g4Eeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RInt" xmi:id="_URUBqLg4Eeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RChar" xmi:id="_URUBqbg4Eeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RString" xmi:id="_URUBqrg4Eeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RDouble" xmi:id="_URUBq7g4Eeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RFloat" xmi:id="_URUBrLg4Eeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RLong" xmi:id="_URUBrbg4Eeevxsfq8kXl4Q"/>
+    <types xsi:type="ram:RByte" xmi:id="_URUBrrg4Eeevxsfq8kXl4Q"/>
+  </structuralView>
+  <instantiations xmi:id="_URUBr7g4Eeevxsfq8kXl4Q">
+    <source xsi:type="ram:Aspect" href="DataCollection.ram#__CrvcLgxEeevxsfq8kXl4Q"/>
+  </instantiations>
+  <layout xmi:id="_URUBsLg4Eeevxsfq8kXl4Q">
+    <containers xmi:id="_URUBsbg4Eeevxsfq8kXl4Q" key="_URUBoLg4Eeevxsfq8kXl4Q">
+      <value xmi:id="_URUBsrg4Eeevxsfq8kXl4Q" key="_URUBobg4Eeevxsfq8kXl4Q">
+        <value xmi:id="_URUBs7g4Eeevxsfq8kXl4Q" x="351.5" y="489.9998"/>
+      </value>
+      <value xmi:id="_URUBtLg4Eeevxsfq8kXl4Q" key="_URUBorg4Eeevxsfq8kXl4Q">
+        <value xmi:id="_URUBtbg4Eeevxsfq8kXl4Q" x="783.4999" y="489.99985"/>
+      </value>
+      <value xmi:id="_URUBtrg4Eeevxsfq8kXl4Q" key="_URUBo7g4Eeevxsfq8kXl4Q">
+        <value xmi:id="_URUBt7g4Eeevxsfq8kXl4Q" x="532.5" y="301.99988"/>
+      </value>
+      <value xmi:id="_URUBuLg4Eeevxsfq8kXl4Q" key="_URUBpLg4Eeevxsfq8kXl4Q">
+        <value xmi:id="_URUBubg4Eeevxsfq8kXl4Q" x="546.0" y="117.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>
