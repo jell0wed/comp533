@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_QA_fILg8EeeJr8Xnv81ikw" name="Woven_Performance Analysis">
+  <structuralView xmi:id="_QA_fIbg8EeeJr8Xnv81ikw">
+    <classes xsi:type="ram:Class" xmi:id="_QA_fIrg8EeeJr8Xnv81ikw" name="MonitorableEvent" superTypes="_QA_fJLg8EeeJr8Xnv81ikw"/>
+    <classes xsi:type="ram:Class" xmi:id="_QA_fI7g8EeeJr8Xnv81ikw" name="TimeEvent" superTypes="_QA_fIrg8EeeJr8Xnv81ikw"/>
+    <classes xsi:type="ram:Class" xmi:id="_QA_fJLg8EeeJr8Xnv81ikw" name="Event" abstract="true">
+      <operations xmi:id="_QA_fJbg8EeeJr8Xnv81ikw" name="getMySource" extendedVisibility="package" returnType="_QA_fObg8EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_QA_fJrg8EeeJr8Xnv81ikw" name="setMySource" extendedVisibility="package" returnType="_QA_fWbg8EeeJr8Xnv81ikw">
+        <parameters xmi:id="_QA_fJ7g8EeeJr8Xnv81ikw" name="a" type="_QA_fObg8EeeJr8Xnv81ikw"/>
+      </operations>
+      <operations xmi:id="_QA_fKLg8EeeJr8Xnv81ikw" name="setSimpleMySource" extendedVisibility="protected" returnType="_QA_fWbg8EeeJr8Xnv81ikw">
+        <parameters xmi:id="_QA_fKbg8EeeJr8Xnv81ikw" name="newObject" type="_QA_fObg8EeeJr8Xnv81ikw"/>
+      </operations>
+      <operations xmi:id="_QA_fKrg8EeeJr8Xnv81ikw" name="setSimpleMyEntry" extendedVisibility="protected" returnType="_QA_fWbg8EeeJr8Xnv81ikw">
+        <parameters xmi:id="_QA_fK7g8EeeJr8Xnv81ikw" name="a" type="_QA_fQLg8EeeJr8Xnv81ikw"/>
+      </operations>
+      <operations xmi:id="_QA_fLLg8EeeJr8Xnv81ikw" name="getMySession" extendedVisibility="package" returnType="_QA_fQbg8EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_QA_fLbg8EeeJr8Xnv81ikw" name="setMySession" extendedVisibility="package" returnType="_QA_fWbg8EeeJr8Xnv81ikw">
+        <parameters xmi:id="_QA_fLrg8EeeJr8Xnv81ikw" name="a" type="_QA_fQbg8EeeJr8Xnv81ikw"/>
+      </operations>
+      <operations xmi:id="_QA_fL7g8EeeJr8Xnv81ikw" name="setSimpleMySession" extendedVisibility="protected" returnType="_QA_fWbg8EeeJr8Xnv81ikw">
+        <parameters xmi:id="_QA_fMLg8EeeJr8Xnv81ikw" name="newObject" type="_QA_fQbg8EeeJr8Xnv81ikw"/>
+      </operations>
+      <operations xmi:id="_QA_fMbg8EeeJr8Xnv81ikw" name="getMyDataCollectionManager" extendedVisibility="package" returnType="_QA_fSLg8EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_QA_fMrg8EeeJr8Xnv81ikw" name="setMyDataCollectionManager" extendedVisibility="package" returnType="_QA_fWbg8EeeJr8Xnv81ikw">
+        <parameters xmi:id="_QA_fM7g8EeeJr8Xnv81ikw" name="a" type="_QA_fSLg8EeeJr8Xnv81ikw"/>
+      </operations>
+      <operations xmi:id="_QA_fNLg8EeeJr8Xnv81ikw" name="setSimpleMyDataCollectionManager" extendedVisibility="protected" returnType="_QA_fWbg8EeeJr8Xnv81ikw">
+        <parameters xmi:id="_QA_fNbg8EeeJr8Xnv81ikw" name="newObject" type="_QA_fSLg8EeeJr8Xnv81ikw"/>
+      </operations>
+      <associationEnds xmi:id="_QA_fNrg8EeeJr8Xnv81ikw" name="mySource" lowerBound="1" assoc="_QA_fU7g8EeeJr8Xnv81ikw">
+        <featureSelection href="DataCollection.ram#__CrvkLgxEeevxsfq8kXl4Q"/>
+      </associationEnds>
+      <associationEnds xmi:id="_QA_fN7g8EeeJr8Xnv81ikw" name="mySession" lowerBound="1" assoc="_QA_fVLg8EeeJr8Xnv81ikw">
+        <featureSelection href="DataCollection.ram#_px1EILg1Eeevxsfq8kXl4Q"/>
+      </associationEnds>
+      <associationEnds xmi:id="_QA_fOLg8EeeJr8Xnv81ikw" name="myDataCollectionManager" lowerBound="1" assoc="_QA_fVbg8EeeJr8Xnv81ikw">
+        <featureSelection href="DataCollection.ram#_UH1AYbg2Eeevxsfq8kXl4Q"/>
+      </associationEnds>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_QA_fObg8EeeJr8Xnv81ikw" name="Source">
+      <operations xmi:id="_QA_fOrg8EeeJr8Xnv81ikw" name="createMyEvent" extendedVisibility="package" returnType="_QA_fObg8EeeJr8Xnv81ikw" operationType="Constructor"/>
+      <operations xmi:id="_QA_fO7g8EeeJr8Xnv81ikw" name="containsMyEvent" extendedVisibility="package" returnType="_QA_fWbg8EeeJr8Xnv81ikw">
+        <parameters xmi:id="_QA_fPLg8EeeJr8Xnv81ikw" name="a" type="_QA_fJLg8EeeJr8Xnv81ikw"/>
+      </operations>
+      <operations xmi:id="_QA_fPbg8EeeJr8Xnv81ikw" name="sizeOfMyEvent" extendedVisibility="package" returnType="_QA_fWrg8EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_QA_fPrg8EeeJr8Xnv81ikw" name="getMyEvent" extendedVisibility="package">
+        <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziEbgxEeevxsfq8kXl4Q"/>
+      </operations>
+      <associationEnds xmi:id="_QA_fP7g8EeeJr8Xnv81ikw" name="myEvent" upperBound="-1" assoc="_QA_fU7g8EeeJr8Xnv81ikw">
+        <featureSelection href="DataCollection.ram#__CrvhbgxEeevxsfq8kXl4Q"/>
+      </associationEnds>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_QA_fQLg8EeeJr8Xnv81ikw" name="Entry" abstract="true"/>
+    <classes xsi:type="ram:Class" xmi:id="_QA_fQbg8EeeJr8Xnv81ikw" name="Session">
+      <operations xmi:id="_QA_fQrg8EeeJr8Xnv81ikw" name="createMyEvent" extendedVisibility="package" returnType="_QA_fQbg8EeeJr8Xnv81ikw" operationType="Constructor"/>
+      <operations xmi:id="_QA_fQ7g8EeeJr8Xnv81ikw" name="containsMyEvent" extendedVisibility="package" returnType="_QA_fWbg8EeeJr8Xnv81ikw">
+        <parameters xmi:id="_QA_fRLg8EeeJr8Xnv81ikw" name="a" type="_QA_fJLg8EeeJr8Xnv81ikw"/>
+      </operations>
+      <operations xmi:id="_QA_fRbg8EeeJr8Xnv81ikw" name="sizeOfMyEvent" extendedVisibility="package" returnType="_QA_fWrg8EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_QA_fRrg8EeeJr8Xnv81ikw" name="getMyEvent" extendedVisibility="package">
+        <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziEbgxEeevxsfq8kXl4Q"/>
+      </operations>
+      <associationEnds xmi:id="_QA_fR7g8EeeJr8Xnv81ikw" name="myEvent" upperBound="-1" assoc="_QA_fVLg8EeeJr8Xnv81ikw">
+        <featureSelection href="DataCollection.ram#_pxtIUbg1Eeevxsfq8kXl4Q"/>
+      </associationEnds>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_QA_fSLg8EeeJr8Xnv81ikw" name="DataCollectionManager">
+      <operations xmi:id="_QA_fSbg8EeeJr8Xnv81ikw" name="createMyEvent" extendedVisibility="package" returnType="_QA_fSLg8EeeJr8Xnv81ikw" operationType="Constructor"/>
+      <operations xmi:id="_QA_fSrg8EeeJr8Xnv81ikw" name="containsMyEvent" extendedVisibility="package" returnType="_QA_fWbg8EeeJr8Xnv81ikw">
+        <parameters xmi:id="_QA_fS7g8EeeJr8Xnv81ikw" name="a" type="_QA_fJLg8EeeJr8Xnv81ikw"/>
+      </operations>
+      <operations xmi:id="_QA_fTLg8EeeJr8Xnv81ikw" name="sizeOfMyEvent" extendedVisibility="package" returnType="_QA_fWrg8EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_QA_fTbg8EeeJr8Xnv81ikw" name="getMyEvent" extendedVisibility="package">
+        <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziEbgxEeevxsfq8kXl4Q"/>
+      </operations>
+      <operations xmi:id="_QA_fTrg8EeeJr8Xnv81ikw" name="create" partiality="public" extendedVisibility="private" returnType="_QA_fSLg8EeeJr8Xnv81ikw" operationType="Constructor"/>
+      <operations xmi:id="_QA_fT7g8EeeJr8Xnv81ikw" name="getInstance" extendedVisibility="package" returnType="_QA_fSLg8EeeJr8Xnv81ikw" static="true"/>
+      <associationEnds xmi:id="_QA_fULg8EeeJr8Xnv81ikw" name="myEvent" upperBound="-1" assoc="_QA_fVbg8EeeJr8Xnv81ikw">
+        <featureSelection href="DataCollection.ram#_UHsdgLg2Eeevxsfq8kXl4Q"/>
+      </associationEnds>
+      <associationEnds xmi:id="_QA_fUbg8EeeJr8Xnv81ikw" name="instance" static="true" assoc="_QA_fVrg8EeeJr8Xnv81ikw"/>
+      <associationEnds xmi:id="_QA_fUrg8EeeJr8Xnv81ikw" name="self" navigable="false" assoc="_QA_fVrg8EeeJr8Xnv81ikw"/>
+    </classes>
+    <associations xmi:id="_QA_fU7g8EeeJr8Xnv81ikw" name="Source_Event" ends="_QA_fP7g8EeeJr8Xnv81ikw _QA_fNrg8EeeJr8Xnv81ikw"/>
+    <associations xmi:id="_QA_fVLg8EeeJr8Xnv81ikw" name="Session_Event" ends="_QA_fR7g8EeeJr8Xnv81ikw _QA_fN7g8EeeJr8Xnv81ikw"/>
+    <associations xmi:id="_QA_fVbg8EeeJr8Xnv81ikw" name="Event_DataCollectionManager" ends="_QA_fOLg8EeeJr8Xnv81ikw _QA_fULg8EeeJr8Xnv81ikw"/>
+    <associations xmi:id="_QA_fVrg8EeeJr8Xnv81ikw" name="instance" ends="_QA_fUbg8EeeJr8Xnv81ikw _QA_fUrg8EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RVoid" xmi:id="_QA_fV7g8EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RAny" xmi:id="_QA_fWLg8EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_QA_fWbg8EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RInt" xmi:id="_QA_fWrg8EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RChar" xmi:id="_QA_fW7g8EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RString" xmi:id="_QA_fXLg8EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RDouble" xmi:id="_QA_fXbg8EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RFloat" xmi:id="_QA_fXrg8EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RLong" xmi:id="_QA_fX7g8EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RByte" xmi:id="_QA_fYLg8EeeJr8Xnv81ikw"/>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_QA_fYbg8EeeJr8Xnv81ikw" specifies="_QA_fT7g8EeeJr8Xnv81ikw">
+    <specification xmi:id="_QA_fYrg8EeeJr8Xnv81ikw">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_QA_fY7g8EeeJr8Xnv81ikw" covered="_QA_farg8EeeJr8Xnv81ikw" message="_QA_fbLg8EeeJr8Xnv81ikw"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_QA_fZLg8EeeJr8Xnv81ikw" covered="_QA_farg8EeeJr8Xnv81ikw _QA_fa7g8EeeJr8Xnv81ikw" interactionOperator="opt">
+        <operands xmi:id="_QA_fZbg8EeeJr8Xnv81ikw">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_QA_fZrg8EeeJr8Xnv81ikw" covered="_QA_farg8EeeJr8Xnv81ikw" message="_QA_fbbg8EeeJr8Xnv81ikw"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_QA_fZ7g8EeeJr8Xnv81ikw" covered="_QA_fa7g8EeeJr8Xnv81ikw" message="_QA_fbbg8EeeJr8Xnv81ikw"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_QA_faLg8EeeJr8Xnv81ikw" body="instance == null" language="Java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_QA_fabg8EeeJr8Xnv81ikw" covered="_QA_farg8EeeJr8Xnv81ikw" message="_QA_fbrg8EeeJr8Xnv81ikw"/>
+      <lifelines xmi:id="_QA_farg8EeeJr8Xnv81ikw" represents="_QA_fcLg8EeeJr8Xnv81ikw" coveredBy="_QA_fY7g8EeeJr8Xnv81ikw _QA_fZLg8EeeJr8Xnv81ikw _QA_fabg8EeeJr8Xnv81ikw _QA_fZrg8EeeJr8Xnv81ikw"/>
+      <lifelines xmi:id="_QA_fa7g8EeeJr8Xnv81ikw" represents="_QA_fUbg8EeeJr8Xnv81ikw" coveredBy="_QA_fZLg8EeeJr8Xnv81ikw _QA_fZ7g8EeeJr8Xnv81ikw"/>
+      <messages xmi:id="_QA_fbLg8EeeJr8Xnv81ikw" sendEvent="_QA_fcbg8EeeJr8Xnv81ikw" receiveEvent="_QA_fY7g8EeeJr8Xnv81ikw" signature="_QA_fT7g8EeeJr8Xnv81ikw"/>
+      <messages xmi:id="_QA_fbbg8EeeJr8Xnv81ikw" sendEvent="_QA_fZrg8EeeJr8Xnv81ikw" receiveEvent="_QA_fZ7g8EeeJr8Xnv81ikw" signature="_QA_fTrg8EeeJr8Xnv81ikw" assignTo="_QA_fUbg8EeeJr8Xnv81ikw" messageSort="createMessage"/>
+      <messages xmi:id="_QA_fbrg8EeeJr8Xnv81ikw" sendEvent="_QA_fabg8EeeJr8Xnv81ikw" receiveEvent="_QA_fcrg8EeeJr8Xnv81ikw" signature="_QA_fT7g8EeeJr8Xnv81ikw" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_QA_fb7g8EeeJr8Xnv81ikw" value="_QA_fUbg8EeeJr8Xnv81ikw"/>
+      </messages>
+      <properties xmi:id="_QA_fcLg8EeeJr8Xnv81ikw" name="singleton" static="true" lowerBound="1" type="_QA_fSLg8EeeJr8Xnv81ikw"/>
+      <formalGates xmi:id="_QA_fcbg8EeeJr8Xnv81ikw" message="_QA_fbLg8EeeJr8Xnv81ikw" name="in_getInstance"/>
+      <formalGates xmi:id="_QA_fcrg8EeeJr8Xnv81ikw" message="_QA_fbrg8EeeJr8Xnv81ikw" name="out_getInstance"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_QA_fc7g8EeeJr8Xnv81ikw">
+    <containers xmi:id="_QA_fdLg8EeeJr8Xnv81ikw" key="_QA_fIbg8EeeJr8Xnv81ikw">
+      <value xmi:id="_QA_fdbg8EeeJr8Xnv81ikw" key="_QA_fIrg8EeeJr8Xnv81ikw">
+        <value xmi:id="_QA_fdrg8EeeJr8Xnv81ikw" x="594.55597" y="506.98865"/>
+      </value>
+      <value xmi:id="_QA_fd7g8EeeJr8Xnv81ikw" key="_QA_fI7g8EeeJr8Xnv81ikw">
+        <value xmi:id="_QA_feLg8EeeJr8Xnv81ikw" x="523.4997" y="737.3633"/>
+      </value>
+      <value xmi:id="_QA_febg8EeeJr8Xnv81ikw" key="_QA_fJLg8EeeJr8Xnv81ikw">
+        <value xmi:id="_QA_ferg8EeeJr8Xnv81ikw" x="790.7164" y="270.8613"/>
+      </value>
+      <value xmi:id="_QA_fe7g8EeeJr8Xnv81ikw" key="_QA_fObg8EeeJr8Xnv81ikw">
+        <value xmi:id="_QA_ffLg8EeeJr8Xnv81ikw" x="1143.767" y="270.90045"/>
+      </value>
+      <value xmi:id="_QA_ffbg8EeeJr8Xnv81ikw" key="_QA_fQLg8EeeJr8Xnv81ikw">
+        <value xmi:id="_QA_ffrg8EeeJr8Xnv81ikw" x="982.6743" y="987.1124"/>
+      </value>
+      <value xmi:id="_QA_ff7g8EeeJr8Xnv81ikw" key="_QA_fQbg8EeeJr8Xnv81ikw">
+        <value xmi:id="_QA_fgLg8EeeJr8Xnv81ikw" x="476.35968" y="270.8817"/>
+      </value>
+      <value xmi:id="_QA_fgbg8EeeJr8Xnv81ikw" key="_QA_fSLg8EeeJr8Xnv81ikw">
+        <value xmi:id="_QA_fgrg8EeeJr8Xnv81ikw" x="309.19107" y="987.1124"/>
+      </value>
+    </containers>
+  </layout>
+  <wovenAspects xmi:id="_QA_fg7g8EeeJr8Xnv81ikw" name="DataCollection">
+    <comesFrom href="DataCollection.ram#__CrvcLgxEeevxsfq8kXl4Q"/>
+    <wovenElements xmi:id="_QA_fhLg8EeeJr8Xnv81ikw" key="_QA_fOrg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvrLgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fhbg8EeeJr8Xnv81ikw" key="_QA_fQrg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_pxu9gLg1Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fhrg8EeeJr8Xnv81ikw" key="_QA_fKLg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvoLgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fh7g8EeeJr8Xnv81ikw" key="_QA_fL7g8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_pxyA0Lg1Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fiLg8EeeJr8Xnv81ikw" key="_QA_fTbg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_UHwu8Lg2Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fibg8EeeJr8Xnv81ikw" key="_QA_fLbg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_pxxZwLg1Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_firg8EeeJr8Xnv81ikw" key="_QA_fQ7g8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_pxvkkLg1Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fi7g8EeeJr8Xnv81ikw" key="_QA_fQLg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Class" href="DataCollection.ram#__CrvpLgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fjLg8EeeJr8Xnv81ikw" key="_QA_fJLg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Class" href="DataCollection.ram#__Crvl7gxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fjbg8EeeJr8Xnv81ikw" key="_QA_fObg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Class" href="DataCollection.ram#__Crvq7gxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fjrg8EeeJr8Xnv81ikw" key="_QA_fJrg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvnrgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fj7g8EeeJr8Xnv81ikw" key="_QA_fSbg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_UHuSsLg2Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fkLg8EeeJr8Xnv81ikw" key="_QA_fPbg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__Crvr7gxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fkbg8EeeJr8Xnv81ikw" key="_QA_fQbg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Class" href="DataCollection.ram#_eW4DwLg1Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fkrg8EeeJr8Xnv81ikw" key="_QA_fSrg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_UHu5wLg2Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fk7g8EeeJr8Xnv81ikw" key="_QA_fRbg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_pxvkkrg1Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_flLg8EeeJr8Xnv81ikw" key="_QA_fLLg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_pxwysLg1Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_flbg8EeeJr8Xnv81ikw" key="_QA_fJbg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvnbgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_flrg8EeeJr8Xnv81ikw" key="_QA_fTLg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_UHwH4Lg2Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fl7g8EeeJr8Xnv81ikw" key="_QA_fO7g8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvrbgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fmLg8EeeJr8Xnv81ikw" key="_QA_fMbg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_UHxWALg2Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fmbg8EeeJr8Xnv81ikw" key="_QA_fMrg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_UHx9ELg2Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fmrg8EeeJr8Xnv81ikw" key="_QA_fKrg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_dnFF4LgyEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fm7g8EeeJr8Xnv81ikw" key="_QA_fPrg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvsLgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fnLg8EeeJr8Xnv81ikw" key="_QA_fRrg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_pxwLoLg1Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fnbg8EeeJr8Xnv81ikw" key="_QA_fSLg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Class" href="DataCollection.ram#_Rfu8wLg2Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fnrg8EeeJr8Xnv81ikw" key="_QA_fNLg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_UHykILg2Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_QA_fn7g8EeeJr8Xnv81ikw" name="Monitoring">
+    <comesFrom href="Monitoring.ram#_URTakLg4Eeevxsfq8kXl4Q"/>
+    <wovenElements xmi:id="_QA_foLg8EeeJr8Xnv81ikw" key="_QA_fJLg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Class" href="Monitoring.ram#_URUBpLg4Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fobg8EeeJr8Xnv81ikw" key="_QA_fIrg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Class" href="Monitoring.ram#_URUBo7g4Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_QA_forg8EeeJr8Xnv81ikw" name="Singleton&lt;Singleton>">
+    <comesFrom href="Reused_Singleton/Woven_Singleton_Singleton.ram#_a3L0ULg2Eeevxsfq8kXl4Q"/>
+    <children xmi:id="_QA_fo7g8EeeJr8Xnv81ikw" name="Singleton">
+      <comesFrom href="Reused_Singleton/Singleton.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+      <wovenElements xmi:id="_QA_fpLg8EeeJr8Xnv81ikw" key="_QA_fT7g8EeeJr8Xnv81ikw">
+        <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QIdYEeG0oPAT5BSQFQ"/>
+      </wovenElements>
+      <wovenElements xmi:id="_QA_fpbg8EeeJr8Xnv81ikw" key="_QA_fSLg8EeeJr8Xnv81ikw">
+        <value xsi:type="ram:Class" href="Reused_Singleton/Singleton.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+      </wovenElements>
+      <wovenElements xmi:id="_QA_fprg8EeeJr8Xnv81ikw" key="_QA_fTrg8EeeJr8Xnv81ikw">
+        <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QYdYEeG0oPAT5BSQFQ"/>
+      </wovenElements>
+    </children>
+    <wovenElements xmi:id="_QA_fp7g8EeeJr8Xnv81ikw" key="_QA_fT7g8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QIdYEeG0oPAT5BSQFQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fqLg8EeeJr8Xnv81ikw" key="_QA_fSLg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Class" href="Reused_Singleton/Singleton.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_QA_fqbg8EeeJr8Xnv81ikw" key="_QA_fTrg8EeeJr8Xnv81ikw">
+      <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QYdYEeG0oPAT5BSQFQ"/>
+    </wovenElements>
+  </wovenAspects>
+</ram:Aspect>

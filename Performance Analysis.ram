@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_YiMgoLg7EeeJr8Xnv81ikw" name="Performance Analysis">
+  <realizes href="DataCollection.core#_G5BPALgxEeevxsfq8kXl4Q"/>
+  <coreConcern href="DataCollection.core#__f990LgwEeevxsfq8kXl4Q"/>
+  <structuralView xmi:id="_YiMgobg7EeeJr8Xnv81ikw">
+    <classes xsi:type="ram:Class" xmi:id="_YiMgorg7EeeJr8Xnv81ikw" name="MonitorableEvent"/>
+    <classes xsi:type="ram:Class" xmi:id="_YiMgo7g7EeeJr8Xnv81ikw" name="TimeEvent" superTypes="_YiMgorg7EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RVoid" xmi:id="_YiMgpLg7EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RAny" xmi:id="_YiMgpbg7EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_YiNHsLg7EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RInt" xmi:id="_YiNHsbg7EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RChar" xmi:id="_YiNHsrg7EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RString" xmi:id="_YiNHs7g7EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RDouble" xmi:id="_YiNHtLg7EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RFloat" xmi:id="_YiNHtbg7EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RLong" xmi:id="_YiNHtrg7EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:RByte" xmi:id="_YiNHt7g7EeeJr8Xnv81ikw"/>
+  </structuralView>
+  <instantiations xmi:id="_YiNHuLg7EeeJr8Xnv81ikw">
+    <source xsi:type="ram:Aspect" href="Monitoring.ram#_URTakLg4Eeevxsfq8kXl4Q"/>
+  </instantiations>
+  <layout xmi:id="_YiNHubg7EeeJr8Xnv81ikw">
+    <containers xmi:id="_YiNHurg7EeeJr8Xnv81ikw" key="_YiMgobg7EeeJr8Xnv81ikw">
+      <value xmi:id="_YiNHu7g7EeeJr8Xnv81ikw" key="_YiMgorg7EeeJr8Xnv81ikw">
+        <value xmi:id="_YiNHvLg7EeeJr8Xnv81ikw" x="472.0" y="208.0"/>
+      </value>
+      <value xmi:id="_YiNHvbg7EeeJr8Xnv81ikw" key="_YiMgo7g7EeeJr8Xnv81ikw">
+        <value xmi:id="_YiNHvrg7EeeJr8Xnv81ikw" x="245.51071" y="424.99997"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

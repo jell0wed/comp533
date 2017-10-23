@@ -3,8 +3,6 @@
   <realizes href="DataCollection.core#_CbbCULgxEeevxsfq8kXl4Q"/>
   <coreConcern href="DataCollection.core#__f990LgwEeevxsfq8kXl4Q"/>
   <structuralView xmi:id="_URUBoLg4Eeevxsfq8kXl4Q">
-    <classes xsi:type="ram:Class" xmi:id="_URUBobg4Eeevxsfq8kXl4Q" name="AccessEvent" superTypes="_URUBo7g4Eeevxsfq8kXl4Q"/>
-    <classes xsi:type="ram:Class" xmi:id="_URUBorg4Eeevxsfq8kXl4Q" name="TimeEvent" superTypes="_URUBo7g4Eeevxsfq8kXl4Q"/>
     <classes xsi:type="ram:Class" xmi:id="_URUBo7g4Eeevxsfq8kXl4Q" name="MonitorableEvent" superTypes="_URUBpLg4Eeevxsfq8kXl4Q"/>
     <classes xsi:type="ram:Class" xmi:id="_URUBpLg4Eeevxsfq8kXl4Q" name="Event" abstract="true"/>
     <types xsi:type="ram:RVoid" xmi:id="_URUBpbg4Eeevxsfq8kXl4Q"/>
@@ -23,12 +21,6 @@
   </instantiations>
   <layout xmi:id="_URUBsLg4Eeevxsfq8kXl4Q">
     <containers xmi:id="_URUBsbg4Eeevxsfq8kXl4Q" key="_URUBoLg4Eeevxsfq8kXl4Q">
-      <value xmi:id="_URUBsrg4Eeevxsfq8kXl4Q" key="_URUBobg4Eeevxsfq8kXl4Q">
-        <value xmi:id="_URUBs7g4Eeevxsfq8kXl4Q" x="351.5" y="489.9998"/>
-      </value>
-      <value xmi:id="_URUBtLg4Eeevxsfq8kXl4Q" key="_URUBorg4Eeevxsfq8kXl4Q">
-        <value xmi:id="_URUBtbg4Eeevxsfq8kXl4Q" x="783.4999" y="489.99985"/>
-      </value>
       <value xmi:id="_URUBtrg4Eeevxsfq8kXl4Q" key="_URUBo7g4Eeevxsfq8kXl4Q">
         <value xmi:id="_URUBt7g4Eeevxsfq8kXl4Q" x="532.5" y="301.99988"/>
       </value>
