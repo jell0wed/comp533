@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_EiYAkLhZEeetyvHnMFFg9Q" name="Error Reporting">
+  <modelReuses xmi:id="_lATPALhaEeetyvHnMFFg9Q">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_lATPAbhaEeetyvHnMFFg9Q">
+      <source xsi:type="ram:Aspect" href="Reused_Singleton/Woven_Singleton_Singleton.ram#_a3L0ULg2Eeevxsfq8kXl4Q"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_llb8YLhaEeetyvHnMFFg9Q" to="_hHZDwLhaEeetyvHnMFFg9Q">
+        <from xsi:type="ram:Class" href="Reused_Singleton/Woven_Singleton_Singleton.ram#_a3L0Urg2Eeevxsfq8kXl4Q"/>
+      </mappings>
+    </compositions>
+    <reuse href="DataCollection.core#_lAUdILhaEeetyvHnMFFg9Q"/>
+  </modelReuses>
+  <realizes href="DataCollection.core#_NynkELgxEeevxsfq8kXl4Q"/>
+  <coreConcern href="DataCollection.core#__f990LgwEeevxsfq8kXl4Q"/>
+  <structuralView xmi:id="_EiYAkbhZEeetyvHnMFFg9Q">
+    <classes xsi:type="ram:Class" xmi:id="_dphEILhZEeetyvHnMFFg9Q" name="UserReportedErrorLoggableEvent" superTypes="_2j8hYLhZEeetyvHnMFFg9Q">
+      <attributes xmi:id="_EFmIgLhaEeetyvHnMFFg9Q" name="sysInfo" type="_8KUUALhZEeetyvHnMFFg9Q"/>
+      <attributes xmi:id="_bmAe0LhaEeetyvHnMFFg9Q" name="userCustomMessage" type="_EiYAmrhZEeetyvHnMFFg9Q"/>
+      <attributes xmi:id="_dPxR8LhaEeetyvHnMFFg9Q" name="userEmail" type="_EiYAmrhZEeetyvHnMFFg9Q"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_2j8hYLhZEeetyvHnMFFg9Q" name="ExceptionLoggableEvent"/>
+    <classes xsi:type="ram:Class" xmi:id="_8KUUALhZEeetyvHnMFFg9Q" name="UserSystemInfo" visibility="public" dataType="true">
+      <attributes xmi:id="_I_i6ALhaEeetyvHnMFFg9Q" name="osVersion" type="_EiYAmLhZEeetyvHnMFFg9Q"/>
+      <attributes xmi:id="_PR3MoLhaEeetyvHnMFFg9Q" name="osType" type="_JpyJ0LhaEeetyvHnMFFg9Q"/>
+      <attributes xmi:id="_XcTegLhaEeetyvHnMFFg9Q" name="localTime" type="_UslI4LhaEeetyvHnMFFg9Q"/>
+      <attributes xmi:id="_ZK0OwLhaEeetyvHnMFFg9Q" name="softwareVersion" type="_EiYAmLhZEeetyvHnMFFg9Q"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_UslI4LhaEeetyvHnMFFg9Q" name="DateTime" dataType="true"/>
+    <classes xsi:type="ram:Class" xmi:id="_hHZDwLhaEeetyvHnMFFg9Q" name="SystemInfoManager"/>
+    <types xsi:type="ram:RVoid" xmi:id="_EiYAlbhZEeetyvHnMFFg9Q"/>
+    <types xsi:type="ram:RAny" xmi:id="_EiYAlrhZEeetyvHnMFFg9Q"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_EiYAl7hZEeetyvHnMFFg9Q"/>
+    <types xsi:type="ram:RInt" xmi:id="_EiYAmLhZEeetyvHnMFFg9Q"/>
+    <types xsi:type="ram:RChar" xmi:id="_EiYAmbhZEeetyvHnMFFg9Q"/>
+    <types xsi:type="ram:RString" xmi:id="_EiYAmrhZEeetyvHnMFFg9Q"/>
+    <types xsi:type="ram:RDouble" xmi:id="_EiYAm7hZEeetyvHnMFFg9Q"/>
+    <types xsi:type="ram:RFloat" xmi:id="_EiYAnLhZEeetyvHnMFFg9Q"/>
+    <types xsi:type="ram:RLong" xmi:id="_EiYAnbhZEeetyvHnMFFg9Q"/>
+    <types xsi:type="ram:RByte" xmi:id="_EiYAnrhZEeetyvHnMFFg9Q"/>
+    <types xsi:type="ram:REnum" xmi:id="_JpyJ0LhaEeetyvHnMFFg9Q" name="OSType">
+      <literals xmi:id="_Mkau8LhaEeetyvHnMFFg9Q" name="Windows"/>
+      <literals xmi:id="_Mkb9ELhaEeetyvHnMFFg9Q" name="Mac"/>
+      <literals xmi:id="_MkckILhaEeetyvHnMFFg9Q" name="Linux"/>
+      <literals xmi:id="_MkdLMLhaEeetyvHnMFFg9Q" name="Unknown"/>
+    </types>
+  </structuralView>
+  <instantiations xmi:id="_EiYAn7hZEeetyvHnMFFg9Q">
+    <source xsi:type="ram:Aspect" href="Logging.ram#_UeWxYLgzEeevxsfq8kXl4Q"/>
+  </instantiations>
+  <layout xmi:id="_EiYAoLhZEeetyvHnMFFg9Q">
+    <containers xmi:id="_EiYAobhZEeetyvHnMFFg9Q" key="_EiYAkbhZEeetyvHnMFFg9Q">
+      <value xmi:id="_dpiSQLhZEeetyvHnMFFg9Q" key="_dphEILhZEeetyvHnMFFg9Q">
+        <value xmi:id="_dpiSQbhZEeetyvHnMFFg9Q" x="69.5" y="222.0"/>
+      </value>
+      <value xmi:id="_2j9vgLhZEeetyvHnMFFg9Q" key="_2j8hYLhZEeetyvHnMFFg9Q">
+        <value xmi:id="_2j9vgbhZEeetyvHnMFFg9Q" x="110.5" y="70.0"/>
+      </value>
+      <value xmi:id="_8KViILhZEeetyvHnMFFg9Q" key="_8KUUALhZEeetyvHnMFFg9Q">
+        <value xmi:id="_8KViIbhZEeetyvHnMFFg9Q" x="682.0" y="70.0"/>
+      </value>
+      <value xmi:id="_Jpyw4LhaEeetyvHnMFFg9Q" key="_JpyJ0LhaEeetyvHnMFFg9Q">
+        <value xmi:id="_Jpyw4bhaEeetyvHnMFFg9Q" x="924.0" y="70.0"/>
+      </value>
+      <value xmi:id="_UsmXALhaEeetyvHnMFFg9Q" key="_UslI4LhaEeetyvHnMFFg9Q">
+        <value xmi:id="_UsmXAbhaEeetyvHnMFFg9Q" x="462.0" y="70.0"/>
+      </value>
+      <value xmi:id="_hHaR4LhaEeetyvHnMFFg9Q" key="_hHZDwLhaEeetyvHnMFFg9Q">
+        <value xmi:id="_hHaR4bhaEeetyvHnMFFg9Q" x="462.0" y="337.0"/>
+      </value>
+    </containers>
+  </layout>
+</ram:Aspect>

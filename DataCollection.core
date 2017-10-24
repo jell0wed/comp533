@@ -7,6 +7,7 @@
   <models xsi:type="ram:Aspect" href="Collection.ram#_uns0oLg6EeeJr8Xnv81ikw"/>
   <models xsi:type="ram:Aspect" href="Performance%20Analysis.ram#_YiMgoLg7EeeJr8Xnv81ikw"/>
   <models xsi:type="ram:Aspect" href="User%20Analysis.ram#_xAHoELg7EeeJr8Xnv81ikw"/>
+  <models xsi:type="ram:Aspect" href="Error%20Reporting.ram#_EiYAkLhZEeetyvHnMFFg9Q"/>
   <featureModel xmi:id="__f-k4LgwEeevxsfq8kXl4Q" coreConcern="__f990LgwEeevxsfq8kXl4Q" root="__f-k4bgwEeevxsfq8kXl4Q">
     <features xmi:id="__f-k4bgwEeevxsfq8kXl4Q" name="DataCollection" children="_CbbCULgxEeevxsfq8kXl4Q _C15X0LgxEeevxsfq8kXl4Q">
       <realizedBy xsi:type="ram:Aspect" href="DataCollection.ram#__CrvcLgxEeevxsfq8kXl4Q"/>
@@ -96,7 +97,16 @@
     <features xmi:id="_HXM_0LgxEeevxsfq8kXl4Q" name="User Analysis" parent="_CbbCULgxEeevxsfq8kXl4Q" parentRelationship="OR">
       <realizedBy xsi:type="ram:Aspect" href="User%20Analysis.ram#_xAHoELg7EeeJr8Xnv81ikw"/>
     </features>
-    <features xmi:id="_NynkELgxEeevxsfq8kXl4Q" name="Error Reporting" parent="_C15X0LgxEeevxsfq8kXl4Q" parentRelationship="Optional"/>
+    <features xmi:id="_NynkELgxEeevxsfq8kXl4Q" name="Error Reporting" parent="_C15X0LgxEeevxsfq8kXl4Q" parentRelationship="Optional">
+      <realizedBy xsi:type="ram:Aspect" href="Error%20Reporting.ram#_EiYAkLhZEeetyvHnMFFg9Q"/>
+      <reuses xmi:id="_lAUdILhaEeetyvHnMFFg9Q" name="Singleton" selectedConfiguration="_lAUdIbhaEeetyvHnMFFg9Q">
+        <reusedConcern href="Reused_Singleton/Singleton.core#_d1_oUKBBEeS-cby9IJCtzQ"/>
+        <configurations xmi:id="_lAUdIbhaEeetyvHnMFFg9Q" name="Singleton_Singleton" reuse="_lAUdILhaEeetyvHnMFFg9Q">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Singleton/Singleton.core#_d1_oUaBBEeS-cby9IJCtzQ"/>
+          <selected href="Reused_Singleton/Singleton.core#_d1_oUqBBEeS-cby9IJCtzQ"/>
+        </configurations>
+      </reuses>
+    </features>
     <features xmi:id="_PWJMULgxEeevxsfq8kXl4Q" name="Collection" parent="_C15X0LgxEeevxsfq8kXl4Q" parentRelationship="Mandatory">
       <realizedBy xsi:type="ram:Aspect" href="Collection.ram#_uns0oLg6EeeJr8Xnv81ikw"/>
       <reuses xmi:id="_GJu7m7g7EeeJr8Xnv81ikw" name="Association_DataCollectionManager_EntryCollector" selectedConfiguration="_GJu7nLg7EeeJr8Xnv81ikw">

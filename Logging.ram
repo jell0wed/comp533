@@ -4,11 +4,16 @@
   <coreConcern href="DataCollection.core#__f990LgwEeevxsfq8kXl4Q"/>
   <structuralView xmi:id="_UeWxYbgzEeevxsfq8kXl4Q">
     <classes xsi:type="ram:Class" xmi:id="_UeWxZLgzEeevxsfq8kXl4Q" name="Event" abstract="true"/>
-    <classes xsi:type="ram:Class" xmi:id="_vybmkLgzEeevxsfq8kXl4Q" name="LoggableEvent" superTypes="_UeWxZLgzEeevxsfq8kXl4Q">
+    <classes xsi:type="ram:Class" xmi:id="_vybmkLgzEeevxsfq8kXl4Q" name="LoggableEvent" superTypes="_UeWxZLgzEeevxsfq8kXl4Q" abstract="true">
       <attributes xmi:id="_p22cILg3Eeevxsfq8kXl4Q" name="level" type="_YGxswLg3Eeevxsfq8kXl4Q"/>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_1StYQLgzEeevxsfq8kXl4Q" name="ErrorLoggableEvent" superTypes="_vybmkLgzEeevxsfq8kXl4Q"/>
-    <classes xsi:type="ram:Class" xmi:id="_FKZCoLg0Eeevxsfq8kXl4Q" name="TextLoggableEvent" superTypes="_vybmkLgzEeevxsfq8kXl4Q"/>
+    <classes xsi:type="ram:Class" xmi:id="_FKZCoLg0Eeevxsfq8kXl4Q" name="TextLoggableEvent" superTypes="_vybmkLgzEeevxsfq8kXl4Q">
+      <attributes xmi:id="_aGYKALhYEeetyvHnMFFg9Q" name="message" type="_UeWxargzEeevxsfq8kXl4Q"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_o-n7MLhZEeetyvHnMFFg9Q" name="ExceptionLoggableEvent" superTypes="_vybmkLgzEeevxsfq8kXl4Q">
+      <attributes xmi:id="_sFJnQLhZEeetyvHnMFFg9Q" name="source" type="_qRhGcLhZEeetyvHnMFFg9Q"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_qRhGcLhZEeetyvHnMFFg9Q" name="Exception" dataType="true"/>
     <types xsi:type="ram:RVoid" xmi:id="_UeWxZbgzEeevxsfq8kXl4Q"/>
     <types xsi:type="ram:RAny" xmi:id="_UeWxZrgzEeevxsfq8kXl4Q"/>
     <types xsi:type="ram:RBoolean" xmi:id="_UeWxZ7gzEeevxsfq8kXl4Q"/>
@@ -32,19 +37,22 @@
   <layout xmi:id="_UeWxcLgzEeevxsfq8kXl4Q">
     <containers xmi:id="_UeWxcbgzEeevxsfq8kXl4Q" key="_UeWxYbgzEeevxsfq8kXl4Q">
       <value xmi:id="_UeWxdrgzEeevxsfq8kXl4Q" key="_UeWxZLgzEeevxsfq8kXl4Q">
-        <value xmi:id="_UeWxd7gzEeevxsfq8kXl4Q" x="220.52686" y="134.00334"/>
+        <value xmi:id="_UeWxd7gzEeevxsfq8kXl4Q" x="235.0" y="70.0"/>
       </value>
       <value xmi:id="_vycNoLgzEeevxsfq8kXl4Q" key="_vybmkLgzEeevxsfq8kXl4Q">
-        <value xmi:id="_vydbwLgzEeevxsfq8kXl4Q" x="218.52658" y="301.98233"/>
-      </value>
-      <value xmi:id="_1StYQbgzEeevxsfq8kXl4Q" key="_1StYQLgzEeevxsfq8kXl4Q">
-        <value xmi:id="_1StYQrgzEeevxsfq8kXl4Q" x="328.00012" y="463.99805"/>
+        <value xmi:id="_vydbwLgzEeevxsfq8kXl4Q" x="233.0" y="222.0"/>
       </value>
       <value xmi:id="_FKZpsLg0Eeevxsfq8kXl4Q" key="_FKZCoLg0Eeevxsfq8kXl4Q">
-        <value xmi:id="_FKZpsbg0Eeevxsfq8kXl4Q" x="63.727337" y="463.99805"/>
+        <value xmi:id="_FKZpsbg0Eeevxsfq8kXl4Q" x="69.5" y="388.0"/>
       </value>
       <value xmi:id="_YG0JALg3Eeevxsfq8kXl4Q" key="_YGxswLg3Eeevxsfq8kXl4Q">
-        <value xmi:id="_YG0JAbg3Eeevxsfq8kXl4Q" x="479.0" y="144.0"/>
+        <value xmi:id="_YG0JAbg3Eeevxsfq8kXl4Q" x="863.0" y="70.0"/>
+      </value>
+      <value xmi:id="_o-pJULhZEeetyvHnMFFg9Q" key="_o-n7MLhZEeetyvHnMFFg9Q">
+        <value xmi:id="_o-pJUbhZEeetyvHnMFFg9Q" x="332.5" y="388.0"/>
+      </value>
+      <value xmi:id="_qRiUkLhZEeetyvHnMFFg9Q" key="_qRhGcLhZEeetyvHnMFFg9Q">
+        <value xmi:id="_qRiUkbhZEeetyvHnMFFg9Q" x="643.0" y="70.0"/>
       </value>
     </containers>
   </layout>

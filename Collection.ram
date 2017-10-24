@@ -64,6 +64,7 @@
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_394g4Lg6EeeJr8Xnv81ikw" name="FileCollector" superTypes="_6SfAwLg6EeeJr8Xnv81ikw">
       <attributes xmi:id="_59C8QLg6EeeJr8Xnv81ikw" name="filename" type="_uns0qLg6EeeJr8Xnv81ikw"/>
+      <attributes xmi:id="_Ru6ocLhbEeetyvHnMFFg9Q" name="appendFile" type="_uns0pbg6EeeJr8Xnv81ikw"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_6SfAwLg6EeeJr8Xnv81ikw" name="EntryCollector" abstract="true">
       <operations xmi:id="_GJ23YLg7EeeJr8Xnv81ikw" name="getMyDataCollectionManager" extendedVisibility="package" returnType="_-2ohYLg6EeeJr8Xnv81ikw"/>
@@ -107,13 +108,13 @@
         <value xmi:id="_uns0sbg6EeeJr8Xnv81ikw" x="639.0" y="409.99997"/>
       </value>
       <value xmi:id="_wl-fMLg6EeeJr8Xnv81ikw" key="_wl9RELg6EeeJr8Xnv81ikw">
-        <value xmi:id="_wl-fMbg6EeeJr8Xnv81ikw" x="524.0218" y="568.00006"/>
+        <value xmi:id="_wl-fMbg6EeeJr8Xnv81ikw" x="953.19446" y="405.50583"/>
       </value>
       <value xmi:id="_zf0aILg6EeeJr8Xnv81ikw" key="_zfzMALg6EeeJr8Xnv81ikw">
-        <value xmi:id="_zf0aIbg6EeeJr8Xnv81ikw" x="418.0" y="397.00583"/>
+        <value xmi:id="_zf0aIbg6EeeJr8Xnv81ikw" x="423.5" y="396.9754"/>
       </value>
       <value xmi:id="_395H8Lg6EeeJr8Xnv81ikw" key="_394g4Lg6EeeJr8Xnv81ikw">
-        <value xmi:id="_395H8bg6EeeJr8Xnv81ikw" x="137.0" y="399.0"/>
+        <value xmi:id="_395H8bg6EeeJr8Xnv81ikw" x="136.99835" y="399.00085"/>
       </value>
       <value xmi:id="_6SgO4Lg6EeeJr8Xnv81ikw" key="_6SfAwLg6EeeJr8Xnv81ikw">
         <value xmi:id="_6SgO4bg6EeeJr8Xnv81ikw" x="424.0" y="185.0"/>
