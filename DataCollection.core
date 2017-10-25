@@ -84,6 +84,31 @@
           <selected href="Reused_Singleton/Singleton.core#_d1_oUqBBEeS-cby9IJCtzQ"/>
         </configurations>
       </reuses>
+      <reuses xmi:id="_UVE9r7m0Eee5s6JleMNq_w" name="Association_Entry_Event" selectedConfiguration="_UVE9sLm0Eee5s6JleMNq_w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_UVE9sLm0Eee5s6JleMNq_w" name="Automatic selection" reuse="_UVE9r7m0Eee5s6JleMNq_w">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_SKylUH2DEeWIy5MXlHNV-w"/>
+          <selected href="Reused_Association/Association.core#_GHh2gH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_EDjMIHQzEeWm6eZfpLWFHw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_LEwHcACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_y2TyIHQ0EeWm6eZfpLWFHw"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_UVSZBrm0Eee5s6JleMNq_w" name="Association_Event_Entry" selectedConfiguration="_UVSZB7m0Eee5s6JleMNq_w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_UVSZB7m0Eee5s6JleMNq_w" name="Automatic selection" reuse="_UVSZBrm0Eee5s6JleMNq_w">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_EnSLwH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_EDjMIHQzEeWm6eZfpLWFHw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_zPvl0HQ0EeWm6eZfpLWFHw"/>
+        </configurations>
+      </reuses>
     </features>
     <features xmi:id="_CbbCULgxEeevxsfq8kXl4Q" name="Monitoring" children="_G5BPALgxEeevxsfq8kXl4Q _HXM_0LgxEeevxsfq8kXl4Q" parent="__f-k4bgwEeevxsfq8kXl4Q" parentRelationship="Mandatory">
       <realizedBy xsi:type="ram:Aspect" href="Monitoring.ram#_URTakLg4Eeevxsfq8kXl4Q"/>
@@ -93,6 +118,58 @@
     </features>
     <features xmi:id="_G5BPALgxEeevxsfq8kXl4Q" name="Performance Analysis" parent="_CbbCULgxEeevxsfq8kXl4Q" parentRelationship="OR">
       <realizedBy xsi:type="ram:Aspect" href="Performance%20Analysis.ram#_YiMgoLg7EeeJr8Xnv81ikw"/>
+      <reuses xmi:id="_j8cMvrm3Eee5s6JleMNq_w" name="Association_DurationPerformanceEntry_TimeEvent" selectedConfiguration="_j8cMv7m3Eee5s6JleMNq_w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_j8cMv7m3Eee5s6JleMNq_w" name="Automatic selection" reuse="_j8cMvrm3Eee5s6JleMNq_w">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_SKylUH2DEeWIy5MXlHNV-w"/>
+          <selected href="Reused_Association/Association.core#_GHh2gH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_EDjMIHQzEeWm6eZfpLWFHw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_LEwHcACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_JFas8ACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_y2TyIHQ0EeWm6eZfpLWFHw"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_j8ny5rm3Eee5s6JleMNq_w" name="Association_TimeEvent_DurationPerformanceEntry" selectedConfiguration="_j8ny57m3Eee5s6JleMNq_w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_j8ny57m3Eee5s6JleMNq_w" name="Automatic selection" reuse="_j8ny5rm3Eee5s6JleMNq_w">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_EnSLwH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_EDjMIHQzEeWm6eZfpLWFHw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_zPvl0HQ0EeWm6eZfpLWFHw"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_h5vfv7m4Eee5s6JleMNq_w" name="Association_DeltaPerformanceChangeEntry_PerformanceEvent" selectedConfiguration="_h5vfwLm4Eee5s6JleMNq_w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_h5vfwLm4Eee5s6JleMNq_w" name="Automatic selection" reuse="_h5vfv7m4Eee5s6JleMNq_w">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_SKylUH2DEeWIy5MXlHNV-w"/>
+          <selected href="Reused_Association/Association.core#_GHh2gH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_EDjMIHQzEeWm6eZfpLWFHw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_LEwHcACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_JFas8ACXEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_y2TyIHQ0EeWm6eZfpLWFHw"/>
+          <selected href="Reused_Association/Association.core#_8wYC4ACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+      <reuses xmi:id="_h56e1rm4Eee5s6JleMNq_w" name="Association_PerformanceEvent_DeltaPerformanceChangeEntry" selectedConfiguration="_h56e17m4Eee5s6JleMNq_w">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_h56e17m4Eee5s6JleMNq_w" name="Automatic selection" reuse="_h56e1rm4Eee5s6JleMNq_w">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_EnSLwH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_EDjMIHQzEeWm6eZfpLWFHw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_zPvl0HQ0EeWm6eZfpLWFHw"/>
+        </configurations>
+      </reuses>
     </features>
     <features xmi:id="_HXM_0LgxEeevxsfq8kXl4Q" name="User Analysis" parent="_CbbCULgxEeevxsfq8kXl4Q" parentRelationship="OR">
       <realizedBy xsi:type="ram:Aspect" href="User%20Analysis.ram#_xAHoELg7EeeJr8Xnv81ikw"/>
