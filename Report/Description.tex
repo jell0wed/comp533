@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=letter, fontsize=12pt]{scrartcl} % Letter paper and 12pt font size
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm, amssymb} % Math packages
+\usepackage{enumitem} % for a) b) ... list
+\usepackage{tipa}
+\usepackage{xcolor}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{multicol}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\definecolor{code-red}{rgb}{0.8,0.25,0.33}
+\definecolor{light-gray}{gray}{0.95}
+\definecolor{text-gray}{gray}{0.2}
+\colorlet{light-pink}{red!5}
+
+\newcommand{\code}[1]{\colorbox{light-gray}{\textcolor{text-gray}{\texttt{#1}}}}
+\newcommand{\ih}[1]{\textcolor{purple}{#1}}
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{COMP 533: Object Oriented Software Development} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Concern-Oriented Reuse Project \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Jérémie Poisson -  \\ Anna Jolly - 260447198} % Your name
+
+\date{\normalsize October 27, 2017} % Custom date
+%\date{\normalsize\today} % Today's date
+
+\begin{document}
+
+\maketitle % Print the title
+
+\section{Concern and Features}
+
+We have chosen to develop a new concern entitled \textit{Data Collection}. This concern consists of a joint monitoring/logging system that can be used to collect and log data as an application is used.
+
+\subsection{Monitoring}
+\hspace*{.5cm} The monitoring feature provides a way to monitor events of two kinds: performance-related and/or user-related. The \textit{performance analysis} feature provides time events, which are timestamps of certain actions (e.g. the time a page is requested) and performance events, which include throughput, utilization, and count events. These events can then be aggregated into entries (e.g. the time event of a page request and the time event of when the page is done rendering might be aggregated into an entry called "Page loading duration"). \\
+
+\subsection{Logging}
+\hspace*{.5cm} The logging feature 
+
+\newpage
+\section{Impacts}
+\hspace*{.5cm} We have chosen the following goals: "Increase debugging ease", "Increase system traceability", and "Increase user experience". These were chosen because the purpose of having a joint monitoring/logging system is to be able to trace events (which can be used for debugging or can be analysed to improve the software) and performance benchmarks (which can be used to determine how to make the software faster and more efficient). As such, we would like to be able to assess how well each feature is able to increase traceability, debugging ease, and how much it contributes to improving the user experience directly or indirectly (via facilitating software upgrade).
+
+\subsection{Increase debugging ease}
+\hspace*{.5cm} \textit{Logging} is given the highest contributing value of 12, since it is the logging that allows the developer to have access to debugging info. \textit{Error reporting} is given a 2, since a user reporting a crash can be used to find and fix bugs, although this remains less important. \textit{Performance analysis} is given a 3 since performance events can help a developer find where the software is slow or using up a lot of CPU/memory. \textit{Collection} is given a 4, since being able to group logging entries and send them to the right place is very helpful for debugging.
+
+\subsection{Increase system traceability}
+\hspace*{.5cm} \textit{Logging} is given the highest contributing value of 10 since without logging, traces would be impossible to store and comb through. \textit{Monitoring} is given a 7, since it is the monitoring feature that allows crucial performance and user data to be traced. \textit{Error reporting} is given a 2, since allowing users to report crashes increases traceability slightly. \textit{Collection} is given a 1, since the ability to group traces could be said to enhance traceability.
+
+\subsection{Increase user experience}
+\hspace*{.5cm} \textit{User analysis} is given an 8 since analyzing where a user spends most of their time while using an app and what features a user rarely or never uses allows the developer to tailor the app to the users, consequently increasing user experience. \textit{Performance analysis} is given a 5 since the performance data can be used to improve app efficiency and speed, making the user happier. \textit{Error reporting} is given a 2 for both direct and indirect reasons. Directly, reporting a crash can make a user feel better, and indirectly, reporting a crash will likely lead to a fix, which will enhance the user experience for all users.
+
+%\begin{center}
+%\includegraphics[trim={0cm 0cm 0cm 0cm},clip,scale=0.56]{Ex3.pdf}
+%\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

@@ -148,7 +148,7 @@
       <attributes xmi:id="_j7FzwLm1Eee5s6JleMNq_w" name="utilizedUnits" type="_YiNHsbg7EeeJr8Xnv81ikw"/>
       <attributes xmi:id="_k6gpYLm1Eee5s6JleMNq_w" name="totalUnits" type="_YiNHsbg7EeeJr8Xnv81ikw"/>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_sNZoMLm1Eee5s6JleMNq_w" name="DeltaPerformanceChangeEntry">
+    <classes xsi:type="ram:Class" xmi:id="_sNZoMLm1Eee5s6JleMNq_w" name="DeltaPerformanceChangeEntry" superTypes="_sZtwYLp6Eeed--k1buruJQ">
       <operations xmi:id="_EvDLgLnWEeebus-KFf5YJQ" name="addMyPerformanceEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_EvDLgbnWEeebus-KFf5YJQ" name="a" type="_RU0U0Lm4Eee5s6JleMNq_w"/>
       </operations>
@@ -176,7 +176,7 @@
       <attributes xmi:id="_dbkWILm2Eee5s6JleMNq_w" name="currentInteval" type="_TR9o4Lm2Eee5s6JleMNq_w"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_doN1kLm3Eee5s6JleMNq_w" name="Timestamp" dataType="true"/>
-    <classes xsi:type="ram:Class" xmi:id="_g0ar0Lm3Eee5s6JleMNq_w" name="DurationPerformanceEntry">
+    <classes xsi:type="ram:Class" xmi:id="_g0ar0Lm3Eee5s6JleMNq_w" name="DurationPerformanceEntry" superTypes="_sZtwYLp6Eeed--k1buruJQ">
       <operations xmi:id="_L3ktYLnWEeebus-KFf5YJQ" name="addMyTimeEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_L3ktYbnWEeebus-KFf5YJQ" name="a" type="_YiMgo7g7EeeJr8Xnv81ikw"/>
       </operations>
@@ -213,6 +213,7 @@
       <associationEnds xmi:id="_grgK8Lm4Eee5s6JleMNq_w" name="myDeltaPerformanceChangeEntry" referenceType="Composition" assoc="_grgyALm4Eee5s6JleMNq_w" featureSelection="_Eu8d0LnWEeebus-KFf5YJQ"/>
       <attributes xmi:id="_Vb77MLm4Eee5s6JleMNq_w" name="measuredUnitDesc" type="_YiNHs7g7EeeJr8Xnv81ikw"/>
     </classes>
+    <classes xsi:type="ram:Class" xmi:id="_sZtwYLp6Eeed--k1buruJQ" name="Entry"/>
     <associations xmi:id="_grgyALm4Eee5s6JleMNq_w" name="DeltaPerformanceChangeEntry_PerformanceEvent" ends="_grfj4Lm4Eee5s6JleMNq_w _grgK8Lm4Eee5s6JleMNq_w"/>
     <associations xmi:id="_H6HZUbnWEeebus-KFf5YJQ" name="DurationPerformanceEntry_TimeEvent" ends="_H6GyQLnWEeebus-KFf5YJQ _H6HZULnWEeebus-KFf5YJQ"/>
     <types xsi:type="ram:RVoid" xmi:id="_YiMgpLg7EeeJr8Xnv81ikw"/>
@@ -249,16 +250,16 @@
         <value xmi:id="_f7-54bm1Eee5s6JleMNq_w" x="404.3172" y="444.93744"/>
       </value>
       <value xmi:id="_sNaPQLm1Eee5s6JleMNq_w" key="_sNZoMLm1Eee5s6JleMNq_w">
-        <value xmi:id="_sNaPQbm1Eee5s6JleMNq_w" x="825.8541" y="99.351166"/>
+        <value xmi:id="_sNaPQbm1Eee5s6JleMNq_w" x="825.8541" y="15.054302"/>
       </value>
       <value xmi:id="_PN6koLm2Eee5s6JleMNq_w" key="_PN5WgLm2Eee5s6JleMNq_w">
-        <value xmi:id="_PN6kobm2Eee5s6JleMNq_w" x="601.21643" y="621.1869"/>
+        <value xmi:id="_PN6kobm2Eee5s6JleMNq_w" x="643.24243" y="621.05835"/>
       </value>
       <value xmi:id="_TR-3ALm2Eee5s6JleMNq_w" key="_TR9o4Lm2Eee5s6JleMNq_w">
         <value xmi:id="_TR-3Abm2Eee5s6JleMNq_w" x="1071.42" y="207.27704"/>
       </value>
       <value xmi:id="_doPqwLm3Eee5s6JleMNq_w" key="_doN1kLm3Eee5s6JleMNq_w">
-        <value xmi:id="_doPqwbm3Eee5s6JleMNq_w" x="108.952484" y="87.81711"/>
+        <value xmi:id="_doPqwbm3Eee5s6JleMNq_w" x="1006.95264" y="629.6266"/>
       </value>
       <value xmi:id="_g0bS4Lm3Eee5s6JleMNq_w" key="_g0ar0Lm3Eee5s6JleMNq_w">
         <value xmi:id="_g0bS4bm3Eee5s6JleMNq_w" x="54.452477" y="520.34375"/>
@@ -268,6 +269,9 @@
       </value>
       <value xmi:id="_RU1i8Lm4Eee5s6JleMNq_w" key="_RU0U0Lm4Eee5s6JleMNq_w">
         <value xmi:id="_RU1i8bm4Eee5s6JleMNq_w" x="679.27966" y="262.80124"/>
+      </value>
+      <value xmi:id="_sZvlkLp6Eeed--k1buruJQ" key="_sZtwYLp6Eeed--k1buruJQ">
+        <value xmi:id="_sZvlkbp6Eeed--k1buruJQ" x="31.579407" y="99.351166"/>
       </value>
     </containers>
   </layout>
