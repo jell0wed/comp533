@@ -71,7 +71,7 @@
       <operations xmi:id="_UNGtULp4Eeed--k1buruJQ" name="setSimpleMyUser" extendedVisibility="protected" returnType="_EiYAl7hZEeetyvHnMFFg9Q">
         <parameters xmi:id="_UNGtUbp4Eeed--k1buruJQ" name="newObject" type="_OfN9cLp4Eeed--k1buruJQ"/>
       </operations>
-      <associationEnds xmi:id="_RoRZEbp4Eeed--k1buruJQ" name="sourceUser" referenceType="Composition" assoc="_RoRZErp4Eeed--k1buruJQ" featureSelection="_UNH7cLp4Eeed--k1buruJQ"/>
+      <associationEnds xmi:id="_RoRZEbp4Eeed--k1buruJQ" name="sourceUser" assoc="_RoRZErp4Eeed--k1buruJQ" featureSelection="_UNH7cLp4Eeed--k1buruJQ"/>
       <attributes xmi:id="_EFmIgLhaEeetyvHnMFFg9Q" name="sysInfo" type="_8KUUALhZEeetyvHnMFFg9Q"/>
       <attributes xmi:id="_bmAe0LhaEeetyvHnMFFg9Q" name="userCustomMessage" type="_EiYAmrhZEeetyvHnMFFg9Q"/>
       <attributes xmi:id="_dPxR8LhaEeetyvHnMFFg9Q" name="userEmail" type="_EiYAmrhZEeetyvHnMFFg9Q"/>

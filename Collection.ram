@@ -67,27 +67,7 @@
       <attributes xmi:id="_Ru6ocLhbEeetyvHnMFFg9Q" name="appendFile" type="_uns0pbg6EeeJr8Xnv81ikw"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_6SfAwLg6EeeJr8Xnv81ikw" name="EntryCollector" abstract="true">
-      <operations xmi:id="_GJ23YLg7EeeJr8Xnv81ikw" name="getMyDataCollectionManager" extendedVisibility="package" returnType="_-2ohYLg6EeeJr8Xnv81ikw"/>
-      <operations xmi:id="_GJ3ecLg7EeeJr8Xnv81ikw" name="setMyDataCollectionManager" extendedVisibility="package" returnType="_uns0pbg6EeeJr8Xnv81ikw">
-        <parameters xmi:id="_GJ3ecbg7EeeJr8Xnv81ikw" name="a" type="_-2ohYLg6EeeJr8Xnv81ikw"/>
-      </operations>
-      <operations xmi:id="_GJ4skLg7EeeJr8Xnv81ikw" name="setSimpleMyDataCollectionManager" extendedVisibility="protected" returnType="_uns0pbg6EeeJr8Xnv81ikw">
-        <parameters xmi:id="_GJ4skbg7EeeJr8Xnv81ikw" name="newObject" type="_-2ohYLg6EeeJr8Xnv81ikw"/>
-      </operations>
-      <associationEnds xmi:id="_APDF0bg7EeeJr8Xnv81ikw" name="myDataCollectionManager" lowerBound="1" assoc="_APDs4Lg7EeeJr8Xnv81ikw" featureSelection="_GJ7v4Lg7EeeJr8Xnv81ikw"/>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_-2ohYLg6EeeJr8Xnv81ikw" name="DataCollectionManager">
-      <operations xmi:id="_GJxX0Lg7EeeJr8Xnv81ikw" name="createMyEntryCollector" extendedVisibility="package" returnType="_-2ohYLg6EeeJr8Xnv81ikw" operationType="Constructor"/>
-      <operations xmi:id="_GJyl8Lg7EeeJr8Xnv81ikw" name="containsMyEntryCollector" extendedVisibility="package" returnType="_uns0pbg6EeeJr8Xnv81ikw">
-        <parameters xmi:id="_GJyl8bg7EeeJr8Xnv81ikw" name="a" type="_6SfAwLg6EeeJr8Xnv81ikw"/>
-      </operations>
-      <operations xmi:id="_GJz0ELg7EeeJr8Xnv81ikw" name="sizeOfMyEntryCollector" extendedVisibility="package" returnType="_uns0prg6EeeJr8Xnv81ikw"/>
-      <operations xmi:id="_GJ1CMLg7EeeJr8Xnv81ikw" name="getMyEntryCollector" extendedVisibility="package">
-        <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziEbgxEeevxsfq8kXl4Q"/>
-      </operations>
-      <associationEnds xmi:id="_APDF0Lg7EeeJr8Xnv81ikw" name="myEntryCollector" upperBound="-1" assoc="_APDs4Lg7EeeJr8Xnv81ikw" featureSelection="_GJu7kLg7EeeJr8Xnv81ikw"/>
-    </classes>
-    <associations xmi:id="_APDs4Lg7EeeJr8Xnv81ikw" name="DataCollectionManager_EntryCollector" ends="_APDF0Lg7EeeJr8Xnv81ikw _APDF0bg7EeeJr8Xnv81ikw"/>
     <types xsi:type="ram:RVoid" xmi:id="_uns0o7g6EeeJr8Xnv81ikw"/>
     <types xsi:type="ram:RAny" xmi:id="_uns0pLg6EeeJr8Xnv81ikw"/>
     <types xsi:type="ram:RBoolean" xmi:id="_uns0pbg6EeeJr8Xnv81ikw"/>
