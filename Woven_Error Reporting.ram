@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_iarEYLsqEeez9_300R18Xw" name="Woven_Error Reporting">
+  <structuralView xmi:id="_iarEYbsqEeez9_300R18Xw">
+    <classes xsi:type="ram:Class" xmi:id="_iarEYrsqEeez9_300R18Xw" name="UserReportedErrorLoggableEvent" superTypes="_iarEbLsqEeez9_300R18Xw">
+      <operations xmi:id="_iarEY7sqEeez9_300R18Xw" name="getSourceUser" extendedVisibility="package" returnType="_iarEf7sqEeez9_300R18Xw"/>
+      <operations xmi:id="_iarEZLsqEeez9_300R18Xw" name="setSourceUser" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarEZbsqEeez9_300R18Xw" name="a" type="_iarEf7sqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarEZrsqEeez9_300R18Xw" name="setSimpleMyUser" extendedVisibility="protected" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarEZ7sqEeez9_300R18Xw" name="newObject" type="_iarEf7sqEeez9_300R18Xw"/>
+      </operations>
+      <associationEnds xmi:id="_iarEaLsqEeez9_300R18Xw" name="sourceUser" assoc="_iarrprsqEeez9_300R18Xw"/>
+      <attributes xmi:id="_iarEabsqEeez9_300R18Xw" name="sysInfo" type="_iarEdLsqEeez9_300R18Xw"/>
+      <attributes xmi:id="_iarEarsqEeez9_300R18Xw" name="userCustomMessage" type="_iarrsrsqEeez9_300R18Xw"/>
+      <attributes xmi:id="_iarEa7sqEeez9_300R18Xw" name="userEmail" type="_iarrsrsqEeez9_300R18Xw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_iarEbLsqEeez9_300R18Xw" name="ExceptionLoggableEvent" superTypes="_iarribsqEeez9_300R18Xw">
+      <operations xmi:id="_iarEbbsqEeez9_300R18Xw" name="setAssocEntry" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarEbrsqEeez9_300R18Xw" name="newObject" type="_iarEh7sqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarEb7sqEeez9_300R18Xw" name="setSimpleAssocEntry" extendedVisibility="protected" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarEcLsqEeez9_300R18Xw" name="newObject" type="_iarEh7sqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarEcbsqEeez9_300R18Xw" name="getAssocEntry" extendedVisibility="package" returnType="_iarEh7sqEeez9_300R18Xw"/>
+      <associationEnds xmi:id="_iarEcrsqEeez9_300R18Xw" name="assocEntry" lowerBound="1" assoc="_iarrp7sqEeez9_300R18Xw">
+        <featureSelection href="Logging.ram#_AUh6YLq6Eee7H_mrj5TNuw"/>
+      </associationEnds>
+      <attributes xmi:id="_iarEc7sqEeez9_300R18Xw" name="source" type="_iarrmLsqEeez9_300R18Xw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_iarEdLsqEeez9_300R18Xw" name="UserSystemInfo" visibility="public" dataType="true">
+      <attributes xmi:id="_iarEdbsqEeez9_300R18Xw" name="osVersion" type="_iarrsLsqEeez9_300R18Xw"/>
+      <attributes xmi:id="_iarEdrsqEeez9_300R18Xw" name="osType" type="_iarrt7sqEeez9_300R18Xw"/>
+      <attributes xmi:id="_iarEd7sqEeez9_300R18Xw" name="localTime" type="_iarEebsqEeez9_300R18Xw"/>
+      <attributes xmi:id="_iarEeLsqEeez9_300R18Xw" name="softwareVersion" type="_iarrsLsqEeez9_300R18Xw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_iarEebsqEeez9_300R18Xw" name="DateTime" dataType="true"/>
+    <classes xsi:type="ram:Class" xmi:id="_iarEersqEeez9_300R18Xw" name="SystemInfoManager">
+      <operations xmi:id="_iarEe7sqEeez9_300R18Xw" name="create" partiality="public" extendedVisibility="private" returnType="_iarEersqEeez9_300R18Xw" operationType="Constructor"/>
+      <operations xmi:id="_iarEfLsqEeez9_300R18Xw" name="getInstance" extendedVisibility="package" returnType="_iarEersqEeez9_300R18Xw" static="true"/>
+      <associationEnds xmi:id="_iarEfbsqEeez9_300R18Xw" name="instance" static="true" assoc="_iarrq7sqEeez9_300R18Xw"/>
+      <associationEnds xmi:id="_iarEfrsqEeez9_300R18Xw" name="self" navigable="false" assoc="_iarrq7sqEeez9_300R18Xw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_iarEf7sqEeez9_300R18Xw" name="User">
+      <operations xmi:id="_iarEgLsqEeez9_300R18Xw" name="createCreatedUserReportedEvents" extendedVisibility="package" returnType="_iarEf7sqEeez9_300R18Xw" operationType="Constructor"/>
+      <operations xmi:id="_iarEgbsqEeez9_300R18Xw" name="containsCreatedUserReportedEvents" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarEgrsqEeez9_300R18Xw" name="a" type="_iarEYrsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarEg7sqEeez9_300R18Xw" name="sizeOfCreatedUserReportedEvents" extendedVisibility="package" returnType="_iarrsLsqEeez9_300R18Xw"/>
+      <operations xmi:id="_iarEhLsqEeez9_300R18Xw" name="getCreatedUserReportedEvents" extendedVisibility="package">
+        <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziEbgxEeevxsfq8kXl4Q"/>
+      </operations>
+      <associationEnds xmi:id="_iarEhbsqEeez9_300R18Xw" name="createdUserReportedEvents" upperBound="-1" assoc="_iarrprsqEeez9_300R18Xw"/>
+      <attributes xmi:id="_iarEhrsqEeez9_300R18Xw" name="id" type="_iarrsLsqEeez9_300R18Xw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_iarEh7sqEeez9_300R18Xw" name="LoggingTextEntry" superTypes="_iarreLsqEeez9_300R18Xw">
+      <operations xmi:id="_iarEiLsqEeez9_300R18Xw" name="setSimpleSourceEvent" extendedVisibility="protected" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarEibsqEeez9_300R18Xw" name="newObject" type="_iarEbLsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarEirsqEeez9_300R18Xw" name="getSourceEvent" extendedVisibility="package" returnType="_iarEbLsqEeez9_300R18Xw"/>
+      <operations xmi:id="_iarEi7sqEeez9_300R18Xw" name="setSourceEvent" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarEjLsqEeez9_300R18Xw" name="a" type="_iarEbLsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarEjbsqEeez9_300R18Xw" name="setSimpleSourceEvent" extendedVisibility="protected" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarEjrsqEeez9_300R18Xw" name="newObject" type="_iarrcLsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarEj7sqEeez9_300R18Xw" name="getSourceEvent" extendedVisibility="package" returnType="_iarrcLsqEeez9_300R18Xw"/>
+      <operations xmi:id="_iarEkLsqEeez9_300R18Xw" name="setSourceEvent" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarEkbsqEeez9_300R18Xw" name="a" type="_iarrcLsqEeez9_300R18Xw"/>
+      </operations>
+      <associationEnds xmi:id="_iarEkrsqEeez9_300R18Xw" name="sourceEvent" lowerBound="1" assoc="_iarrp7sqEeez9_300R18Xw">
+        <featureSelection href="Logging.ram#_AUooELq6Eee7H_mrj5TNuw"/>
+      </associationEnds>
+      <associationEnds xmi:id="_iarEk7sqEeez9_300R18Xw" name="sourceEvent" lowerBound="1" assoc="_iarrqLsqEeez9_300R18Xw">
+        <featureSelection href="Logging.ram#_Bgmr8Lq6Eee7H_mrj5TNuw"/>
+      </associationEnds>
+      <attributes xmi:id="_iarElLsqEeez9_300R18Xw" name="formattedMessage" type="_iarrsrsqEeez9_300R18Xw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_iarrcLsqEeez9_300R18Xw" name="TextLoggableEvent" superTypes="_iarribsqEeez9_300R18Xw">
+      <operations xmi:id="_iarrcbsqEeez9_300R18Xw" name="setAssociEntry" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrcrsqEeez9_300R18Xw" name="newObject" type="_iarEh7sqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarrc7sqEeez9_300R18Xw" name="setSimpleAssociEntry" extendedVisibility="protected" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrdLsqEeez9_300R18Xw" name="newObject" type="_iarEh7sqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarrdbsqEeez9_300R18Xw" name="getAssociEntry" extendedVisibility="package" returnType="_iarEh7sqEeez9_300R18Xw"/>
+      <associationEnds xmi:id="_iarrdrsqEeez9_300R18Xw" name="associEntry" lowerBound="1" assoc="_iarrqLsqEeez9_300R18Xw">
+        <featureSelection href="Logging.ram#_BgewILq6Eee7H_mrj5TNuw"/>
+      </associationEnds>
+      <attributes xmi:id="_iarrd7sqEeez9_300R18Xw" name="message" type="_iarrsrsqEeez9_300R18Xw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_iarreLsqEeez9_300R18Xw" name="Entry" abstract="true">
+      <operations xmi:id="_iarrebsqEeez9_300R18Xw" name="removeSourceEvents" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrersqEeez9_300R18Xw" name="a" type="_iarribsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarre7sqEeez9_300R18Xw" name="addSimpleSourceEvents" extendedVisibility="protected" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrfLsqEeez9_300R18Xw" name="a" type="_iarribsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarrfbsqEeez9_300R18Xw" name="removeSimpleSourceEvents" extendedVisibility="protected" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrfrsqEeez9_300R18Xw" name="a" type="_iarribsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarrf7sqEeez9_300R18Xw" name="addSourceEvents" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrgLsqEeez9_300R18Xw" name="a" type="_iarribsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarrgbsqEeez9_300R18Xw" name="createSourceEvents" extendedVisibility="package" returnType="_iarreLsqEeez9_300R18Xw" operationType="Constructor"/>
+      <operations xmi:id="_iarrgrsqEeez9_300R18Xw" name="containsSourceEvents" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrg7sqEeez9_300R18Xw" name="a" type="_iarribsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarrhLsqEeez9_300R18Xw" name="sizeOfSourceEvents" extendedVisibility="package" returnType="_iarrsLsqEeez9_300R18Xw"/>
+      <operations xmi:id="_iarrhbsqEeez9_300R18Xw" name="getSourceEvents" extendedVisibility="package">
+        <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_ManyOpposite_MinimumPlainBidirectional.ram#_tbQNlLnYEeebus-KFf5YJQ"/>
+      </operations>
+      <associationEnds xmi:id="_iarrhrsqEeez9_300R18Xw" name="sourceEvents" lowerBound="1" upperBound="-1" assoc="_iarrqrsqEeez9_300R18Xw">
+        <featureSelection href="DataCollection.ram#_LPULkLp7Eeed--k1buruJQ"/>
+      </associationEnds>
+      <attributes xmi:id="_iarrh7sqEeez9_300R18Xw" name="entry" type="_iarrsrsqEeez9_300R18Xw"/>
+      <attributes xmi:id="_iarriLsqEeez9_300R18Xw" name="level" type="_iarrwLsqEeez9_300R18Xw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_iarribsqEeez9_300R18Xw" name="Event" abstract="true">
+      <operations xmi:id="_iarrirsqEeez9_300R18Xw" name="getTriggeringSource" extendedVisibility="package" returnType="_iarrmbsqEeez9_300R18Xw"/>
+      <operations xmi:id="_iarri7sqEeez9_300R18Xw" name="setTriggeringSource" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrjLsqEeez9_300R18Xw" name="a" type="_iarrmbsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarrjbsqEeez9_300R18Xw" name="setSimpleMySource" extendedVisibility="protected" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrjrsqEeez9_300R18Xw" name="newObject" type="_iarrmbsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarrj7sqEeez9_300R18Xw" name="setSimpleMyEntry" extendedVisibility="protected" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrkLsqEeez9_300R18Xw" name="a" type="_iarreLsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarrkbsqEeez9_300R18Xw" name="createAssocEntries" extendedVisibility="package" returnType="_iarribsqEeez9_300R18Xw" operationType="Constructor"/>
+      <operations xmi:id="_iarrkrsqEeez9_300R18Xw" name="containsAssocEntries" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrk7sqEeez9_300R18Xw" name="a" type="_iarreLsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarrlLsqEeez9_300R18Xw" name="sizeOfAssocEntries" extendedVisibility="package" returnType="_iarrsLsqEeez9_300R18Xw"/>
+      <operations xmi:id="_iarrlbsqEeez9_300R18Xw" name="getAssocEntries" extendedVisibility="package">
+        <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_ManyOpposite.ram#_tbmLybnYEeebus-KFf5YJQ"/>
+      </operations>
+      <associationEnds xmi:id="_iarrlrsqEeez9_300R18Xw" name="triggeringSource" lowerBound="1" assoc="_iarrqbsqEeez9_300R18Xw">
+        <featureSelection href="DataCollection.ram#__CrvkLgxEeevxsfq8kXl4Q"/>
+      </associationEnds>
+      <associationEnds xmi:id="_iarrl7sqEeez9_300R18Xw" name="assocEntries" upperBound="-1" assoc="_iarrqrsqEeez9_300R18Xw">
+        <featureSelection href="DataCollection.ram#_LPZrILp7Eeed--k1buruJQ"/>
+      </associationEnds>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_iarrmLsqEeez9_300R18Xw" name="Exception" dataType="true"/>
+    <classes xsi:type="ram:Class" xmi:id="_iarrmbsqEeez9_300R18Xw" name="Source" abstract="true">
+      <operations xmi:id="_iarrmrsqEeez9_300R18Xw" name="createEvents" extendedVisibility="package" returnType="_iarrmbsqEeez9_300R18Xw" operationType="Constructor"/>
+      <operations xmi:id="_iarrm7sqEeez9_300R18Xw" name="containsEvents" extendedVisibility="package" returnType="_iarrr7sqEeez9_300R18Xw">
+        <parameters xmi:id="_iarrnLsqEeez9_300R18Xw" name="a" type="_iarribsqEeez9_300R18Xw"/>
+      </operations>
+      <operations xmi:id="_iarrnbsqEeez9_300R18Xw" name="sizeOfEvents" extendedVisibility="package" returnType="_iarrsLsqEeez9_300R18Xw"/>
+      <operations xmi:id="_iarrnrsqEeez9_300R18Xw" name="getEvents" extendedVisibility="package">
+        <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziEbgxEeevxsfq8kXl4Q"/>
+      </operations>
+      <associationEnds xmi:id="_iarrn7sqEeez9_300R18Xw" name="events" upperBound="-1" assoc="_iarrqbsqEeez9_300R18Xw">
+        <featureSelection href="DataCollection.ram#__CrvhbgxEeevxsfq8kXl4Q"/>
+      </associationEnds>
+      <attributes xmi:id="_iarroLsqEeez9_300R18Xw" name="type" type="_iarrvLsqEeez9_300R18Xw"/>
+    </classes>
+    <classes xsi:type="ram:Class" xmi:id="_iarrobsqEeez9_300R18Xw" name="DataCollectionManager">
+      <operations xmi:id="_iarrorsqEeez9_300R18Xw" name="create" partiality="public" extendedVisibility="private" returnType="_iarrobsqEeez9_300R18Xw" operationType="Constructor"/>
+      <operations xmi:id="_iarro7sqEeez9_300R18Xw" name="getInstance" extendedVisibility="package" returnType="_iarrobsqEeez9_300R18Xw" static="true"/>
+      <associationEnds xmi:id="_iarrpLsqEeez9_300R18Xw" name="instance" static="true" assoc="_iarrrLsqEeez9_300R18Xw"/>
+      <associationEnds xmi:id="_iarrpbsqEeez9_300R18Xw" name="self" navigable="false" assoc="_iarrrLsqEeez9_300R18Xw"/>
+    </classes>
+    <associations xmi:id="_iarrprsqEeez9_300R18Xw" name="User_UserReportedErrorLoggableEvent" ends="_iarEhbsqEeez9_300R18Xw _iarEaLsqEeez9_300R18Xw"/>
+    <associations xmi:id="_iarrp7sqEeez9_300R18Xw" name="ExceptionLoggableEvent_LoggingTextEntry" ends="_iarEcrsqEeez9_300R18Xw _iarEkrsqEeez9_300R18Xw"/>
+    <associations xmi:id="_iarrqLsqEeez9_300R18Xw" name="TextLoggableEvent_LoggingTextEntry" ends="_iarrdrsqEeez9_300R18Xw _iarEk7sqEeez9_300R18Xw"/>
+    <associations xmi:id="_iarrqbsqEeez9_300R18Xw" name="Source_Event" ends="_iarrn7sqEeez9_300R18Xw _iarrlrsqEeez9_300R18Xw"/>
+    <associations xmi:id="_iarrqrsqEeez9_300R18Xw" name="Entry_Event" ends="_iarrhrsqEeez9_300R18Xw _iarrl7sqEeez9_300R18Xw"/>
+    <associations xmi:id="_iarrq7sqEeez9_300R18Xw" name="instance" ends="_iarEfbsqEeez9_300R18Xw _iarEfrsqEeez9_300R18Xw"/>
+    <associations xmi:id="_iarrrLsqEeez9_300R18Xw" name="instance" ends="_iarrpLsqEeez9_300R18Xw _iarrpbsqEeez9_300R18Xw"/>
+    <types xsi:type="ram:RVoid" xmi:id="_iarrrbsqEeez9_300R18Xw"/>
+    <types xsi:type="ram:RAny" xmi:id="_iarrrrsqEeez9_300R18Xw"/>
+    <types xsi:type="ram:RBoolean" xmi:id="_iarrr7sqEeez9_300R18Xw"/>
+    <types xsi:type="ram:RInt" xmi:id="_iarrsLsqEeez9_300R18Xw"/>
+    <types xsi:type="ram:RChar" xmi:id="_iarrsbsqEeez9_300R18Xw"/>
+    <types xsi:type="ram:RString" xmi:id="_iarrsrsqEeez9_300R18Xw"/>
+    <types xsi:type="ram:RDouble" xmi:id="_iarrs7sqEeez9_300R18Xw"/>
+    <types xsi:type="ram:RFloat" xmi:id="_iarrtLsqEeez9_300R18Xw"/>
+    <types xsi:type="ram:RLong" xmi:id="_iarrtbsqEeez9_300R18Xw"/>
+    <types xsi:type="ram:RByte" xmi:id="_iarrtrsqEeez9_300R18Xw"/>
+    <types xsi:type="ram:REnum" xmi:id="_iarrt7sqEeez9_300R18Xw" name="OSType">
+      <literals xmi:id="_iarruLsqEeez9_300R18Xw" name="Windows"/>
+      <literals xmi:id="_iarrubsqEeez9_300R18Xw" name="Mac"/>
+      <literals xmi:id="_iarrursqEeez9_300R18Xw" name="Linux"/>
+      <literals xmi:id="_iarru7sqEeez9_300R18Xw" name="Unknown"/>
+    </types>
+    <types xsi:type="ram:REnum" xmi:id="_iarrvLsqEeez9_300R18Xw" name="SourceType">
+      <literals xmi:id="_iarrvbsqEeez9_300R18Xw" name="Page"/>
+      <literals xmi:id="_iarrvrsqEeez9_300R18Xw" name="FunctionCall"/>
+      <literals xmi:id="_iarrv7sqEeez9_300R18Xw" name="ExternalProvider"/>
+    </types>
+    <types xsi:type="ram:REnum" xmi:id="_iarrwLsqEeez9_300R18Xw" name="EntryLevel">
+      <literals xmi:id="_iarrwbsqEeez9_300R18Xw" name="Debug"/>
+      <literals xmi:id="_iarrwrsqEeez9_300R18Xw" name="Info"/>
+      <literals xmi:id="_iarrw7sqEeez9_300R18Xw" name="Warn"/>
+      <literals xmi:id="_iarrxLsqEeez9_300R18Xw" name="Error"/>
+    </types>
+  </structuralView>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_iarrxbsqEeez9_300R18Xw" specifies="_iarEfLsqEeez9_300R18Xw">
+    <specification xmi:id="_iarrxrsqEeez9_300R18Xw">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_iarrx7sqEeez9_300R18Xw" covered="_iarrzrsqEeez9_300R18Xw" message="_iarr0LsqEeez9_300R18Xw"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_iarryLsqEeez9_300R18Xw" covered="_iarrzrsqEeez9_300R18Xw _iarrz7sqEeez9_300R18Xw" interactionOperator="opt">
+        <operands xmi:id="_iarrybsqEeez9_300R18Xw">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_iarryrsqEeez9_300R18Xw" covered="_iarrzrsqEeez9_300R18Xw" message="_iarr0bsqEeez9_300R18Xw"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_iarry7sqEeez9_300R18Xw" covered="_iarrz7sqEeez9_300R18Xw" message="_iarr0bsqEeez9_300R18Xw"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_iarrzLsqEeez9_300R18Xw" body="instance == null" language="Java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_iarrzbsqEeez9_300R18Xw" covered="_iarrzrsqEeez9_300R18Xw" message="_iarr0rsqEeez9_300R18Xw"/>
+      <lifelines xmi:id="_iarrzrsqEeez9_300R18Xw" represents="_iarr1LsqEeez9_300R18Xw" coveredBy="_iarrx7sqEeez9_300R18Xw _iarryLsqEeez9_300R18Xw _iarrzbsqEeez9_300R18Xw _iarryrsqEeez9_300R18Xw"/>
+      <lifelines xmi:id="_iarrz7sqEeez9_300R18Xw" represents="_iarEfbsqEeez9_300R18Xw" coveredBy="_iarryLsqEeez9_300R18Xw _iarry7sqEeez9_300R18Xw"/>
+      <messages xmi:id="_iarr0LsqEeez9_300R18Xw" sendEvent="_iarr1bsqEeez9_300R18Xw" receiveEvent="_iarrx7sqEeez9_300R18Xw" signature="_iarEfLsqEeez9_300R18Xw"/>
+      <messages xmi:id="_iarr0bsqEeez9_300R18Xw" sendEvent="_iarryrsqEeez9_300R18Xw" receiveEvent="_iarry7sqEeez9_300R18Xw" signature="_iarEe7sqEeez9_300R18Xw" assignTo="_iarEfbsqEeez9_300R18Xw" messageSort="createMessage"/>
+      <messages xmi:id="_iarr0rsqEeez9_300R18Xw" sendEvent="_iarrzbsqEeez9_300R18Xw" receiveEvent="_iarr1rsqEeez9_300R18Xw" signature="_iarEfLsqEeez9_300R18Xw" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_iarr07sqEeez9_300R18Xw" value="_iarEfbsqEeez9_300R18Xw"/>
+      </messages>
+      <properties xmi:id="_iarr1LsqEeez9_300R18Xw" name="singleton" static="true" lowerBound="1" type="_iarEersqEeez9_300R18Xw"/>
+      <formalGates xmi:id="_iarr1bsqEeez9_300R18Xw" message="_iarr0LsqEeez9_300R18Xw" name="in_getInstance"/>
+      <formalGates xmi:id="_iarr1rsqEeez9_300R18Xw" message="_iarr0rsqEeez9_300R18Xw" name="out_getInstance"/>
+    </specification>
+  </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_iarr17sqEeez9_300R18Xw" specifies="_iarro7sqEeez9_300R18Xw">
+    <specification xmi:id="_iarr2LsqEeez9_300R18Xw">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_iarr2bsqEeez9_300R18Xw" covered="_iarr4LsqEeez9_300R18Xw" message="_iarr4rsqEeez9_300R18Xw"/>
+      <fragments xsi:type="ram:CombinedFragment" xmi:id="_iarr2rsqEeez9_300R18Xw" covered="_iarr4LsqEeez9_300R18Xw _iarr4bsqEeez9_300R18Xw" interactionOperator="opt">
+        <operands xmi:id="_iarr27sqEeez9_300R18Xw">
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_iarr3LsqEeez9_300R18Xw" covered="_iarr4LsqEeez9_300R18Xw" message="_iarr47sqEeez9_300R18Xw"/>
+          <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_iarr3bsqEeez9_300R18Xw" covered="_iarr4bsqEeez9_300R18Xw" message="_iarr47sqEeez9_300R18Xw"/>
+          <interactionConstraint xsi:type="ram:OpaqueExpression" xmi:id="_iarr3rsqEeez9_300R18Xw" body="instance == null" language="Java"/>
+        </operands>
+      </fragments>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_iarr37sqEeez9_300R18Xw" covered="_iarr4LsqEeez9_300R18Xw" message="_iarr5LsqEeez9_300R18Xw"/>
+      <lifelines xmi:id="_iarr4LsqEeez9_300R18Xw" represents="_iarr5rsqEeez9_300R18Xw" coveredBy="_iarr2bsqEeez9_300R18Xw _iarr2rsqEeez9_300R18Xw _iarr37sqEeez9_300R18Xw _iarr3LsqEeez9_300R18Xw"/>
+      <lifelines xmi:id="_iarr4bsqEeez9_300R18Xw" represents="_iarrpLsqEeez9_300R18Xw" coveredBy="_iarr2rsqEeez9_300R18Xw _iarr3bsqEeez9_300R18Xw"/>
+      <messages xmi:id="_iarr4rsqEeez9_300R18Xw" sendEvent="_iarr57sqEeez9_300R18Xw" receiveEvent="_iarr2bsqEeez9_300R18Xw" signature="_iarro7sqEeez9_300R18Xw"/>
+      <messages xmi:id="_iarr47sqEeez9_300R18Xw" sendEvent="_iarr3LsqEeez9_300R18Xw" receiveEvent="_iarr3bsqEeez9_300R18Xw" signature="_iarrorsqEeez9_300R18Xw" assignTo="_iarrpLsqEeez9_300R18Xw" messageSort="createMessage"/>
+      <messages xmi:id="_iarr5LsqEeez9_300R18Xw" sendEvent="_iarr37sqEeez9_300R18Xw" receiveEvent="_iarr6LsqEeez9_300R18Xw" signature="_iarro7sqEeez9_300R18Xw" messageSort="reply">
+        <returns xsi:type="ram:StructuralFeatureValue" xmi:id="_iarr5bsqEeez9_300R18Xw" value="_iarrpLsqEeez9_300R18Xw"/>
+      </messages>
+      <properties xmi:id="_iarr5rsqEeez9_300R18Xw" name="singleton" static="true" lowerBound="1" type="_iarrobsqEeez9_300R18Xw"/>
+      <formalGates xmi:id="_iarr57sqEeez9_300R18Xw" message="_iarr4rsqEeez9_300R18Xw" name="in_getInstance"/>
+      <formalGates xmi:id="_iarr6LsqEeez9_300R18Xw" message="_iarr5LsqEeez9_300R18Xw" name="out_getInstance"/>
+    </specification>
+  </messageViews>
+  <layout xmi:id="_iarr6bsqEeez9_300R18Xw">
+    <containers xmi:id="_iarr6rsqEeez9_300R18Xw" key="_iarEYbsqEeez9_300R18Xw">
+      <value xmi:id="_iarr67sqEeez9_300R18Xw" key="_iarEYrsqEeez9_300R18Xw">
+        <value xmi:id="_iarr7LsqEeez9_300R18Xw" x="69.5" y="222.0"/>
+      </value>
+      <value xmi:id="_iarr7bsqEeez9_300R18Xw" key="_iarEbLsqEeez9_300R18Xw">
+        <value xmi:id="_iarr7rsqEeez9_300R18Xw" x="110.5" y="70.0"/>
+      </value>
+      <value xmi:id="_iarr77sqEeez9_300R18Xw" key="_iarEdLsqEeez9_300R18Xw">
+        <value xmi:id="_iarr8LsqEeez9_300R18Xw" x="682.0" y="70.0"/>
+      </value>
+      <value xmi:id="_iarr8bsqEeez9_300R18Xw" key="_iarrt7sqEeez9_300R18Xw">
+        <value xmi:id="_iarr8rsqEeez9_300R18Xw" x="924.0" y="70.0"/>
+      </value>
+      <value xmi:id="_iarr87sqEeez9_300R18Xw" key="_iarEebsqEeez9_300R18Xw">
+        <value xmi:id="_iarr9LsqEeez9_300R18Xw" x="462.0" y="70.0"/>
+      </value>
+      <value xmi:id="_iarr9bsqEeez9_300R18Xw" key="_iarEersqEeez9_300R18Xw">
+        <value xmi:id="_iarr9rsqEeez9_300R18Xw" x="462.0" y="337.0"/>
+      </value>
+      <value xmi:id="_iarr97sqEeez9_300R18Xw" key="_iarEf7sqEeez9_300R18Xw">
+        <value xmi:id="_iarr-LsqEeez9_300R18Xw" x="156.0" y="503.99994"/>
+      </value>
+      <value xmi:id="_iarr-bsqEeez9_300R18Xw" key="_iarEh7sqEeez9_300R18Xw">
+        <value xmi:id="_iarr-rsqEeez9_300R18Xw" x="1055.0" y="599.99994"/>
+      </value>
+      <value xmi:id="_iarr-7sqEeez9_300R18Xw" key="_iarrcLsqEeez9_300R18Xw">
+        <value xmi:id="_iarr_LsqEeez9_300R18Xw" x="1469.0" y="599.99994"/>
+      </value>
+      <value xmi:id="_iarr_bsqEeez9_300R18Xw" key="_iarreLsqEeez9_300R18Xw">
+        <value xmi:id="_iarr_rsqEeez9_300R18Xw" x="1862.0" y="599.99994"/>
+      </value>
+      <value xmi:id="_iarr_7sqEeez9_300R18Xw" key="_iarribsqEeez9_300R18Xw">
+        <value xmi:id="_iarsALsqEeez9_300R18Xw" x="2212.0" y="599.99994"/>
+      </value>
+      <value xmi:id="_iarsAbsqEeez9_300R18Xw" key="_iarrmLsqEeez9_300R18Xw">
+        <value xmi:id="_iarsArsqEeez9_300R18Xw" x="2562.0" y="599.99994"/>
+      </value>
+      <value xmi:id="_iarsA7sqEeez9_300R18Xw" key="_iarrmbsqEeez9_300R18Xw">
+        <value xmi:id="_iarsBLsqEeez9_300R18Xw" x="2912.0" y="599.99994"/>
+      </value>
+      <value xmi:id="_iarsBbsqEeez9_300R18Xw" key="_iarrobsqEeez9_300R18Xw">
+        <value xmi:id="_iarsBrsqEeez9_300R18Xw" x="2441.0703" y="945.49994"/>
+      </value>
+      <value xmi:id="_iarsB7sqEeez9_300R18Xw" key="_iarrvLsqEeez9_300R18Xw">
+        <value xmi:id="_iarsCLsqEeez9_300R18Xw" x="200.0" y="921.99994"/>
+      </value>
+      <value xmi:id="_iarsCbsqEeez9_300R18Xw" key="_iarrwLsqEeez9_300R18Xw">
+        <value xmi:id="_iarsCrsqEeez9_300R18Xw" x="550.0" y="921.99994"/>
+      </value>
+    </containers>
+  </layout>
+  <wovenAspects xmi:id="_iarsC7sqEeez9_300R18Xw" name="DataCollection">
+    <comesFrom href="DataCollection.ram#__CrvcLgxEeevxsfq8kXl4Q"/>
+    <wovenElements xmi:id="_iarsDLsqEeez9_300R18Xw" key="_iarrm7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvrbgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsDbsqEeez9_300R18Xw" key="_iarroLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Attribute" href="DataCollection.ram#_PRgvkLnUEeebus-KFf5YJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsDrsqEeez9_300R18Xw" key="_iarrnbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__Crvr7gxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsD7sqEeez9_300R18Xw" key="_iarribsqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="DataCollection.ram#__Crvl7gxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsELsqEeez9_300R18Xw" key="_iarrlbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPcucLp7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsEbsqEeez9_300R18Xw" key="_iarrhLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPYdA7p7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsErsqEeez9_300R18Xw" key="_iarrhbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPZEELp7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsE7sqEeez9_300R18Xw" key="_iarrobsqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="DataCollection.ram#_Rfu8wLg2Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsFLsqEeez9_300R18Xw" key="_iarrj7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_UVOuoLm0Eee5s6JleMNq_w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsFbsqEeez9_300R18Xw" key="_iarrnrsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvsLgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsFrsqEeez9_300R18Xw" key="_iarrirsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvnbgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsF7sqEeez9_300R18Xw" key="_iarrfbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPXO4Lp7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsGLsqEeez9_300R18Xw" key="_iarrebsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPWAwLp7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsGbsqEeez9_300R18Xw" key="_iarrlLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPcHYrp7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsGrsqEeez9_300R18Xw" key="_iarre7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPWn0bp7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsG7sqEeez9_300R18Xw" key="_iarreLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="DataCollection.ram#__CrvpLgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsHLsqEeez9_300R18Xw" key="_iarrkrsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPcHYLp7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsHbsqEeez9_300R18Xw" key="_iarrkbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPbgULp7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsHrsqEeez9_300R18Xw" key="_iarrf7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPX18Lp7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsH7sqEeez9_300R18Xw" key="_iarriLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Attribute" href="DataCollection.ram#_P83okLq3Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsILsqEeez9_300R18Xw" key="_iarrmbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="DataCollection.ram#__Crvq7gxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsIbsqEeez9_300R18Xw" key="_iarrjbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvoLgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsIrsqEeez9_300R18Xw" key="_iarrgrsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPYdAbp7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsI7sqEeez9_300R18Xw" key="_iarrmrsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvrLgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsJLsqEeez9_300R18Xw" key="_iarrgbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#_LPYdALp7Eeed--k1buruJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsJbsqEeez9_300R18Xw" key="_iarrh7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Attribute" href="DataCollection.ram#_YTBzYLnUEeebus-KFf5YJQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsJrsqEeez9_300R18Xw" key="_iarri7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="DataCollection.ram#__CrvnrgxEeevxsfq8kXl4Q"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_iarsJ7sqEeez9_300R18Xw" name="Logging">
+    <comesFrom href="Logging.ram#_UeWxYLgzEeevxsfq8kXl4Q"/>
+    <wovenElements xmi:id="_iarsKLsqEeez9_300R18Xw" key="_iarrc7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_BgjooLq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsKbsqEeez9_300R18Xw" key="_iarEc7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Attribute" href="Logging.ram#_sFJnQLhZEeetyvHnMFFg9Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsKrsqEeez9_300R18Xw" key="_iarEjbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_Bgk2wLq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsK7sqEeez9_300R18Xw" key="_iarEi7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_AUnZ8Lq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsLLsqEeez9_300R18Xw" key="_iarEirsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_AUmy4rq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsLbsqEeez9_300R18Xw" key="_iarEbLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="Logging.ram#_o-n7MLhZEeetyvHnMFFg9Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsLrsqEeez9_300R18Xw" key="_iarreLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="Logging.ram#_UewBkLm1Eee5s6JleMNq_w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsL7sqEeez9_300R18Xw" key="_iarrcbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_BgjBkLq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsMLsqEeez9_300R18Xw" key="_iarribsqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="Logging.ram#_UeWxZLgzEeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsMbsqEeez9_300R18Xw" key="_iarEj7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_Bgld0Lq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsMrsqEeez9_300R18Xw" key="_iarrmLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="Logging.ram#_qRhGcLhZEeetyvHnMFFg9Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsM7sqEeez9_300R18Xw" key="_iarElLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Attribute" href="Logging.ram#_cG1EALq3Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsNLsqEeez9_300R18Xw" key="_iarEh7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="Logging.ram#_R7pysLm1Eee5s6JleMNq_w"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsNbsqEeez9_300R18Xw" key="_iarrd7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Attribute" href="Logging.ram#_aGYKALhYEeetyvHnMFFg9Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsNrsqEeez9_300R18Xw" key="_iarrcLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="Logging.ram#_FKZCoLg0Eeevxsfq8kXl4Q"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsN7sqEeez9_300R18Xw" key="_iarEbbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_AUk9sLq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsOLsqEeez9_300R18Xw" key="_iarEiLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_AUmy4Lq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsObsqEeez9_300R18Xw" key="_iarEkLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_Bgld0bq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsOrsqEeez9_300R18Xw" key="_iarEb7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_AUlkwLq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsO7sqEeez9_300R18Xw" key="_iarrdbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_BgkPsLq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsPLsqEeez9_300R18Xw" key="_iarEcbsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Logging.ram#_AUmL0Lq6Eee7H_mrj5TNuw"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_iarsPbsqEeez9_300R18Xw" name="Singleton&lt;Singleton>">
+    <comesFrom href="Reused_Singleton/Woven_Singleton_Singleton.ram#_a3L0ULg2Eeevxsfq8kXl4Q"/>
+    <children xmi:id="_iarsPrsqEeez9_300R18Xw" name="Singleton">
+      <comesFrom href="Reused_Singleton/Singleton.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+      <wovenElements xmi:id="_iarsP7sqEeez9_300R18Xw" key="_iarEfLsqEeez9_300R18Xw">
+        <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QIdYEeG0oPAT5BSQFQ"/>
+      </wovenElements>
+      <wovenElements xmi:id="_iarsQLsqEeez9_300R18Xw" key="_iarEe7sqEeez9_300R18Xw">
+        <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QYdYEeG0oPAT5BSQFQ"/>
+      </wovenElements>
+      <wovenElements xmi:id="_iarsQbsqEeez9_300R18Xw" key="_iarEersqEeez9_300R18Xw">
+        <value xsi:type="ram:Class" href="Reused_Singleton/Singleton.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+      </wovenElements>
+    </children>
+    <wovenElements xmi:id="_iarsQrsqEeez9_300R18Xw" key="_iarEfLsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QIdYEeG0oPAT5BSQFQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsQ7sqEeez9_300R18Xw" key="_iarEe7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QYdYEeG0oPAT5BSQFQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsRLsqEeez9_300R18Xw" key="_iarEersqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="Reused_Singleton/Singleton.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </wovenElements>
+  </wovenAspects>
+  <wovenAspects xmi:id="_iarsRbsqEeez9_300R18Xw" name="Singleton&lt;Singleton>">
+    <comesFrom href="Reused_Singleton/Woven_Singleton_Singleton.ram#_a3L0ULg2Eeevxsfq8kXl4Q"/>
+    <children xmi:id="_iarsRrsqEeez9_300R18Xw" name="Singleton">
+      <comesFrom href="Reused_Singleton/Singleton.ram#_stleYXdvEeGm3uH8rYfPgw"/>
+      <wovenElements xmi:id="_iarsR7sqEeez9_300R18Xw" key="_iarro7sqEeez9_300R18Xw">
+        <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QIdYEeG0oPAT5BSQFQ"/>
+      </wovenElements>
+      <wovenElements xmi:id="_iarsSLsqEeez9_300R18Xw" key="_iarrorsqEeez9_300R18Xw">
+        <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QYdYEeG0oPAT5BSQFQ"/>
+      </wovenElements>
+      <wovenElements xmi:id="_iarsSbsqEeez9_300R18Xw" key="_iarrobsqEeez9_300R18Xw">
+        <value xsi:type="ram:Class" href="Reused_Singleton/Singleton.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+      </wovenElements>
+    </children>
+    <wovenElements xmi:id="_iarsSrsqEeez9_300R18Xw" key="_iarro7sqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QIdYEeG0oPAT5BSQFQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsS7sqEeez9_300R18Xw" key="_iarrorsqEeez9_300R18Xw">
+      <value xsi:type="ram:Operation" href="Reused_Singleton/Singleton.ram#_mRK_QYdYEeG0oPAT5BSQFQ"/>
+    </wovenElements>
+    <wovenElements xmi:id="_iarsTLsqEeez9_300R18Xw" key="_iarrobsqEeez9_300R18Xw">
+      <value xsi:type="ram:Class" href="Reused_Singleton/Singleton.ram#_stleMHdvEeGm3uH8rYfPgw"/>
+    </wovenElements>
+  </wovenAspects>
+</ram:Aspect>

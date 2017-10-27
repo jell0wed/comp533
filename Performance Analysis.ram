@@ -137,14 +137,14 @@
       <operations xmi:id="_LMRtoLnWEeebus-KFf5YJQ" name="setSimpleMyDurationPerformanceEntry1" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_LMRtobnWEeebus-KFf5YJQ" name="a" type="_g0ar0Lm3Eee5s6JleMNq_w"/>
       </operations>
-      <operations xmi:id="_oQPeILq9Eee7H_mrj5TNuw" name="getAssocDurationEvent" extendedVisibility="package" returnType="_g0ar0Lm3Eee5s6JleMNq_w"/>
-      <operations xmi:id="_oQQFMLq9Eee7H_mrj5TNuw" name="setAssocDurationEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+      <operations xmi:id="_oQPeILq9Eee7H_mrj5TNuw" name="getAssocDurationEntry" extendedVisibility="package" returnType="_g0ar0Lm3Eee5s6JleMNq_w"/>
+      <operations xmi:id="_oQQFMLq9Eee7H_mrj5TNuw" name="setAssocDurationEntry" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_oQQFMbq9Eee7H_mrj5TNuw" name="newObject" type="_g0ar0Lm3Eee5s6JleMNq_w"/>
       </operations>
       <operations xmi:id="_oQYBALq9Eee7H_mrj5TNuw" name="setSimpleAssocDurationEvent" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_oQYBAbq9Eee7H_mrj5TNuw" name="a" type="_g0ar0Lm3Eee5s6JleMNq_w"/>
       </operations>
-      <associationEnds xmi:id="_H6HZULnWEeebus-KFf5YJQ" name="assocDurationEvent" lowerBound="1" assoc="_H6HZUbnWEeebus-KFf5YJQ" featureSelection="_oQNB4Lq9Eee7H_mrj5TNuw"/>
+      <associationEnds xmi:id="_H6HZULnWEeebus-KFf5YJQ" name="assocDurationEntry" lowerBound="1" assoc="_H6HZUbnWEeebus-KFf5YJQ" featureSelection="_oQNB4Lq9Eee7H_mrj5TNuw"/>
       <attributes xmi:id="_gPW28Lm3Eee5s6JleMNq_w" name="startTime" type="_doN1kLm3Eee5s6JleMNq_w"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_f7-S0Lm1Eee5s6JleMNq_w" name="UtilizationPerformanceEvent" superTypes="_RU0U0Lm4Eee5s6JleMNq_w">
@@ -209,11 +209,11 @@
       <operations xmi:id="_h54CkLm4Eee5s6JleMNq_w" name="setSimpleMyDeltaPerformanceChangeEntry" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_h54Ckbm4Eee5s6JleMNq_w" name="a" type="_sNZoMLm1Eee5s6JleMNq_w"/>
       </operations>
-      <operations xmi:id="_sTYjcLq9Eee7H_mrj5TNuw" name="getAssocDeltaChangeEvent" extendedVisibility="package" returnType="_sNZoMLm1Eee5s6JleMNq_w"/>
-      <operations xmi:id="_sTZKgLq9Eee7H_mrj5TNuw" name="setAssocDeltaChangeEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+      <operations xmi:id="_sTYjcLq9Eee7H_mrj5TNuw" name="getAssocDeltaChangeEntry" extendedVisibility="package" returnType="_sNZoMLm1Eee5s6JleMNq_w"/>
+      <operations xmi:id="_sTZKgLq9Eee7H_mrj5TNuw" name="setAssocDeltaChangeEntry" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_sTZKgbq9Eee7H_mrj5TNuw" name="newObject" type="_sNZoMLm1Eee5s6JleMNq_w"/>
       </operations>
-      <associationEnds xmi:id="_grgK8Lm4Eee5s6JleMNq_w" name="assocDeltaChangeEvent" lowerBound="1" assoc="_grgyALm4Eee5s6JleMNq_w" featureSelection="_sTVgILq9Eee7H_mrj5TNuw"/>
+      <associationEnds xmi:id="_grgK8Lm4Eee5s6JleMNq_w" name="assocDeltaChangeEntry" lowerBound="1" assoc="_grgyALm4Eee5s6JleMNq_w" featureSelection="_sTVgILq9Eee7H_mrj5TNuw"/>
       <attributes xmi:id="_Vb77MLm4Eee5s6JleMNq_w" name="measuredUnitDescription" type="_YiNHs7g7EeeJr8Xnv81ikw"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_sZtwYLp6Eeed--k1buruJQ" name="Entry"/>
