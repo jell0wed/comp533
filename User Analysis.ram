@@ -51,6 +51,126 @@
     </compositions>
     <reuse href="DataCollection.core#__SPc9rp3Eeed--k1buruJQ"/>
   </modelReuses>
+  <modelReuses xmi:id="_0GuoILq2Eee7H_mrj5TNuw">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_0GuoIbq2Eee7H_mrj5TNuw">
+      <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3boLgxEeevxsfq8kXl4Q"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_0GuoIrq2Eee7H_mrj5TNuw" to="_79TFwLpIEeebus-KFf5YJQ">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3borgxEeevxsfq8kXl4Q"/>
+        <operationMappings xmi:id="_0GuoI7q2Eee7H_mrj5TNuw" to="_0HUeALq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bo7gxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_0GuoJLq2Eee7H_mrj5TNuw" to="_0HVFELq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bpbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_0GuoJbq2Eee7H_mrj5TNuw" to="_0HWTMLq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bprgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_0GuoJrq2Eee7H_mrj5TNuw" to="_ZeNbYLpIEeebus-KFf5YJQ">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CsLgxEeevxsfq8kXl4Q"/>
+        <operationMappings xmi:id="_0GuoJ7q2Eee7H_mrj5TNuw" to="_0GySgLq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CsbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_0GuoKLq2Eee7H_mrj5TNuw" to="_0HSBwLq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4Cs7gxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_0GuoKbq2Eee7H_mrj5TNuw" to="_0HT28Lq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CtbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+      </mappings>
+    </compositions>
+    <reuse href="DataCollection.core#_0GuoKrq2Eee7H_mrj5TNuw"/>
+  </modelReuses>
+  <modelReuses xmi:id="_0HYIYLq2Eee7H_mrj5TNuw">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_0HYIYbq2Eee7H_mrj5TNuw">
+      <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3boLgxEeevxsfq8kXl4Q"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_0HYIYrq2Eee7H_mrj5TNuw" to="_ZeNbYLpIEeebus-KFf5YJQ">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3borgxEeevxsfq8kXl4Q"/>
+        <operationMappings xmi:id="_0HYIY7q2Eee7H_mrj5TNuw" to="_0HSBwLq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bo7gxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_0HYIZLq2Eee7H_mrj5TNuw" to="_0HT28Lq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bpbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_0HYIZbq2Eee7H_mrj5TNuw" to="_0GySgLq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bprgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_0HYIZrq2Eee7H_mrj5TNuw" to="_79TFwLpIEeebus-KFf5YJQ">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CsLgxEeevxsfq8kXl4Q"/>
+        <operationMappings xmi:id="_0HYIZ7q2Eee7H_mrj5TNuw" to="_0HWTMLq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CsbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_0HYIaLq2Eee7H_mrj5TNuw" to="_0HUeALq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4Cs7gxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_0HYIabq2Eee7H_mrj5TNuw" to="_0HVFELq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CtbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+      </mappings>
+    </compositions>
+    <reuse href="DataCollection.core#_0HYIarq2Eee7H_mrj5TNuw"/>
+  </modelReuses>
+  <modelReuses xmi:id="_2dhgYLq2Eee7H_mrj5TNuw">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_2dhgYbq2Eee7H_mrj5TNuw">
+      <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3boLgxEeevxsfq8kXl4Q"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_2dhgYrq2Eee7H_mrj5TNuw" to="_79TFwLpIEeebus-KFf5YJQ">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3borgxEeevxsfq8kXl4Q"/>
+        <operationMappings xmi:id="_2dhgY7q2Eee7H_mrj5TNuw" to="_2doOELq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bo7gxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_2dhgZLq2Eee7H_mrj5TNuw" to="_2do1ILq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bpbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_2dhgZbq2Eee7H_mrj5TNuw" to="_2dpcMLq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bprgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_2dhgZrq2Eee7H_mrj5TNuw" to="_iE6VcLnaEeebus-KFf5YJQ">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CsLgxEeevxsfq8kXl4Q"/>
+        <operationMappings xmi:id="_2dhgZ7q2Eee7H_mrj5TNuw" to="_2dmY4Lq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CsbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_2dhgaLq2Eee7H_mrj5TNuw" to="_2dm_8Lq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4Cs7gxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_2dhgabq2Eee7H_mrj5TNuw" to="_2dnnALq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CtbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+      </mappings>
+    </compositions>
+    <reuse href="DataCollection.core#_2dhgarq2Eee7H_mrj5TNuw"/>
+  </modelReuses>
+  <modelReuses xmi:id="_2dqqULq2Eee7H_mrj5TNuw">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_2dqqUbq2Eee7H_mrj5TNuw">
+      <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3boLgxEeevxsfq8kXl4Q"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_2dqqUrq2Eee7H_mrj5TNuw" to="_iE6VcLnaEeebus-KFf5YJQ">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3borgxEeevxsfq8kXl4Q"/>
+        <operationMappings xmi:id="_2dqqU7q2Eee7H_mrj5TNuw" to="_2dm_8Lq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bo7gxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_2dqqVLq2Eee7H_mrj5TNuw" to="_2dnnALq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bpbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_2dqqVbq2Eee7H_mrj5TNuw" to="_2dmY4Lq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf3bprgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_2dqqVrq2Eee7H_mrj5TNuw" to="_79TFwLpIEeebus-KFf5YJQ">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CsLgxEeevxsfq8kXl4Q"/>
+        <operationMappings xmi:id="_2dqqV7q2Eee7H_mrj5TNuw" to="_2dpcMLq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CsbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_2dqqWLq2Eee7H_mrj5TNuw" to="_2doOELq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4Cs7gxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+        <operationMappings xmi:id="_2dqqWbq2Eee7H_mrj5TNuw" to="_2do1ILq2Eee7H_mrj5TNuw">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_OneToOne.ram#_cf4CtbgxEeevxsfq8kXl4Q"/>
+        </operationMappings>
+      </mappings>
+    </compositions>
+    <reuse href="DataCollection.core#_2dqqWrq2Eee7H_mrj5TNuw"/>
+  </modelReuses>
   <realizes href="DataCollection.core#_HXM_0LgxEeevxsfq8kXl4Q"/>
   <coreConcern href="DataCollection.core#__f990LgwEeevxsfq8kXl4Q"/>
   <structuralView xmi:id="_xAHoEbg7EeeJr8Xnv81ikw">
@@ -66,9 +186,18 @@
       <operations xmi:id="_sr_TwrnYEeebus-KFf5YJQ" name="setSimpleMyPageAccessEvent" extendedVisibility="protected" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_sr_Tw7nYEeebus-KFf5YJQ" name="newObject" type="_xAHoErg7EeeJr8Xnv81ikw"/>
       </operations>
+      <attributes xmi:id="_GN068Lq4Eee7H_mrj5TNuw" name="accessedTime" type="_XcYQgLnaEeebus-KFf5YJQ"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_XcYQgLnaEeebus-KFf5YJQ" name="Timestamp" dataType="true"/>
     <classes xsi:type="ram:Class" xmi:id="_iE6VcLnaEeebus-KFf5YJQ" name="ExitEvent" superTypes="_xAHoE7g7EeeJr8Xnv81ikw">
+      <operations xmi:id="_2dmY4Lq2Eee7H_mrj5TNuw" name="setSessionFinishEvent" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_2dmY4bq2Eee7H_mrj5TNuw" name="newObject" type="_79TFwLpIEeebus-KFf5YJQ"/>
+      </operations>
+      <operations xmi:id="_2dm_8Lq2Eee7H_mrj5TNuw" name="setSimpleSessionFinishEvent" extendedVisibility="protected" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_2dm_8bq2Eee7H_mrj5TNuw" name="newObject" type="_79TFwLpIEeebus-KFf5YJQ"/>
+      </operations>
+      <operations xmi:id="_2dnnALq2Eee7H_mrj5TNuw" name="getSessionFinishEvent" extendedVisibility="package" returnType="_79TFwLpIEeebus-KFf5YJQ"/>
+      <associationEnds xmi:id="_2dd2ALq2Eee7H_mrj5TNuw" name="sessionFinishEvent" lowerBound="1" assoc="_2dd2Arq2Eee7H_mrj5TNuw" featureSelection="_2dhgYLq2Eee7H_mrj5TNuw"/>
       <attributes xmi:id="_o9BucLp3Eeed--k1buruJQ" name="exitTime" type="_XcYQgLnaEeebus-KFf5YJQ"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_azLXwLnbEeebus-KFf5YJQ" name="Location" dataType="true">
@@ -76,33 +205,59 @@
       <attributes xmi:id="_tFkKALnbEeebus-KFf5YJQ" name="latitude" type="_xAHoG7g7EeeJr8Xnv81ikw"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_ZeNbYLpIEeebus-KFf5YJQ" name="LoginEvent" superTypes="_xAHoE7g7EeeJr8Xnv81ikw">
-      <operations xmi:id="__SNAsLp3Eeed--k1buruJQ" name="getMyUser" extendedVisibility="package" returnType="_fMDsALppEeed--k1buruJQ"/>
-      <operations xmi:id="__SNAsbp3Eeed--k1buruJQ" name="setMyUser" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+      <operations xmi:id="__SNAsLp3Eeed--k1buruJQ" name="getLoggedInUser" extendedVisibility="package" returnType="_fMDsALppEeed--k1buruJQ"/>
+      <operations xmi:id="__SNAsbp3Eeed--k1buruJQ" name="setLoggedInUser" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
         <parameters xmi:id="__SNAsrp3Eeed--k1buruJQ" name="a" type="_fMDsALppEeed--k1buruJQ"/>
       </operations>
       <operations xmi:id="__SNnwLp3Eeed--k1buruJQ" name="setSimpleMyUser" extendedVisibility="protected" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
         <parameters xmi:id="__SNnwbp3Eeed--k1buruJQ" name="newObject" type="_fMDsALppEeed--k1buruJQ"/>
       </operations>
-      <associationEnds xmi:id="_8upe0Lp3Eeed--k1buruJQ" name="myUser" assoc="_8upe0bp3Eeed--k1buruJQ" featureSelection="__SPc8Lp3Eeed--k1buruJQ"/>
+      <operations xmi:id="_0GySgLq2Eee7H_mrj5TNuw" name="setSessionStartEvent" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_0GySgbq2Eee7H_mrj5TNuw" name="newObject" type="_79TFwLpIEeebus-KFf5YJQ"/>
+      </operations>
+      <operations xmi:id="_0HSBwLq2Eee7H_mrj5TNuw" name="setSimpleSessionStartEvent" extendedVisibility="protected" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_0HSBwbq2Eee7H_mrj5TNuw" name="newObject" type="_79TFwLpIEeebus-KFf5YJQ"/>
+      </operations>
+      <operations xmi:id="_0HT28Lq2Eee7H_mrj5TNuw" name="getSessionStartEvent" extendedVisibility="package" returnType="_79TFwLpIEeebus-KFf5YJQ"/>
+      <associationEnds xmi:id="_8upe0Lp3Eeed--k1buruJQ" name="loggedInUser" assoc="_8upe0bp3Eeed--k1buruJQ" featureSelection="__SPc8Lp3Eeed--k1buruJQ"/>
+      <associationEnds xmi:id="_0FggILq2Eee7H_mrj5TNuw" name="sessionStartEvent" lowerBound="1" assoc="_0FhHMbq2Eee7H_mrj5TNuw" featureSelection="_0GuoILq2Eee7H_mrj5TNuw"/>
       <attributes xmi:id="_eqUT4LpIEeebus-KFf5YJQ" name="loginTime" type="_XcYQgLnaEeebus-KFf5YJQ"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_79TFwLpIEeebus-KFf5YJQ" name="SessionEntry" superTypes="_q0Dp4LppEeed--k1buruJQ">
+      <operations xmi:id="_0HUeALq2Eee7H_mrj5TNuw" name="setSimpleAssocStart" extendedVisibility="protected" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_0HUeAbq2Eee7H_mrj5TNuw" name="newObject" type="_ZeNbYLpIEeebus-KFf5YJQ"/>
+      </operations>
+      <operations xmi:id="_0HVFELq2Eee7H_mrj5TNuw" name="getAssocStart" extendedVisibility="package" returnType="_ZeNbYLpIEeebus-KFf5YJQ"/>
+      <operations xmi:id="_0HWTMLq2Eee7H_mrj5TNuw" name="setAssocStart" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_0HWTMbq2Eee7H_mrj5TNuw" name="a" type="_ZeNbYLpIEeebus-KFf5YJQ"/>
+      </operations>
+      <operations xmi:id="_2doOELq2Eee7H_mrj5TNuw" name="setSimpleAssocFinish" extendedVisibility="protected" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_2doOEbq2Eee7H_mrj5TNuw" name="newObject" type="_iE6VcLnaEeebus-KFf5YJQ"/>
+      </operations>
+      <operations xmi:id="_2do1ILq2Eee7H_mrj5TNuw" name="getAssocFinish" extendedVisibility="package" returnType="_iE6VcLnaEeebus-KFf5YJQ"/>
+      <operations xmi:id="_2dpcMLq2Eee7H_mrj5TNuw" name="setAssocFinish" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_2dpcMbq2Eee7H_mrj5TNuw" name="a" type="_iE6VcLnaEeebus-KFf5YJQ"/>
+      </operations>
+      <associationEnds xmi:id="_0FhHMLq2Eee7H_mrj5TNuw" name="assocStart" lowerBound="1" referenceType="Composition" assoc="_0FhHMbq2Eee7H_mrj5TNuw" featureSelection="_0HYIYLq2Eee7H_mrj5TNuw"/>
+      <associationEnds xmi:id="_2dd2Abq2Eee7H_mrj5TNuw" name="assocFinish" lowerBound="1" referenceType="Composition" assoc="_2dd2Arq2Eee7H_mrj5TNuw" featureSelection="_2dqqULq2Eee7H_mrj5TNuw"/>
       <attributes xmi:id="_OqzX0Lp3Eeed--k1buruJQ" name="location" type="_azLXwLnbEeebus-KFf5YJQ"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_fMDsALppEeed--k1buruJQ" name="User">
-      <operations xmi:id="__SJWULp3Eeed--k1buruJQ" name="createMyLoginEvent" extendedVisibility="package" returnType="_fMDsALppEeed--k1buruJQ" operationType="Constructor"/>
-      <operations xmi:id="__SJ9YLp3Eeed--k1buruJQ" name="containsMyLoginEvent" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+      <operations xmi:id="__SJWULp3Eeed--k1buruJQ" name="createUserLoginEvents" extendedVisibility="package" returnType="_fMDsALppEeed--k1buruJQ" operationType="Constructor"/>
+      <operations xmi:id="__SJ9YLp3Eeed--k1buruJQ" name="containsUserLoginEvents" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
         <parameters xmi:id="__SJ9Ybp3Eeed--k1buruJQ" name="a" type="_ZeNbYLpIEeebus-KFf5YJQ"/>
       </operations>
-      <operations xmi:id="__SKkcLp3Eeed--k1buruJQ" name="sizeOfMyLoginEvent" extendedVisibility="package" returnType="_xAHoF7g7EeeJr8Xnv81ikw"/>
-      <operations xmi:id="__SLLgLp3Eeed--k1buruJQ" name="getMyLoginEvent" extendedVisibility="package">
+      <operations xmi:id="__SKkcLp3Eeed--k1buruJQ" name="sizeOfUserLoginEvents" extendedVisibility="package" returnType="_xAHoF7g7EeeJr8Xnv81ikw"/>
+      <operations xmi:id="__SLLgLp3Eeed--k1buruJQ" name="getUserLoginEvents" extendedVisibility="package">
         <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziEbgxEeevxsfq8kXl4Q"/>
       </operations>
-      <associationEnds xmi:id="_8uo3wLp3Eeed--k1buruJQ" name="myLoginEvent" upperBound="-1" assoc="_8upe0bp3Eeed--k1buruJQ" featureSelection="__SHhILp3Eeed--k1buruJQ"/>
+      <associationEnds xmi:id="_8uo3wLp3Eeed--k1buruJQ" name="userLoginEvents" upperBound="-1" assoc="_8upe0bp3Eeed--k1buruJQ" featureSelection="__SHhILp3Eeed--k1buruJQ"/>
       <attributes xmi:id="_hyY1ELppEeed--k1buruJQ" name="id" type="_xAHoF7g7EeeJr8Xnv81ikw"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_q0Dp4LppEeed--k1buruJQ" name="Entry"/>
     <associations xmi:id="_8upe0bp3Eeed--k1buruJQ" name="User_LoginEvent" ends="_8uo3wLp3Eeed--k1buruJQ _8upe0Lp3Eeed--k1buruJQ"/>
+    <associations xmi:id="_0FhHMbq2Eee7H_mrj5TNuw" name="LoginEvent_SessionEntry" ends="_0FggILq2Eee7H_mrj5TNuw _0FhHMLq2Eee7H_mrj5TNuw"/>
+    <associations xmi:id="_2dd2Arq2Eee7H_mrj5TNuw" name="ExitEvent_SessionEntry" ends="_2dd2ALq2Eee7H_mrj5TNuw _2dd2Abq2Eee7H_mrj5TNuw"/>
     <types xsi:type="ram:RVoid" xmi:id="_xAHoFLg7EeeJr8Xnv81ikw"/>
     <types xsi:type="ram:RAny" xmi:id="_xAHoFbg7EeeJr8Xnv81ikw"/>
     <types xsi:type="ram:RBoolean" xmi:id="_xAHoFrg7EeeJr8Xnv81ikw"/>
@@ -126,7 +281,7 @@
         <value xmi:id="_xAHoJLg7EeeJr8Xnv81ikw" x="587.862" y="92.21373"/>
       </value>
       <value xmi:id="_hTDM8LnVEeebus-KFf5YJQ" key="_hTCl4LnVEeebus-KFf5YJQ">
-        <value xmi:id="_hTDM8bnVEeebus-KFf5YJQ" x="850.3563" y="399.15942"/>
+        <value xmi:id="_hTDM8bnVEeebus-KFf5YJQ" x="977.4453" y="399.5014"/>
       </value>
       <value xmi:id="_lv3WgLnVEeebus-KFf5YJQ" key="_lv2IYLnVEeebus-KFf5YJQ">
         <value xmi:id="_lv3WgbnVEeebus-KFf5YJQ" x="833.0" y="66.0"/>
@@ -138,19 +293,19 @@
         <value xmi:id="_XcZeobnaEeebus-KFf5YJQ" x="1047.9999" y="66.0"/>
       </value>
       <value xmi:id="_iE7jkLnaEeebus-KFf5YJQ" key="_iE6VcLnaEeebus-KFf5YJQ">
-        <value xmi:id="_iE7jkbnaEeebus-KFf5YJQ" x="727.153" y="255.11708"/>
+        <value xmi:id="_iE7jkbnaEeebus-KFf5YJQ" x="820.5" y="519.4872"/>
       </value>
       <value xmi:id="_azMl4LnbEeebus-KFf5YJQ" key="_azLXwLnbEeebus-KFf5YJQ">
-        <value xmi:id="_azMl4bnbEeebus-KFf5YJQ" x="-8.106392" y="495.20044"/>
+        <value xmi:id="_azMl4bnbEeebus-KFf5YJQ" x="1223.1082" y="46.0"/>
       </value>
       <value xmi:id="_ZeNbYbpIEeebus-KFf5YJQ" key="_ZeNbYLpIEeebus-KFf5YJQ">
-        <value xmi:id="_ZeNbYrpIEeebus-KFf5YJQ" x="570.2542" y="392.5014"/>
+        <value xmi:id="_ZeNbYrpIEeebus-KFf5YJQ" x="526.1999" y="441.11505"/>
       </value>
       <value xmi:id="_79UT4LpIEeebus-KFf5YJQ" key="_79TFwLpIEeebus-KFf5YJQ">
-        <value xmi:id="_79UT4bpIEeebus-KFf5YJQ" x="210.63574" y="392.1969"/>
+        <value xmi:id="_79UT4bpIEeebus-KFf5YJQ" x="132.2811" y="522.88556"/>
       </value>
       <value xmi:id="_fMETELppEeed--k1buruJQ" key="_fMDsALppEeed--k1buruJQ">
-        <value xmi:id="_fMETEbppEeed--k1buruJQ" x="433.94028" y="627.04114"/>
+        <value xmi:id="_fMETEbppEeed--k1buruJQ" x="833.0" y="692.08624"/>
       </value>
       <value xmi:id="_q0FfELppEeed--k1buruJQ" key="_q0Dp4LppEeed--k1buruJQ">
         <value xmi:id="_q0FfEbppEeed--k1buruJQ" x="132.2811" y="77.5"/>

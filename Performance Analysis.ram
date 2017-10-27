@@ -1,135 +1,135 @@
 <?xml version="1.0" encoding="ASCII"?>
 <ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_YiMgoLg7EeeJr8Xnv81ikw" name="Performance Analysis">
-  <modelReuses xmi:id="_Eu8d0LnWEeebus-KFf5YJQ">
-    <compositions xsi:type="ram:Instantiation" xmi:id="_Eu8d0bnWEeebus-KFf5YJQ">
+  <modelReuses xmi:id="_oQNB4Lq9Eee7H_mrj5TNuw">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_oQNB4bq9Eee7H_mrj5TNuw">
       <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjkLgxEeevxsfq8kXl4Q"/>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_Eu8d0rnWEeebus-KFf5YJQ" to="_sNZoMLm1Eee5s6JleMNq_w">
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_oQNB4rq9Eee7H_mrj5TNuw" to="_g0ar0Lm3Eee5s6JleMNq_w">
         <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjkrgxEeevxsfq8kXl4Q"/>
       </mappings>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_Eu8d07nWEeebus-KFf5YJQ" to="_RU0U0Lm4Eee5s6JleMNq_w">
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_oQNB47q9Eee7H_mrj5TNuw" to="_YiMgo7g7EeeJr8Xnv81ikw">
         <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjlLgxEeevxsfq8kXl4Q"/>
-        <operationMappings xmi:id="_Eu8d1LnWEeebus-KFf5YJQ" to="_Eu-TALnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQNB5Lq9Eee7H_mrj5TNuw" to="_oQPeILq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjlbgxEeevxsfq8kXl4Q"/>
         </operationMappings>
-        <operationMappings xmi:id="_Eu8d1bnWEeebus-KFf5YJQ" to="_Eu-6ELnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQNB5bq9Eee7H_mrj5TNuw" to="_oQQFMLq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjlrgxEeevxsfq8kXl4Q"/>
         </operationMappings>
       </mappings>
     </compositions>
-    <reuse href="DataCollection.core#_Eu8d1rnWEeebus-KFf5YJQ"/>
+    <reuse href="DataCollection.core#_oQNB5rq9Eee7H_mrj5TNuw"/>
   </modelReuses>
-  <modelReuses xmi:id="_EvAIMLnWEeebus-KFf5YJQ">
-    <compositions xsi:type="ram:Instantiation" xmi:id="_EvAIMbnWEeebus-KFf5YJQ">
+  <modelReuses xmi:id="_oQRTULq9Eee7H_mrj5TNuw">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_oQRTUbq9Eee7H_mrj5TNuw">
       <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiULm3Eee5s6JleMNq_w"/>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_EvAIMrnWEeebus-KFf5YJQ" to="_RU0U0Lm4Eee5s6JleMNq_w">
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_oQRTUrq9Eee7H_mrj5TNuw" to="_YiMgo7g7EeeJr8Xnv81ikw">
         <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiUrm3Eee5s6JleMNq_w"/>
-        <operationMappings xmi:id="_EvAIM7nWEeebus-KFf5YJQ" to="_h54CkLm4Eee5s6JleMNq_w">
+        <operationMappings xmi:id="_oQRTU7q9Eee7H_mrj5TNuw" to="_oQYBALq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiU7m3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_EvAINLnWEeebus-KFf5YJQ" to="_Eu-TALnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQRTVLq9Eee7H_mrj5TNuw" to="_oQPeILq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiVbm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_EvAINbnWEeebus-KFf5YJQ" to="_Eu-6ELnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQRTVbq9Eee7H_mrj5TNuw" to="_oQQFMLq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiVrm3Eee5s6JleMNq_w"/>
         </operationMappings>
       </mappings>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_EvAINrnWEeebus-KFf5YJQ" to="_sNZoMLm1Eee5s6JleMNq_w">
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_oQRTVrq9Eee7H_mrj5TNuw" to="_g0ar0Lm3Eee5s6JleMNq_w">
         <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiWbm3Eee5s6JleMNq_w"/>
-        <operationMappings xmi:id="_EvAIN7nWEeebus-KFf5YJQ" to="_EvDLgLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQRTV7q9Eee7H_mrj5TNuw" to="_oQU9sLq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiWrm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_EvAIOLnWEeebus-KFf5YJQ" to="_EvDykLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQRTWLq9Eee7H_mrj5TNuw" to="_oQVkwLq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiXLm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_EvAIObnWEeebus-KFf5YJQ" to="_EvDykrnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQRTWbq9Eee7H_mrj5TNuw" to="_oQVkwrq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiXrm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_EvAIOrnWEeebus-KFf5YJQ" to="_EvEZoLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQRTWrq9Eee7H_mrj5TNuw" to="_oQWL0Lq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiYLm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_EvAIO7nWEeebus-KFf5YJQ" to="_EvFAsLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQRTW7q9Eee7H_mrj5TNuw" to="_oQWy4Lq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiYrm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_EvAIPLnWEeebus-KFf5YJQ" to="_EvFAsbnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQRTXLq9Eee7H_mrj5TNuw" to="_oQWy4bq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiY7m3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_EvAIPbnWEeebus-KFf5YJQ" to="_EvFnwLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQRTXbq9Eee7H_mrj5TNuw" to="_oQXZ8Lq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiZbm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_EvAIPrnWEeebus-KFf5YJQ" to="_EvGO0LnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_oQRTXrq9Eee7H_mrj5TNuw" to="_oQXZ8bq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiZrm3Eee5s6JleMNq_w"/>
         </operationMappings>
       </mappings>
     </compositions>
-    <reuse href="DataCollection.core#_EvAvQLnWEeebus-KFf5YJQ"/>
+    <reuse href="DataCollection.core#_oQR6YLq9Eee7H_mrj5TNuw"/>
   </modelReuses>
-  <modelReuses xmi:id="_L3emwLnWEeebus-KFf5YJQ">
-    <compositions xsi:type="ram:Instantiation" xmi:id="_L3emwbnWEeebus-KFf5YJQ">
+  <modelReuses xmi:id="_sTVgILq9Eee7H_mrj5TNuw">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_sTWHMLq9Eee7H_mrj5TNuw">
       <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjkLgxEeevxsfq8kXl4Q"/>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_L3emwrnWEeebus-KFf5YJQ" to="_g0ar0Lm3Eee5s6JleMNq_w">
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_sTWHMbq9Eee7H_mrj5TNuw" to="_sNZoMLm1Eee5s6JleMNq_w">
         <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjkrgxEeevxsfq8kXl4Q"/>
       </mappings>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_L3emw7nWEeebus-KFf5YJQ" to="_YiMgo7g7EeeJr8Xnv81ikw">
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_sTWHMrq9Eee7H_mrj5TNuw" to="_RU0U0Lm4Eee5s6JleMNq_w">
         <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjlLgxEeevxsfq8kXl4Q"/>
-        <operationMappings xmi:id="_L3emxLnWEeebus-KFf5YJQ" to="_L3gb8LnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTWHM7q9Eee7H_mrj5TNuw" to="_sTYjcLq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjlbgxEeevxsfq8kXl4Q"/>
         </operationMappings>
-        <operationMappings xmi:id="_L3emxbnWEeebus-KFf5YJQ" to="_L3hDALnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTWHNLq9Eee7H_mrj5TNuw" to="_sTZKgLq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjlrgxEeevxsfq8kXl4Q"/>
         </operationMappings>
       </mappings>
     </compositions>
-    <reuse href="DataCollection.core#_L3emxrnWEeebus-KFf5YJQ"/>
+    <reuse href="DataCollection.core#_sTWHNbq9Eee7H_mrj5TNuw"/>
   </modelReuses>
-  <modelReuses xmi:id="_L3iRILnWEeebus-KFf5YJQ">
-    <compositions xsi:type="ram:Instantiation" xmi:id="_L3iRIbnWEeebus-KFf5YJQ">
+  <modelReuses xmi:id="_sTaYoLq9Eee7H_mrj5TNuw">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_sTaYobq9Eee7H_mrj5TNuw">
       <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiULm3Eee5s6JleMNq_w"/>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_L3iRIrnWEeebus-KFf5YJQ" to="_YiMgo7g7EeeJr8Xnv81ikw">
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_sTaYorq9Eee7H_mrj5TNuw" to="_RU0U0Lm4Eee5s6JleMNq_w">
         <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiUrm3Eee5s6JleMNq_w"/>
-        <operationMappings xmi:id="_L3iRI7nWEeebus-KFf5YJQ" to="_LMRtoLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTaYo7q9Eee7H_mrj5TNuw" to="_h54CkLm4Eee5s6JleMNq_w">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiU7m3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_L3iRJLnWEeebus-KFf5YJQ" to="_L3gb8LnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTaYpLq9Eee7H_mrj5TNuw" to="_sTYjcLq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiVbm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_L3iRJbnWEeebus-KFf5YJQ" to="_L3hDALnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTaYpbq9Eee7H_mrj5TNuw" to="_sTZKgLq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiVrm3Eee5s6JleMNq_w"/>
         </operationMappings>
       </mappings>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_L3iRJrnWEeebus-KFf5YJQ" to="_g0ar0Lm3Eee5s6JleMNq_w">
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_sTaYprq9Eee7H_mrj5TNuw" to="_sNZoMLm1Eee5s6JleMNq_w">
         <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiWbm3Eee5s6JleMNq_w"/>
-        <operationMappings xmi:id="_L3iRJ7nWEeebus-KFf5YJQ" to="_L3ktYLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTaYp7q9Eee7H_mrj5TNuw" to="_sTdb8Lq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiWrm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_L3iRKLnWEeebus-KFf5YJQ" to="_L3lUcLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTaYqLq9Eee7H_mrj5TNuw" to="_sTeDALq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiXLm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_L3iRKbnWEeebus-KFf5YJQ" to="_L3l7gLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTaYqbq9Eee7H_mrj5TNuw" to="_sTeqELq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiXrm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_L3iRKrnWEeebus-KFf5YJQ" to="_L3mikLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTaYqrq9Eee7H_mrj5TNuw" to="_sTeqErq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiYLm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_L3iRK7nWEeebus-KFf5YJQ" to="_L3nJoLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTaYq7q9Eee7H_mrj5TNuw" to="_sTfRILq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiYrm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_L3iRLLnWEeebus-KFf5YJQ" to="_L3nwsLnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTaYrLq9Eee7H_mrj5TNuw" to="_sTf4MLq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiY7m3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_L3iRLbnWEeebus-KFf5YJQ" to="_L3o-0LnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTaYrbq9Eee7H_mrj5TNuw" to="_sTf4Mrq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiZbm3Eee5s6JleMNq_w"/>
         </operationMappings>
-        <operationMappings xmi:id="_L3iRLrnWEeebus-KFf5YJQ" to="_L3pl4LnWEeebus-KFf5YJQ">
+        <operationMappings xmi:id="_sTaYrrq9Eee7H_mrj5TNuw" to="_sTgfQLq9Eee7H_mrj5TNuw">
           <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8YiZrm3Eee5s6JleMNq_w"/>
         </operationMappings>
       </mappings>
     </compositions>
-    <reuse href="DataCollection.core#_L3iRL7nWEeebus-KFf5YJQ"/>
+    <reuse href="DataCollection.core#_sTaYr7q9Eee7H_mrj5TNuw"/>
   </modelReuses>
   <realizes href="DataCollection.core#_G5BPALgxEeevxsfq8kXl4Q"/>
   <coreConcern href="DataCollection.core#__f990LgwEeevxsfq8kXl4Q"/>
   <structuralView xmi:id="_YiMgobg7EeeJr8Xnv81ikw">
-    <classes xsi:type="ram:Class" xmi:id="_YiMgorg7EeeJr8Xnv81ikw" name="MonitorableEvent"/>
+    <classes xsi:type="ram:Class" xmi:id="_YiMgorg7EeeJr8Xnv81ikw" name="Event"/>
     <classes xsi:type="ram:Class" xmi:id="_YiMgo7g7EeeJr8Xnv81ikw" name="TimeEvent" superTypes="_YiMgorg7EeeJr8Xnv81ikw">
       <operations xmi:id="_j8kvkLm3Eee5s6JleMNq_w" name="setSimpleMyDurationPerformanceEntry" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_j8kvkbm3Eee5s6JleMNq_w" name="a" type="_g0ar0Lm3Eee5s6JleMNq_w"/>
@@ -137,11 +137,14 @@
       <operations xmi:id="_LMRtoLnWEeebus-KFf5YJQ" name="setSimpleMyDurationPerformanceEntry1" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_LMRtobnWEeebus-KFf5YJQ" name="a" type="_g0ar0Lm3Eee5s6JleMNq_w"/>
       </operations>
-      <operations xmi:id="_L3gb8LnWEeebus-KFf5YJQ" name="getMyDurationPerformanceEntry" extendedVisibility="package" returnType="_g0ar0Lm3Eee5s6JleMNq_w"/>
-      <operations xmi:id="_L3hDALnWEeebus-KFf5YJQ" name="setMyDurationPerformanceEntry" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_L3hDAbnWEeebus-KFf5YJQ" name="newObject" type="_g0ar0Lm3Eee5s6JleMNq_w"/>
+      <operations xmi:id="_oQPeILq9Eee7H_mrj5TNuw" name="getAssocDurationEvent" extendedVisibility="package" returnType="_g0ar0Lm3Eee5s6JleMNq_w"/>
+      <operations xmi:id="_oQQFMLq9Eee7H_mrj5TNuw" name="setAssocDurationEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_oQQFMbq9Eee7H_mrj5TNuw" name="newObject" type="_g0ar0Lm3Eee5s6JleMNq_w"/>
       </operations>
-      <associationEnds xmi:id="_H6HZULnWEeebus-KFf5YJQ" name="myDurationPerformanceEntry" assoc="_H6HZUbnWEeebus-KFf5YJQ" featureSelection="_L3emwLnWEeebus-KFf5YJQ"/>
+      <operations xmi:id="_oQYBALq9Eee7H_mrj5TNuw" name="setSimpleAssocDurationEvent" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_oQYBAbq9Eee7H_mrj5TNuw" name="a" type="_g0ar0Lm3Eee5s6JleMNq_w"/>
+      </operations>
+      <associationEnds xmi:id="_H6HZULnWEeebus-KFf5YJQ" name="assocDurationEvent" lowerBound="1" assoc="_H6HZUbnWEeebus-KFf5YJQ" featureSelection="_oQNB4Lq9Eee7H_mrj5TNuw"/>
       <attributes xmi:id="_gPW28Lm3Eee5s6JleMNq_w" name="startTime" type="_doN1kLm3Eee5s6JleMNq_w"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_f7-S0Lm1Eee5s6JleMNq_w" name="UtilizationPerformanceEvent" superTypes="_RU0U0Lm4Eee5s6JleMNq_w">
@@ -149,27 +152,27 @@
       <attributes xmi:id="_k6gpYLm1Eee5s6JleMNq_w" name="totalUnits" type="_YiNHsbg7EeeJr8Xnv81ikw"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_sNZoMLm1Eee5s6JleMNq_w" name="DeltaPerformanceChangeEntry" superTypes="_sZtwYLp6Eeed--k1buruJQ">
-      <operations xmi:id="_EvDLgLnWEeebus-KFf5YJQ" name="addMyPerformanceEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_EvDLgbnWEeebus-KFf5YJQ" name="a" type="_RU0U0Lm4Eee5s6JleMNq_w"/>
+      <operations xmi:id="_sTdb8Lq9Eee7H_mrj5TNuw" name="addComparedEvents" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_sTdb8bq9Eee7H_mrj5TNuw" name="a" type="_RU0U0Lm4Eee5s6JleMNq_w"/>
       </operations>
-      <operations xmi:id="_EvDykLnWEeebus-KFf5YJQ" name="removeMyPerformanceEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_EvDykbnWEeebus-KFf5YJQ" name="a" type="_RU0U0Lm4Eee5s6JleMNq_w"/>
+      <operations xmi:id="_sTeDALq9Eee7H_mrj5TNuw" name="removeComparedEvents" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_sTeDAbq9Eee7H_mrj5TNuw" name="a" type="_RU0U0Lm4Eee5s6JleMNq_w"/>
       </operations>
-      <operations xmi:id="_EvDykrnWEeebus-KFf5YJQ" name="addSimpleMyPerformanceEvent" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_EvDyk7nWEeebus-KFf5YJQ" name="a" type="_RU0U0Lm4Eee5s6JleMNq_w"/>
+      <operations xmi:id="_sTeqELq9Eee7H_mrj5TNuw" name="addSimpleComparedEvents" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_sTeqEbq9Eee7H_mrj5TNuw" name="a" type="_RU0U0Lm4Eee5s6JleMNq_w"/>
       </operations>
-      <operations xmi:id="_EvEZoLnWEeebus-KFf5YJQ" name="removeSimpleMyPerformanceEvent" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_EvEZobnWEeebus-KFf5YJQ" name="a" type="_RU0U0Lm4Eee5s6JleMNq_w"/>
+      <operations xmi:id="_sTeqErq9Eee7H_mrj5TNuw" name="removeSimpleComparedEvents" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_sTeqE7q9Eee7H_mrj5TNuw" name="a" type="_RU0U0Lm4Eee5s6JleMNq_w"/>
       </operations>
-      <operations xmi:id="_EvFAsLnWEeebus-KFf5YJQ" name="createMyPerformanceEvent" extendedVisibility="package" returnType="_sNZoMLm1Eee5s6JleMNq_w" operationType="Constructor"/>
-      <operations xmi:id="_EvFAsbnWEeebus-KFf5YJQ" name="containsMyPerformanceEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_EvFAsrnWEeebus-KFf5YJQ" name="a" type="_RU0U0Lm4Eee5s6JleMNq_w"/>
+      <operations xmi:id="_sTfRILq9Eee7H_mrj5TNuw" name="createComparedEvents" extendedVisibility="package" returnType="_sNZoMLm1Eee5s6JleMNq_w" operationType="Constructor"/>
+      <operations xmi:id="_sTf4MLq9Eee7H_mrj5TNuw" name="containsComparedEvents" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_sTf4Mbq9Eee7H_mrj5TNuw" name="a" type="_RU0U0Lm4Eee5s6JleMNq_w"/>
       </operations>
-      <operations xmi:id="_EvFnwLnWEeebus-KFf5YJQ" name="sizeOfMyPerformanceEvent" extendedVisibility="package" returnType="_YiNHsbg7EeeJr8Xnv81ikw"/>
-      <operations xmi:id="_EvGO0LnWEeebus-KFf5YJQ" name="getMyPerformanceEvent" extendedVisibility="package">
+      <operations xmi:id="_sTf4Mrq9Eee7H_mrj5TNuw" name="sizeOfComparedEvents" extendedVisibility="package" returnType="_YiNHsbg7EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_sTgfQLq9Eee7H_mrj5TNuw" name="getComparedEvents" extendedVisibility="package">
         <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8Yiabm3Eee5s6JleMNq_w"/>
       </operations>
-      <associationEnds xmi:id="_grfj4Lm4Eee5s6JleMNq_w" name="myPerformanceEvent" lowerBound="2" upperBound="2" assoc="_grgyALm4Eee5s6JleMNq_w" featureSelection="_EvAIMLnWEeebus-KFf5YJQ"/>
+      <associationEnds xmi:id="_grfj4Lm4Eee5s6JleMNq_w" name="comparedEvents" lowerBound="2" upperBound="2" referenceType="Composition" assoc="_grgyALm4Eee5s6JleMNq_w" featureSelection="_sTaYoLq9Eee7H_mrj5TNuw"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_PN5WgLm2Eee5s6JleMNq_w" name="ThroughputPerformanceEvent" superTypes="_RU0U0Lm4Eee5s6JleMNq_w">
       <attributes xmi:id="_cSnKALm2Eee5s6JleMNq_w" name="amount" type="_YiNHsbg7EeeJr8Xnv81ikw"/>
@@ -177,27 +180,27 @@
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_doN1kLm3Eee5s6JleMNq_w" name="Timestamp" dataType="true"/>
     <classes xsi:type="ram:Class" xmi:id="_g0ar0Lm3Eee5s6JleMNq_w" name="DurationPerformanceEntry" superTypes="_sZtwYLp6Eeed--k1buruJQ">
-      <operations xmi:id="_L3ktYLnWEeebus-KFf5YJQ" name="addMyTimeEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_L3ktYbnWEeebus-KFf5YJQ" name="a" type="_YiMgo7g7EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_oQU9sLq9Eee7H_mrj5TNuw" name="addStartFinishEvents" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_oQU9sbq9Eee7H_mrj5TNuw" name="a" type="_YiMgo7g7EeeJr8Xnv81ikw"/>
       </operations>
-      <operations xmi:id="_L3lUcLnWEeebus-KFf5YJQ" name="removeMyTimeEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_L3lUcbnWEeebus-KFf5YJQ" name="a" type="_YiMgo7g7EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_oQVkwLq9Eee7H_mrj5TNuw" name="removeStartFinishEvents" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_oQVkwbq9Eee7H_mrj5TNuw" name="a" type="_YiMgo7g7EeeJr8Xnv81ikw"/>
       </operations>
-      <operations xmi:id="_L3l7gLnWEeebus-KFf5YJQ" name="addSimpleMyTimeEvent" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_L3l7gbnWEeebus-KFf5YJQ" name="a" type="_YiMgo7g7EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_oQVkwrq9Eee7H_mrj5TNuw" name="addSimpleStartFinishEvents" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_oQVkw7q9Eee7H_mrj5TNuw" name="a" type="_YiMgo7g7EeeJr8Xnv81ikw"/>
       </operations>
-      <operations xmi:id="_L3mikLnWEeebus-KFf5YJQ" name="removeSimpleMyTimeEvent" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_L3mikbnWEeebus-KFf5YJQ" name="a" type="_YiMgo7g7EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_oQWL0Lq9Eee7H_mrj5TNuw" name="removeSimpleStartFinishEvents" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_oQWL0bq9Eee7H_mrj5TNuw" name="a" type="_YiMgo7g7EeeJr8Xnv81ikw"/>
       </operations>
-      <operations xmi:id="_L3nJoLnWEeebus-KFf5YJQ" name="createMyTimeEvent" extendedVisibility="package" returnType="_g0ar0Lm3Eee5s6JleMNq_w" operationType="Constructor"/>
-      <operations xmi:id="_L3nwsLnWEeebus-KFf5YJQ" name="containsMyTimeEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_L3nwsbnWEeebus-KFf5YJQ" name="a" type="_YiMgo7g7EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_oQWy4Lq9Eee7H_mrj5TNuw" name="createStartFinishEvents" extendedVisibility="package" returnType="_g0ar0Lm3Eee5s6JleMNq_w" operationType="Constructor"/>
+      <operations xmi:id="_oQWy4bq9Eee7H_mrj5TNuw" name="containsStartFinishEvents" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_oQWy4rq9Eee7H_mrj5TNuw" name="a" type="_YiMgo7g7EeeJr8Xnv81ikw"/>
       </operations>
-      <operations xmi:id="_L3o-0LnWEeebus-KFf5YJQ" name="sizeOfMyTimeEvent" extendedVisibility="package" returnType="_YiNHsbg7EeeJr8Xnv81ikw"/>
-      <operations xmi:id="_L3pl4LnWEeebus-KFf5YJQ" name="getMyTimeEvent" extendedVisibility="package">
+      <operations xmi:id="_oQXZ8Lq9Eee7H_mrj5TNuw" name="sizeOfStartFinishEvents" extendedVisibility="package" returnType="_YiNHsbg7EeeJr8Xnv81ikw"/>
+      <operations xmi:id="_oQXZ8bq9Eee7H_mrj5TNuw" name="getStartFinishEvents" extendedVisibility="package">
         <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_MaximumPlainBidirectional_MaximumPlainToOne_MinimumPlainBidirectional_MinimumPlainToOne.ram#_j8Yiabm3Eee5s6JleMNq_w"/>
       </operations>
-      <associationEnds xmi:id="_H6GyQLnWEeebus-KFf5YJQ" name="myTimeEvent" lowerBound="2" upperBound="2" referenceType="Composition" assoc="_H6HZUbnWEeebus-KFf5YJQ" featureSelection="_L3iRILnWEeebus-KFf5YJQ"/>
+      <associationEnds xmi:id="_H6GyQLnWEeebus-KFf5YJQ" name="startFinishEvents" lowerBound="2" upperBound="2" referenceType="Composition" assoc="_H6HZUbnWEeebus-KFf5YJQ" featureSelection="_oQRTULq9Eee7H_mrj5TNuw"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_y26A4Lm3Eee5s6JleMNq_w" name="CountPerformanceEvent" superTypes="_RU0U0Lm4Eee5s6JleMNq_w">
       <attributes xmi:id="_7YQW4Lm3Eee5s6JleMNq_w" name="amount" type="_YiNHsbg7EeeJr8Xnv81ikw"/>
@@ -206,12 +209,12 @@
       <operations xmi:id="_h54CkLm4Eee5s6JleMNq_w" name="setSimpleMyDeltaPerformanceChangeEntry" extendedVisibility="protected" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_h54Ckbm4Eee5s6JleMNq_w" name="a" type="_sNZoMLm1Eee5s6JleMNq_w"/>
       </operations>
-      <operations xmi:id="_Eu-TALnWEeebus-KFf5YJQ" name="getMyDeltaPerformanceChangeEntry" extendedVisibility="package" returnType="_sNZoMLm1Eee5s6JleMNq_w"/>
-      <operations xmi:id="_Eu-6ELnWEeebus-KFf5YJQ" name="setMyDeltaPerformanceChangeEntry" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
-        <parameters xmi:id="_Eu-6EbnWEeebus-KFf5YJQ" name="newObject" type="_sNZoMLm1Eee5s6JleMNq_w"/>
+      <operations xmi:id="_sTYjcLq9Eee7H_mrj5TNuw" name="getAssocDeltaChangeEvent" extendedVisibility="package" returnType="_sNZoMLm1Eee5s6JleMNq_w"/>
+      <operations xmi:id="_sTZKgLq9Eee7H_mrj5TNuw" name="setAssocDeltaChangeEvent" extendedVisibility="package" returnType="_YiNHsLg7EeeJr8Xnv81ikw">
+        <parameters xmi:id="_sTZKgbq9Eee7H_mrj5TNuw" name="newObject" type="_sNZoMLm1Eee5s6JleMNq_w"/>
       </operations>
-      <associationEnds xmi:id="_grgK8Lm4Eee5s6JleMNq_w" name="myDeltaPerformanceChangeEntry" referenceType="Composition" assoc="_grgyALm4Eee5s6JleMNq_w" featureSelection="_Eu8d0LnWEeebus-KFf5YJQ"/>
-      <attributes xmi:id="_Vb77MLm4Eee5s6JleMNq_w" name="measuredUnitDesc" type="_YiNHs7g7EeeJr8Xnv81ikw"/>
+      <associationEnds xmi:id="_grgK8Lm4Eee5s6JleMNq_w" name="assocDeltaChangeEvent" lowerBound="1" assoc="_grgyALm4Eee5s6JleMNq_w" featureSelection="_sTVgILq9Eee7H_mrj5TNuw"/>
+      <attributes xmi:id="_Vb77MLm4Eee5s6JleMNq_w" name="measuredUnitDescription" type="_YiNHs7g7EeeJr8Xnv81ikw"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_sZtwYLp6Eeed--k1buruJQ" name="Entry"/>
     <associations xmi:id="_grgyALm4Eee5s6JleMNq_w" name="DeltaPerformanceChangeEntry_PerformanceEvent" ends="_grfj4Lm4Eee5s6JleMNq_w _grgK8Lm4Eee5s6JleMNq_w"/>
@@ -250,7 +253,7 @@
         <value xmi:id="_f7-54bm1Eee5s6JleMNq_w" x="404.3172" y="444.93744"/>
       </value>
       <value xmi:id="_sNaPQLm1Eee5s6JleMNq_w" key="_sNZoMLm1Eee5s6JleMNq_w">
-        <value xmi:id="_sNaPQbm1Eee5s6JleMNq_w" x="825.8541" y="15.054302"/>
+        <value xmi:id="_sNaPQbm1Eee5s6JleMNq_w" x="750.9586" y="-93.409615"/>
       </value>
       <value xmi:id="_PN6koLm2Eee5s6JleMNq_w" key="_PN5WgLm2Eee5s6JleMNq_w">
         <value xmi:id="_PN6kobm2Eee5s6JleMNq_w" x="643.24243" y="621.05835"/>
@@ -259,7 +262,7 @@
         <value xmi:id="_TR-3Abm2Eee5s6JleMNq_w" x="1071.42" y="207.27704"/>
       </value>
       <value xmi:id="_doPqwLm3Eee5s6JleMNq_w" key="_doN1kLm3Eee5s6JleMNq_w">
-        <value xmi:id="_doPqwbm3Eee5s6JleMNq_w" x="1006.95264" y="629.6266"/>
+        <value xmi:id="_doPqwbm3Eee5s6JleMNq_w" x="1229.953" y="207.5564"/>
       </value>
       <value xmi:id="_g0bS4Lm3Eee5s6JleMNq_w" key="_g0ar0Lm3Eee5s6JleMNq_w">
         <value xmi:id="_g0bS4bm3Eee5s6JleMNq_w" x="54.452477" y="520.34375"/>
@@ -271,7 +274,7 @@
         <value xmi:id="_RU1i8bm4Eee5s6JleMNq_w" x="679.27966" y="262.80124"/>
       </value>
       <value xmi:id="_sZvlkLp6Eeed--k1buruJQ" key="_sZtwYLp6Eeed--k1buruJQ">
-        <value xmi:id="_sZvlkbp6Eeed--k1buruJQ" x="31.579407" y="99.351166"/>
+        <value xmi:id="_sZvlkbp6Eeed--k1buruJQ" x="-48.194996" y="99.351166"/>
       </value>
     </containers>
   </layout>

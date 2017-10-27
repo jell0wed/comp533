@@ -64,14 +64,14 @@
   <coreConcern href="DataCollection.core#__f990LgwEeevxsfq8kXl4Q"/>
   <structuralView xmi:id="_EiYAkbhZEeetyvHnMFFg9Q">
     <classes xsi:type="ram:Class" xmi:id="_dphEILhZEeetyvHnMFFg9Q" name="UserReportedErrorLoggableEvent" superTypes="_2j8hYLhZEeetyvHnMFFg9Q">
-      <operations xmi:id="_UNGGQLp4Eeed--k1buruJQ" name="getMyUser" extendedVisibility="package" returnType="_OfN9cLp4Eeed--k1buruJQ"/>
-      <operations xmi:id="_UNGGQbp4Eeed--k1buruJQ" name="setMyUser" extendedVisibility="package" returnType="_EiYAl7hZEeetyvHnMFFg9Q">
+      <operations xmi:id="_UNGGQLp4Eeed--k1buruJQ" name="getSourceUser" extendedVisibility="package" returnType="_OfN9cLp4Eeed--k1buruJQ"/>
+      <operations xmi:id="_UNGGQbp4Eeed--k1buruJQ" name="setSourceUser" extendedVisibility="package" returnType="_EiYAl7hZEeetyvHnMFFg9Q">
         <parameters xmi:id="_UNGGQrp4Eeed--k1buruJQ" name="a" type="_OfN9cLp4Eeed--k1buruJQ"/>
       </operations>
       <operations xmi:id="_UNGtULp4Eeed--k1buruJQ" name="setSimpleMyUser" extendedVisibility="protected" returnType="_EiYAl7hZEeetyvHnMFFg9Q">
         <parameters xmi:id="_UNGtUbp4Eeed--k1buruJQ" name="newObject" type="_OfN9cLp4Eeed--k1buruJQ"/>
       </operations>
-      <associationEnds xmi:id="_RoRZEbp4Eeed--k1buruJQ" name="myUser" assoc="_RoRZErp4Eeed--k1buruJQ" featureSelection="_UNH7cLp4Eeed--k1buruJQ"/>
+      <associationEnds xmi:id="_RoRZEbp4Eeed--k1buruJQ" name="sourceUser" referenceType="Composition" assoc="_RoRZErp4Eeed--k1buruJQ" featureSelection="_UNH7cLp4Eeed--k1buruJQ"/>
       <attributes xmi:id="_EFmIgLhaEeetyvHnMFFg9Q" name="sysInfo" type="_8KUUALhZEeetyvHnMFFg9Q"/>
       <attributes xmi:id="_bmAe0LhaEeetyvHnMFFg9Q" name="userCustomMessage" type="_EiYAmrhZEeetyvHnMFFg9Q"/>
       <attributes xmi:id="_dPxR8LhaEeetyvHnMFFg9Q" name="userEmail" type="_EiYAmrhZEeetyvHnMFFg9Q"/>
@@ -86,15 +86,15 @@
     <classes xsi:type="ram:Class" xmi:id="_UslI4LhaEeetyvHnMFFg9Q" name="DateTime" dataType="true"/>
     <classes xsi:type="ram:Class" xmi:id="_hHZDwLhaEeetyvHnMFFg9Q" name="SystemInfoManager"/>
     <classes xsi:type="ram:Class" xmi:id="_OfN9cLp4Eeed--k1buruJQ" name="User">
-      <operations xmi:id="_UNDqALp4Eeed--k1buruJQ" name="createMyUserReportedErrorLoggableEvent" extendedVisibility="package" returnType="_OfN9cLp4Eeed--k1buruJQ" operationType="Constructor"/>
-      <operations xmi:id="_UNERELp4Eeed--k1buruJQ" name="containsMyUserReportedErrorLoggableEvent" extendedVisibility="package" returnType="_EiYAl7hZEeetyvHnMFFg9Q">
+      <operations xmi:id="_UNDqALp4Eeed--k1buruJQ" name="createCreatedUserReportedEvents" extendedVisibility="package" returnType="_OfN9cLp4Eeed--k1buruJQ" operationType="Constructor"/>
+      <operations xmi:id="_UNERELp4Eeed--k1buruJQ" name="containsCreatedUserReportedEvents" extendedVisibility="package" returnType="_EiYAl7hZEeetyvHnMFFg9Q">
         <parameters xmi:id="_UNEREbp4Eeed--k1buruJQ" name="a" type="_dphEILhZEeetyvHnMFFg9Q"/>
       </operations>
-      <operations xmi:id="_UNFfMLp4Eeed--k1buruJQ" name="sizeOfMyUserReportedErrorLoggableEvent" extendedVisibility="package" returnType="_EiYAmLhZEeetyvHnMFFg9Q"/>
-      <operations xmi:id="_UNFfMbp4Eeed--k1buruJQ" name="getMyUserReportedErrorLoggableEvent" extendedVisibility="package">
+      <operations xmi:id="_UNFfMLp4Eeed--k1buruJQ" name="sizeOfCreatedUserReportedEvents" extendedVisibility="package" returnType="_EiYAmLhZEeetyvHnMFFg9Q"/>
+      <operations xmi:id="_UNFfMbp4Eeed--k1buruJQ" name="getCreatedUserReportedEvents" extendedVisibility="package">
         <returnType xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziEbgxEeevxsfq8kXl4Q"/>
       </operations>
-      <associationEnds xmi:id="_RoRZELp4Eeed--k1buruJQ" name="myUserReportedErrorLoggableEvent" upperBound="-1" assoc="_RoRZErp4Eeed--k1buruJQ" featureSelection="_UNB00Lp4Eeed--k1buruJQ"/>
+      <associationEnds xmi:id="_RoRZELp4Eeed--k1buruJQ" name="createdUserReportedEvents" upperBound="-1" assoc="_RoRZErp4Eeed--k1buruJQ" featureSelection="_UNB00Lp4Eeed--k1buruJQ"/>
       <attributes xmi:id="_PyLaILp4Eeed--k1buruJQ" name="id" type="_EiYAmLhZEeetyvHnMFFg9Q"/>
     </classes>
     <associations xmi:id="_RoRZErp4Eeed--k1buruJQ" name="User_UserReportedErrorLoggableEvent" ends="_RoRZELp4Eeed--k1buruJQ _RoRZEbp4Eeed--k1buruJQ"/>
@@ -139,7 +139,7 @@
         <value xmi:id="_hHaR4bhaEeetyvHnMFFg9Q" x="462.0" y="337.0"/>
       </value>
       <value xmi:id="_OfOkgLp4Eeed--k1buruJQ" key="_OfN9cLp4Eeed--k1buruJQ">
-        <value xmi:id="_OfOkgbp4Eeed--k1buruJQ" x="156.0" y="504.99988"/>
+        <value xmi:id="_OfOkgbp4Eeed--k1buruJQ" x="156.0" y="503.99994"/>
       </value>
     </containers>
   </layout>

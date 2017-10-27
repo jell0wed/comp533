@@ -3,8 +3,8 @@
   <realizes href="DataCollection.core#_CbbCULgxEeevxsfq8kXl4Q"/>
   <coreConcern href="DataCollection.core#__f990LgwEeevxsfq8kXl4Q"/>
   <structuralView xmi:id="_URUBoLg4Eeevxsfq8kXl4Q">
-    <classes xsi:type="ram:Class" xmi:id="_URUBo7g4Eeevxsfq8kXl4Q" name="MonitorableEvent" superTypes="_URUBpLg4Eeevxsfq8kXl4Q"/>
-    <classes xsi:type="ram:Class" xmi:id="_URUBpLg4Eeevxsfq8kXl4Q" name="Event" abstract="true"/>
+    <classes xsi:type="ram:Class" xmi:id="_WBsm4Lq5Eee7H_mrj5TNuw" name="MonitorableSource" superTypes="_Z2_dcLq5Eee7H_mrj5TNuw" abstract="true"/>
+    <classes xsi:type="ram:Class" xmi:id="_Z2_dcLq5Eee7H_mrj5TNuw" name="Source" abstract="true"/>
     <types xsi:type="ram:RVoid" xmi:id="_URUBpbg4Eeevxsfq8kXl4Q"/>
     <types xsi:type="ram:RAny" xmi:id="_URUBprg4Eeevxsfq8kXl4Q"/>
     <types xsi:type="ram:RBoolean" xmi:id="_URUBp7g4Eeevxsfq8kXl4Q"/>
@@ -21,11 +21,11 @@
   </instantiations>
   <layout xmi:id="_URUBsLg4Eeevxsfq8kXl4Q">
     <containers xmi:id="_URUBsbg4Eeevxsfq8kXl4Q" key="_URUBoLg4Eeevxsfq8kXl4Q">
-      <value xmi:id="_URUBtrg4Eeevxsfq8kXl4Q" key="_URUBo7g4Eeevxsfq8kXl4Q">
-        <value xmi:id="_URUBt7g4Eeevxsfq8kXl4Q" x="532.5" y="301.99988"/>
+      <value xmi:id="_WBsm4bq5Eee7H_mrj5TNuw" key="_WBsm4Lq5Eee7H_mrj5TNuw">
+        <value xmi:id="_WBtN8Lq5Eee7H_mrj5TNuw" x="588.0002" y="418.00012"/>
       </value>
-      <value xmi:id="_URUBuLg4Eeevxsfq8kXl4Q" key="_URUBpLg4Eeevxsfq8kXl4Q">
-        <value xmi:id="_URUBubg4Eeevxsfq8kXl4Q" x="546.0" y="117.0"/>
+      <value xmi:id="_Z3ArkLq5Eee7H_mrj5TNuw" key="_Z2_dcLq5Eee7H_mrj5TNuw">
+        <value xmi:id="_Z3Arkbq5Eee7H_mrj5TNuw" x="607.5002" y="220.0"/>
       </value>
     </containers>
   </layout>
