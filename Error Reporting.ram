@@ -79,6 +79,18 @@
       <formalGates xmi:id="_grT37N6-EeedrJpLo2guRQ" message="_grT36d6-EeedrJpLo2guRQ" name="out_create"/>
     </specification>
   </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_DAJyc-ByEeemGqsbOAO2dg" specifies="_H435AN6-EeedrJpLo2guRQ">
+    <specification xmi:id="_DAJydOByEeemGqsbOAO2dg">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_DAJydeByEeemGqsbOAO2dg" covered="_DAJyd-ByEeemGqsbOAO2dg" message="_DAJyeOByEeemGqsbOAO2dg"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_DAJyduByEeemGqsbOAO2dg" covered="_DAJyd-ByEeemGqsbOAO2dg" message="_DAJyeeByEeemGqsbOAO2dg"/>
+      <lifelines xmi:id="_DAJyd-ByEeemGqsbOAO2dg" represents="_DAJyeuByEeemGqsbOAO2dg" coveredBy="_DAJydeByEeemGqsbOAO2dg _DAJyduByEeemGqsbOAO2dg"/>
+      <messages xmi:id="_DAJyeOByEeemGqsbOAO2dg" sendEvent="_DAJye-ByEeemGqsbOAO2dg" receiveEvent="_DAJydeByEeemGqsbOAO2dg" signature="_H435AN6-EeedrJpLo2guRQ"/>
+      <messages xmi:id="_DAJyeeByEeemGqsbOAO2dg" sendEvent="_DAJyduByEeemGqsbOAO2dg" receiveEvent="_DAJyfOByEeemGqsbOAO2dg" signature="_H435AN6-EeedrJpLo2guRQ" messageSort="reply"/>
+      <properties xmi:id="_DAJyeuByEeemGqsbOAO2dg" name="target" lowerBound="1" type="_dphEILhZEeetyvHnMFFg9Q"/>
+      <formalGates xmi:id="_DAJye-ByEeemGqsbOAO2dg" message="_DAJyeOByEeemGqsbOAO2dg" name="in_toString"/>
+      <formalGates xmi:id="_DAJyfOByEeemGqsbOAO2dg" message="_DAJyeeByEeemGqsbOAO2dg" name="out_toString"/>
+    </specification>
+  </messageViews>
   <instantiations xmi:id="_EiYAn7hZEeetyvHnMFFg9Q">
     <source xsi:type="ram:Aspect" href="Logging.ram#_UeWxYLgzEeevxsfq8kXl4Q"/>
   </instantiations>
@@ -109,6 +121,11 @@
       </value>
       <value xmi:id="_8Wx5Yd6-EeedrJpLo2guRQ" key="_8Wx5YN6-EeedrJpLo2guRQ">
         <value xmi:id="_8Wx5Yt6-EeedrJpLo2guRQ" x="511.25775" y="100.0"/>
+      </value>
+    </containers>
+    <containers xmi:id="_DAJycOByEeemGqsbOAO2dg" key="_DAJyc-ByEeemGqsbOAO2dg">
+      <value xmi:id="_DAJyceByEeemGqsbOAO2dg" key="_DAJyd-ByEeemGqsbOAO2dg">
+        <value xmi:id="_DAJycuByEeemGqsbOAO2dg" x="100.0" y="100.0"/>
       </value>
     </containers>
   </layout>
