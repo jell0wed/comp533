@@ -1,56 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
 <ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_uns0oLg6EeeJr8Xnv81ikw" name="Collection">
-  <modelReuses xmi:id="_GJu7kLg7EeeJr8Xnv81ikw">
-    <compositions xsi:type="ram:Instantiation" xmi:id="_GJu7kbg7EeeJr8Xnv81ikw">
-      <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziALgxEeevxsfq8kXl4Q"/>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_GJu7krg7EeeJr8Xnv81ikw" to="_6SfAwLg6EeeJr8Xnv81ikw">
-        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziCbgxEeevxsfq8kXl4Q"/>
-        <operationMappings xmi:id="_GJu7k7g7EeeJr8Xnv81ikw">
-          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziCrgxEeevxsfq8kXl4Q"/>
-        </operationMappings>
-        <operationMappings xmi:id="_GJu7lLg7EeeJr8Xnv81ikw">
-          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziC7gxEeevxsfq8kXl4Q"/>
-        </operationMappings>
-        <operationMappings xmi:id="_GJu7lbg7EeeJr8Xnv81ikw">
-          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziDbgxEeevxsfq8kXl4Q"/>
-        </operationMappings>
-      </mappings>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_GJu7lrg7EeeJr8Xnv81ikw">
-        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziArgxEeevxsfq8kXl4Q"/>
-        <operationMappings xmi:id="_GJu7l7g7EeeJr8Xnv81ikw">
-          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziA7gxEeevxsfq8kXl4Q"/>
-        </operationMappings>
-        <operationMappings xmi:id="_GJu7mLg7EeeJr8Xnv81ikw">
-          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziBLgxEeevxsfq8kXl4Q"/>
-        </operationMappings>
-        <operationMappings xmi:id="_GJu7mbg7EeeJr8Xnv81ikw">
-          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziBrgxEeevxsfq8kXl4Q"/>
-        </operationMappings>
-        <operationMappings xmi:id="_GJu7mrg7EeeJr8Xnv81ikw">
-          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_Many_OneOpposite.ram#_p1ziB7gxEeevxsfq8kXl4Q"/>
-        </operationMappings>
-      </mappings>
-    </compositions>
-    <reuse href="DataCollection.core#_GJu7m7g7EeeJr8Xnv81ikw"/>
-  </modelReuses>
-  <modelReuses xmi:id="_GJ7v4Lg7EeeJr8Xnv81ikw">
-    <compositions xsi:type="ram:Instantiation" xmi:id="_GJ7v4bg7EeeJr8Xnv81ikw">
-      <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjkLgxEeevxsfq8kXl4Q"/>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_GJ7v4rg7EeeJr8Xnv81ikw">
-        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjkrgxEeevxsfq8kXl4Q"/>
-      </mappings>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_GJ7v47g7EeeJr8Xnv81ikw" to="_6SfAwLg6EeeJr8Xnv81ikw">
-        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjlLgxEeevxsfq8kXl4Q"/>
-        <operationMappings xmi:id="_GJ7v5Lg7EeeJr8Xnv81ikw">
-          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjlbgxEeevxsfq8kXl4Q"/>
-        </operationMappings>
-        <operationMappings xmi:id="_GJ7v5bg7EeeJr8Xnv81ikw">
-          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_ManyOpposite_One.ram#_p2MjlrgxEeevxsfq8kXl4Q"/>
-        </operationMappings>
-      </mappings>
-    </compositions>
-    <reuse href="DataCollection.core#_GJ7v5rg7EeeJr8Xnv81ikw"/>
-  </modelReuses>
   <modelReuses xmi:id="_yGjqAOBvEeemGqsbOAO2dg">
     <compositions xsi:type="ram:Instantiation" xmi:id="_yGjqAeBvEeemGqsbOAO2dg">
       <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_One.ram#_HGGzULgyEeevxsfq8kXl4Q"/>
@@ -168,7 +117,7 @@
     <classes xsi:type="ram:ImplementationClass" xmi:id="_mv-zUOBvEeemGqsbOAO2dg" name="OutputStream" instanceClassName="java.io.OutputStream">
       <associationEnds xmi:id="_yGgmsOBvEeemGqsbOAO2dg" name="myOutputStreamCollector" lowerBound="1" navigable="false" assoc="_yGgmseBvEeemGqsbOAO2dg"/>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_sxSOcOBvEeemGqsbOAO2dg" name="OutputStreamCollector" visibility="public">
+    <classes xsi:type="ram:Class" xmi:id="_sxSOcOBvEeemGqsbOAO2dg" name="OutputStreamCollector" visibility="public" superTypes="_6SfAwLg6EeeJr8Xnv81ikw">
       <operations xmi:id="_7h7_UOBvEeemGqsbOAO2dg" name="create" visibility="public" returnType="_sxSOcOBvEeemGqsbOAO2dg" operationType="Constructor">
         <parameters xmi:id="_8wF0gOBvEeemGqsbOAO2dg" name="out" type="_mv-zUOBvEeemGqsbOAO2dg"/>
       </operations>
@@ -286,15 +235,6 @@
   </messageViews>
   <instantiations xmi:id="_uns0rbg6EeeJr8Xnv81ikw">
     <source xsi:type="ram:Aspect" href="Logging.ram#_UeWxYLgzEeevxsfq8kXl4Q"/>
-  </instantiations>
-  <instantiations xmi:id="_UQZIAOBuEeemGqsbOAO2dg">
-    <source xsi:type="ram:Aspect" href="DataCollection.ram#__CrvcLgxEeevxsfq8kXl4Q"/>
-    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_aVmLsOBuEeemGqsbOAO2dg" to="_SKkD8OBuEeemGqsbOAO2dg">
-      <from xsi:type="ram:Class" href="DataCollection.ram#_Rfu8wLg2Eeevxsfq8kXl4Q"/>
-      <operationMappings xmi:id="_fxfzsOBuEeemGqsbOAO2dg" to="_X2DAEOBuEeemGqsbOAO2dg">
-        <from xsi:type="ram:Operation" href="DataCollection.ram#_RIgYsN67Eee8ZezwP-tlvw"/>
-      </operationMappings>
-    </mappings>
   </instantiations>
   <layout xmi:id="_uns0rrg6EeeJr8Xnv81ikw">
     <containers xmi:id="_uns0r7g6EeeJr8Xnv81ikw" key="_uns0obg6EeeJr8Xnv81ikw">
