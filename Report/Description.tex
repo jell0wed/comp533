@@ -71,48 +71,44 @@
 \normalfont \normalsize 
 \textsc{COMP 533: Object Oriented Software Development} \\ [25pt] % Your university, school and/or department name(s)
 \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
-\huge Concern-Oriented Reuse Project \\ % The assignment title
+\huge Concern-Oriented Reuse Project - Phase II\\ % The assignment title
 \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
 }
 
 \author{Jeremie Poisson - 260627104 \\ Anna Jolly - 260447198} % Your name
 
-\date{\normalsize October 27, 2017} % Custom date
+\date{\normalsize December 15, 2017} % Custom date
 %\date{\normalsize\today} % Today's date
 
 \begin{document}
 
 \maketitle % Print the title
 
-\section{Concern and Features}
+\section{Recap of Concern and Features}
 
-We have chosen to develop a new concern entitled \textit{Data Collection}. This concern consists of a joint monitoring/logging system that can be used to collect and log data as an application is used.
+We have chosen to develop a new concern entitled \textit{Data Collection}. This concern consists of a joint monitoring/logging system that can be used to collect and log data as an application is used. The monitoring feature provides a way to monitor performance-related and/or user-related events. The \textit{Performance analysis} feature provides time events, which are timestamps of certain actions (e.g. the time a page is requested) and performance events, which include throughput, utilization, and count events. These events can then be aggregated into entries (e.g. the time event of a page request and the time event of when the page is done rendering might be aggregated into an entry). On the other hand, the \textit{User analysis} feature provides a way of monitoring user-initiated events. These events can be page access events, login events, or exit events (closing the app or logging out). The logging feature provides a way for application developers to trace different kinds of events in the system. Logging entries are created from logging events launched by applications developers at some point in their system. Two kinds of logging events can be launched: \textit{TextLoggableEvent} and \textit{ExceptionLoggableEvent}, used to log simple text or an exception, respectively. All events are then used to generate entries, which are the textual representations of such events to be collected in the logs. The \textit{collection} feature enables application developers to specify collectors defining how the generated entries must be collected (in a file, over the network, over an output stream, etc.). The \textit{error reporting} feature enables an end-user of the application to report errors whenever a fatal error causes the application to crash during use. This feature captures the user personal information as well as their system configuration and an optional message.
 
-\subsection{Monitoring}
-\hspace*{.5cm} The monitoring feature provides a way to monitor events of two kinds: performance-related and/or user-related. The monitoring feature itself contains a \textit{MonitorableSource} class. This class is used to track the source of monitoring events. It is introduced here because it is only necessary in monitoring, since in the logging feature, sources are not monitored. The \textit{Performance analysis} feature provides time events, which are timestamps of certain actions (e.g. the time a page is requested) and performance events, which include throughput, utilization, and count events. These events can then be aggregated into entries (e.g. the time event of a page request and the time event of when the page is done rendering might be aggregated into an entry called "Page loading duration"). On the other hand, the \textit{User analysis} feature provides a way of monitoring user-initiated events. These events can be request events (e.g. requesting a document download), a page access event, a login event, or an exit event (closing the app or logging out). We introduce the concept of a user here, since in performance, we do not need to know the source user. Here, we need to know which events belong to which user, or the data will not be useful. An important constraint is that a user must have at least one associated event, since a user does not exist until they have logged in at least once. We can also keep track of sessions, where a session entry consists of a login and an exit event. \\
+\section{Flow of Information}
 
-\subsection{Logging}
-\hspace*{.5cm} The logging feature provides a way for application developers to trace different kinds of events in the system. Logging entries are created from logging events launched by applications developers at some point in their system. Two kinds of logging events can be launched: \textit{TextLoggableEvent} and \textit{ExceptionLoggableEvent}, used to log simple text or an exception, respectively. All events are then used to generate \textit{LoggingTextEntry}, which is the textual representation of such events to be collected in the logs. The \textit{collection} feature enables application developers to specify collectors defining how the generated logging entries must be collected (in a file, over the network, over an output stream, etc.). The \textit{error reporting} feature enables an end-user of the application to report errors whenever a fatal error causes the application to crash during use. This feature captures the user personal information as well as their system configuration and an optional message.
+\subsection{Event Generation}
+
+Events can originate from three places, logging (e.g. an exception was generated), user analysis (e.g. a session was started with a login action), or performance analysis (e.g. a resource was used). In the case of logging, the \textit{Logger} is in charge of generating the event automatically. For user analysis, the user can generate their own events in their code, or they can map their objects/functions to the pre-defined aspects of \textit{User Analysis}. In this latter case, the user does not need to deal with events, since they will be generated "behind the scenes". One example of this is the \textit{Login} aspect. The user of our concern needs only to map their login function to that of our \textit{Login} aspect, and at the end of every login, the concern will automatically generate a login event and process it correctly. \\
+Events can be regular (single) events, or they can be of type EventSequence. This means that several events are joined together as one event. An example of this is \textit{SessionEventSequence}, which is is an event consisting of a \textit{LoginEvent} and an \textit{ExitEvent}. Again, the user can implement their own type of event sequence that they wish to monitor, or they can map to the pre-existing sequences available: session (as described above), or page access (which is a sequence of accesses to a single page made by a user).
+
+\subsection{Entry Generation}
+
+Once an event is generated, it is passed to the \textit{DataCollectionManager}, which holds several kinds of \textit{EventHandlers}. The manager gives the event to the appropriate event handler, which is charged with generating an entry from the event. This entry is then passed on to the registered \textit{EntryCollector}, which adds the entry to the collector. The \textit{EntryCollector} can be a single collector (e.g. a file collector), or a composite collector (e.g. a file collector as well as an output stream collector). In the case of the composite collector, the entry is added to all its collectors. The user must define their collectors in their code and register them with the \textit{DataCollectionManager}.
+
+\subsection{Extending the DataCollection Library}
+If the user wishes to extend our library with a new type of event, they can do so by implementing a new type of \textit{Event} (or \textit{EventSequence}) and \textit{EventHandler}.
+
+\section{Sample application}
 
 
-\subsection{Notes}
+\section{Notes}
 \begin{itemize}
-\item We decided to remove the \textit{DataCollectionManager} class. However, we were unable to delete it without causing touchCORE errors. We then tried to remove it from the XML files, but that caused subsequent weavings to crash, so we had to leave the classes in. Please ignore them.
-\item The logging feature is mandatory and is used to collect entries generated by the monitoring feature too. The whole premise is that it would not make sense to monitor a system without having any means of logging the monitoring results.
+\item Weaving of our concern fails.
 \end{itemize}
-
-\newpage
-\section{Impacts}
-\hspace*{.5cm} We have chosen the following goals: "Increase debugging ease", "Increase system traceability", and "Increase user experience". These were chosen because the purpose of having a joint monitoring/logging system is to be able to trace events (which can be used for debugging or can be analysed to improve the software) and performance benchmarks (which can be used to determine how to make the software faster and more efficient). As such, we would like to be able to assess how well each feature is able to increase traceability, debugging ease, and how much it contributes to improving the user experience directly or indirectly (via facilitating software upgrade).
-
-\subsection{Increase debugging ease}
-\hspace*{.5cm} \textit{Logging} is given the highest contributing value of 12, since it is the logging that allows the developer to have access to debugging info. \textit{Error reporting} is given a 2, since a user reporting a crash can be used to find and fix bugs, although this remains less important. \textit{Performance analysis} is given a 3 since performance events can help a developer find where the software is slow or using up a lot of CPU/memory. \textit{Collection} is given a 4, since being able to group logging entries and send them to the right place is very helpful for debugging.
-
-\subsection{Increase system traceability}
-\hspace*{.5cm} \textit{Logging} is given the highest contributing value of 10 since without logging, traces would be impossible to store and comb through. \textit{Monitoring} is given a 7, since it is the monitoring feature that allows crucial performance and user data to be traced. \textit{Error reporting} is given a 2, since allowing users to report crashes increases traceability slightly. \textit{Collection} is given a 1, since the ability to group traces could be said to enhance traceability.
-
-\subsection{Increase user experience}
-\hspace*{.5cm} \textit{User analysis} is given an 8 since analyzing where a user spends most of their time while using an app and what features a user rarely or never uses allows the developer to tailor the app to the users, consequently increasing user experience. \textit{Performance analysis} is given a 5 since the performance data can be used to improve app efficiency and speed, making the user happier. \textit{Error reporting} is given a 2 for both direct and indirect reasons. Directly, reporting a crash can make a user feel better, and indirectly, reporting a crash will likely lead to a fix, which will enhance the user experience for all users.
 
 %\begin{center}
 %\includegraphics[trim={0cm 0cm 0cm 0cm},clip,scale=0.56]{Ex3.pdf}
