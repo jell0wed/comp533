@@ -256,7 +256,7 @@
       <attributes xmi:id="_V9FoALnaEeebus-KFf5YJQ" name="accessTime" type="_XcYQgLnaEeebus-KFf5YJQ"/>
       <attributes xmi:id="_cfC5ILnaEeebus-KFf5YJQ" name="exitTime" type="_XcYQgLnaEeebus-KFf5YJQ"/>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_xAHoE7g7EeeJr8Xnv81ikw" name="Event">
+    <classes xsi:type="ram:Class" xmi:id="_xAHoE7g7EeeJr8Xnv81ikw" name="Event" visibility="public">
       <operations xmi:id="_2aoxMOHWEeeZLL_RqHUwfA" name="getMyUser" extendedVisibility="package" returnType="_fMDsALppEeed--k1buruJQ"/>
       <operations xmi:id="_2arNcOHWEeeZLL_RqHUwfA" name="setMyUser" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_2ar0gOHWEeeZLL_RqHUwfA" name="newObject" type="_fMDsALppEeed--k1buruJQ"/>
@@ -334,54 +334,54 @@
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_wA4swN9YEeevq5QGJD49mQ" name="EventHandler" abstract="true"/>
     <classes xsi:type="ram:Class" xmi:id="_zn_WUN9YEeevq5QGJD49mQ" name="PageAccessEventSequenceHandler" visibility="public" superTypes="_wA4swN9YEeevq5QGJD49mQ">
-      <operations xmi:id="_GMBG8OBxEeemGqsbOAO2dg" name="create" visibility="public" returnType="_zn_WUN9YEeevq5QGJD49mQ" operationType="Constructor"/>
-      <operations xmi:id="_wUWMkN9eEeevq5QGJD49mQ" name="handleEvent" visibility="public">
+      <operations xmi:id="_GMBG8OBxEeemGqsbOAO2dg" name="create" extendedVisibility="package" returnType="_zn_WUN9YEeevq5QGJD49mQ" operationType="Constructor"/>
+      <operations xmi:id="_wUWMkN9eEeevq5QGJD49mQ" name="handleEvent" extendedVisibility="package">
         <returnType xsi:type="ram:Class" href="DataCollection.ram#__CrvpLgxEeevxsfq8kXl4Q"/>
         <parameters xmi:id="_wUWMkd9eEeevq5QGJD49mQ" name="e" type="_vqSDQN9bEeevq5QGJD49mQ"/>
       </operations>
-      <operations xmi:id="_1PsEUOBSEee5epMUnnmG8A" name="canHandleEvent" visibility="public" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+      <operations xmi:id="_1PsEUOBSEee5epMUnnmG8A" name="canHandleEvent" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_1PsEUeBSEee5epMUnnmG8A" name="e" type="_xAHoE7g7EeeJr8Xnv81ikw"/>
       </operations>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_r-r7QN9bEeevq5QGJD49mQ" name="EventSequence" superTypes="_xAHoE7g7EeeJr8Xnv81ikw" abstract="true"/>
+    <classes xsi:type="ram:Class" xmi:id="_r-r7QN9bEeevq5QGJD49mQ" name="EventSequence" visibility="public" superTypes="_xAHoE7g7EeeJr8Xnv81ikw" abstract="true"/>
     <classes xsi:type="ram:Class" xmi:id="_vqSDQN9bEeevq5QGJD49mQ" name="PageAccessEventSequence" visibility="public" superTypes="_r-r7QN9bEeevq5QGJD49mQ"/>
     <classes xsi:type="ram:Class" xmi:id="_yae6AN9bEeevq5QGJD49mQ" name="SessionEventSequence" visibility="public" superTypes="_r-r7QN9bEeevq5QGJD49mQ"/>
     <classes xsi:type="ram:Class" xmi:id="_7zkwUN9bEeevq5QGJD49mQ" name="SessionEventSequenceHandler" visibility="public" superTypes="_wA4swN9YEeevq5QGJD49mQ">
-      <operations xmi:id="_1YA6wN9eEeevq5QGJD49mQ" name="handleEvent" visibility="public">
+      <operations xmi:id="_1YA6wN9eEeevq5QGJD49mQ" name="handleEvent" extendedVisibility="package">
         <returnType xsi:type="ram:Class" href="DataCollection.ram#__CrvpLgxEeevxsfq8kXl4Q"/>
         <parameters xmi:id="_1YA6wd9eEeevq5QGJD49mQ" name="e" type="_yae6AN9bEeevq5QGJD49mQ"/>
       </operations>
-      <operations xmi:id="_c1lQcOBTEee5epMUnnmG8A" name="canHandleEvent" visibility="public" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+      <operations xmi:id="_c1lQcOBTEee5epMUnnmG8A" name="canHandleEvent" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_c1lQceBTEee5epMUnnmG8A" name="e" type="_xAHoE7g7EeeJr8Xnv81ikw"/>
       </operations>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_2jnyQN9eEeevq5QGJD49mQ" name="PageAccessEventHandler" visibility="public" superTypes="_wA4swN9YEeevq5QGJD49mQ">
-      <operations xmi:id="_HprXwOBxEeemGqsbOAO2dg" name="create" visibility="public" returnType="_2jnyQN9eEeevq5QGJD49mQ" operationType="Constructor"/>
-      <operations xmi:id="__epMgN9eEeevq5QGJD49mQ" name="handleEvent" visibility="public">
+    <classes xsi:type="ram:Class" xmi:id="_2jnyQN9eEeevq5QGJD49mQ" name="PageAccessEventHandler" superTypes="_wA4swN9YEeevq5QGJD49mQ">
+      <operations xmi:id="_HprXwOBxEeemGqsbOAO2dg" name="create" extendedVisibility="package" returnType="_2jnyQN9eEeevq5QGJD49mQ" operationType="Constructor"/>
+      <operations xmi:id="__epMgN9eEeevq5QGJD49mQ" name="handleEvent" extendedVisibility="package">
         <returnType xsi:type="ram:Class" href="DataCollection.ram#__CrvpLgxEeevxsfq8kXl4Q"/>
         <parameters xmi:id="__epMgd9eEeevq5QGJD49mQ" name="e" type="_xAHoErg7EeeJr8Xnv81ikw"/>
       </operations>
-      <operations xmi:id="_McrIUOBTEee5epMUnnmG8A" name="canHandleEvent" visibility="public" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+      <operations xmi:id="_McrIUOBTEee5epMUnnmG8A" name="canHandleEvent" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_McrIUeBTEee5epMUnnmG8A" name="e" type="_xAHoE7g7EeeJr8Xnv81ikw"/>
       </operations>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_yRZsIN9_EeeD840TRTWd6A" name="LoginEventHandler" visibility="public" superTypes="_wA4swN9YEeevq5QGJD49mQ">
-      <operations xmi:id="_ACT9wOBxEeemGqsbOAO2dg" name="create" visibility="public" returnType="_yRZsIN9_EeeD840TRTWd6A" operationType="Constructor"/>
-      <operations xmi:id="_hvAbYN-AEeeD840TRTWd6A" name="handleEvent" visibility="public">
+    <classes xsi:type="ram:Class" xmi:id="_yRZsIN9_EeeD840TRTWd6A" name="LoginEventHandler" superTypes="_wA4swN9YEeevq5QGJD49mQ">
+      <operations xmi:id="_ACT9wOBxEeemGqsbOAO2dg" name="create" extendedVisibility="package" returnType="_yRZsIN9_EeeD840TRTWd6A" operationType="Constructor"/>
+      <operations xmi:id="_hvAbYN-AEeeD840TRTWd6A" name="handleEvent" extendedVisibility="package">
         <returnType xsi:type="ram:Class" href="DataCollection.ram#__CrvpLgxEeevxsfq8kXl4Q"/>
         <parameters xmi:id="_kQGfIN-AEeeD840TRTWd6A" name="e" type="_ZeNbYLpIEeebus-KFf5YJQ"/>
       </operations>
-      <operations xmi:id="___RzgOBSEee5epMUnnmG8A" name="canHandleEvent" visibility="public" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+      <operations xmi:id="___RzgOBSEee5epMUnnmG8A" name="canHandleEvent" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
         <parameters xmi:id="___RzgeBSEee5epMUnnmG8A" name="e" type="_xAHoE7g7EeeJr8Xnv81ikw"/>
       </operations>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_1LuIMN9_EeeD840TRTWd6A" name="ExitEventHandler" visibility="public" superTypes="_wA4swN9YEeevq5QGJD49mQ">
-      <operations xmi:id="_WXOxUOBxEeemGqsbOAO2dg" name="create" visibility="public" returnType="_1LuIMN9_EeeD840TRTWd6A" operationType="Constructor"/>
-      <operations xmi:id="_msH1oN-AEeeD840TRTWd6A" name="handleEvent" visibility="public">
+    <classes xsi:type="ram:Class" xmi:id="_1LuIMN9_EeeD840TRTWd6A" name="ExitEventHandler" superTypes="_wA4swN9YEeevq5QGJD49mQ">
+      <operations xmi:id="_WXOxUOBxEeemGqsbOAO2dg" name="create" extendedVisibility="package" returnType="_1LuIMN9_EeeD840TRTWd6A" operationType="Constructor"/>
+      <operations xmi:id="_msH1oN-AEeeD840TRTWd6A" name="handleEvent" extendedVisibility="package">
         <returnType xsi:type="ram:Class" href="DataCollection.ram#__CrvpLgxEeevxsfq8kXl4Q"/>
         <parameters xmi:id="_pmTHwN-AEeeD840TRTWd6A" name="e" type="_iE6VcLnaEeebus-KFf5YJQ"/>
       </operations>
-      <operations xmi:id="_V1QBQOBTEee5epMUnnmG8A" name="canHandleEvent" visibility="public" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
+      <operations xmi:id="_V1QBQOBTEee5epMUnnmG8A" name="canHandleEvent" extendedVisibility="package" returnType="_xAHoFrg7EeeJr8Xnv81ikw">
         <parameters xmi:id="_V1QBQeBTEee5epMUnnmG8A" name="e" type="_xAHoE7g7EeeJr8Xnv81ikw"/>
       </operations>
     </classes>
@@ -1807,16 +1807,16 @@
         <value xmi:id="_yagvMd9bEeevq5QGJD49mQ" x="1579.7244" y="421.20642"/>
       </value>
       <value xmi:id="_7zl-cN9bEeevq5QGJD49mQ" key="_7zkwUN9bEeevq5QGJD49mQ">
-        <value xmi:id="_7zl-cd9bEeevq5QGJD49mQ" x="1145.2365" y="809.1999"/>
+        <value xmi:id="_7zl-cd9bEeevq5QGJD49mQ" x="1145.2374" y="809.2001"/>
       </value>
       <value xmi:id="_2jpncN9eEeevq5QGJD49mQ" key="_2jnyQN9eEeevq5QGJD49mQ">
         <value xmi:id="_2jpncd9eEeevq5QGJD49mQ" x="466.7269" y="810.10406"/>
       </value>
       <value xmi:id="_yRcvcN9_EeeD840TRTWd6A" key="_yRZsIN9_EeeD840TRTWd6A">
-        <value xmi:id="_yRcvcd9_EeeD840TRTWd6A" x="200.27643" y="990.00964"/>
+        <value xmi:id="_yRcvcd9_EeeD840TRTWd6A" x="200.27902" y="990.00946"/>
       </value>
       <value xmi:id="_1LwkcN9_EeeD840TRTWd6A" key="_1LuIMN9_EeeD840TRTWd6A">
-        <value xmi:id="_1Lwkcd9_EeeD840TRTWd6A" x="832.3043" y="990.00964"/>
+        <value xmi:id="_1Lwkcd9_EeeD840TRTWd6A" x="832.307" y="990.0095"/>
       </value>
       <value xmi:id="_ycZtEOBBEeeBr-UoS3iXzg" key="_ycX34OBBEeeBr-UoS3iXzg">
         <value xmi:id="_ycZtEeBBEeeBr-UoS3iXzg" x="-50.405754" y="85.09573"/>

@@ -135,11 +135,11 @@
       <associationEnds xmi:id="__Crvo7gxEeevxsfq8kXl4Q" name="triggeringSource" lowerBound="1" assoc="__Crvs7gxEeevxsfq8kXl4Q" featureSelection="__CrvkLgxEeevxsfq8kXl4Q"/>
       <attributes xmi:id="_aQpo8N67Eee8ZezwP-tlvw" name="level" type="_LNIjALq3Eee7H_mrj5TNuw"/>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="__CrvpLgxEeevxsfq8kXl4Q" name="Entry" visibility="public">
-      <operations xmi:id="_NPXk4N90EeezmaipZF0znA" name="create" visibility="public" returnType="__CrvpLgxEeevxsfq8kXl4Q" operationType="Constructor">
+    <classes xsi:type="ram:Class" xmi:id="__CrvpLgxEeevxsfq8kXl4Q" name="Entry">
+      <operations xmi:id="_NPXk4N90EeezmaipZF0znA" name="create" extendedVisibility="package" returnType="__CrvpLgxEeevxsfq8kXl4Q" operationType="Constructor">
         <parameters xmi:id="_O7aP8N90EeezmaipZF0znA" name="message" type="__CrvubgxEeevxsfq8kXl4Q"/>
       </operations>
-      <operations xmi:id="_Y0tE0N66EeerH7ZeGDzLtA" name="setLevel" visibility="public" returnType="__CrvtLgxEeevxsfq8kXl4Q">
+      <operations xmi:id="_Y0tE0N66EeerH7ZeGDzLtA" name="setLevel" extendedVisibility="package" returnType="__CrvtLgxEeevxsfq8kXl4Q">
         <parameters xmi:id="_Y0tE0d66EeerH7ZeGDzLtA" name="level" type="_LNIjALq3Eee7H_mrj5TNuw"/>
       </operations>
       <attributes xmi:id="_YTBzYLnUEeebus-KFf5YJQ" name="entry" type="__CrvubgxEeevxsfq8kXl4Q"/>
@@ -157,17 +157,17 @@
       <associationEnds xmi:id="__CrvsbgxEeevxsfq8kXl4Q" name="events" upperBound="-1" assoc="__Crvs7gxEeevxsfq8kXl4Q" featureSelection="__CrvhbgxEeevxsfq8kXl4Q"/>
       <attributes xmi:id="_PRgvkLnUEeebus-KFf5YJQ" name="type" type="_EpeZ4LnUEeebus-KFf5YJQ"/>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_Rfu8wLg2Eeevxsfq8kXl4Q" name="DataCollectionManager">
+    <classes xsi:type="ram:Class" xmi:id="_Rfu8wLg2Eeevxsfq8kXl4Q" name="DataCollectionManager" visibility="public">
       <operations xmi:id="_BMOe0N6SEee2N7Dk3zat4A" name="getInstance" extendedVisibility="package" returnType="_Rfu8wLg2Eeevxsfq8kXl4Q" static="true"/>
-      <operations xmi:id="__dmScN6UEeejetH-oH8izw" name="instance" extendedVisibility="package" returnType="_Rfu8wLg2Eeevxsfq8kXl4Q" static="true"/>
-      <operations xmi:id="_Noz4UN6zEeerH7ZeGDzLtA" name="startSequence" extendedVisibility="package" returnType="__Crvt7gxEeevxsfq8kXl4Q">
+      <operations xmi:id="__dmScN6UEeejetH-oH8izw" name="instance" visibility="public" returnType="_Rfu8wLg2Eeevxsfq8kXl4Q" static="true"/>
+      <operations xmi:id="_Noz4UN6zEeerH7ZeGDzLtA" name="startSequence" visibility="public" returnType="__Crvt7gxEeevxsfq8kXl4Q">
         <parameters xmi:id="_Mq_d0N62EeerH7ZeGDzLtA" name="seq" type="_7hqlYN61EeerH7ZeGDzLtA"/>
       </operations>
-      <operations xmi:id="_cz6pMN62EeerH7ZeGDzLtA" name="appendSequence" extendedVisibility="package" returnType="__CrvtLgxEeevxsfq8kXl4Q">
+      <operations xmi:id="_cz6pMN62EeerH7ZeGDzLtA" name="appendSequence" visibility="public" returnType="__CrvtLgxEeevxsfq8kXl4Q">
         <parameters xmi:id="_cz6pMd62EeerH7ZeGDzLtA" name="id" type="__Crvt7gxEeevxsfq8kXl4Q"/>
         <parameters xmi:id="_cz6pMt62EeerH7ZeGDzLtA" name="event" type="__Crvl7gxEeevxsfq8kXl4Q"/>
       </operations>
-      <operations xmi:id="_egkYQN62EeerH7ZeGDzLtA" name="endSequence" extendedVisibility="package" returnType="__CrvtLgxEeevxsfq8kXl4Q">
+      <operations xmi:id="_egkYQN62EeerH7ZeGDzLtA" name="endSequence" visibility="public" returnType="__CrvtLgxEeevxsfq8kXl4Q">
         <parameters xmi:id="_egkYQd62EeerH7ZeGDzLtA" name="id" type="__Crvt7gxEeevxsfq8kXl4Q"/>
       </operations>
       <operations xmi:id="_j57CkN62EeerH7ZeGDzLtA" name="getMyStartedSequences" extendedVisibility="package" returnType="_hNVggN62EeerH7ZeGDzLtA"/>
@@ -178,21 +178,21 @@
       <operations xmi:id="_cCR7cN63EeerH7ZeGDzLtA" name="setMyEventHandlers" extendedVisibility="package" returnType="__CrvtrgxEeevxsfq8kXl4Q">
         <parameters xmi:id="_cCR7cd63EeerH7ZeGDzLtA" name="newObject" type="_IEvO8N63EeerH7ZeGDzLtA"/>
       </operations>
-      <operations xmi:id="_RIgYsN67Eee8ZezwP-tlvw" name="eventReceived" extendedVisibility="package" returnType="__CrvtLgxEeevxsfq8kXl4Q">
+      <operations xmi:id="_RIgYsN67Eee8ZezwP-tlvw" name="eventReceived" visibility="public" returnType="__CrvtLgxEeevxsfq8kXl4Q">
         <parameters xmi:id="_RIgYsd67Eee8ZezwP-tlvw" name="event" type="__Crvl7gxEeevxsfq8kXl4Q"/>
       </operations>
-      <operations xmi:id="_rHz5wOBwEeemGqsbOAO2dg" name="registerHandler" extendedVisibility="package" returnType="__CrvtLgxEeevxsfq8kXl4Q">
+      <operations xmi:id="_rHz5wOBwEeemGqsbOAO2dg" name="registerHandler" visibility="public" returnType="__CrvtLgxEeevxsfq8kXl4Q">
         <parameters xmi:id="_rHz5weBwEeemGqsbOAO2dg" name="e" type="_kwyKcNuHEeey04PI4Xpm9Q"/>
       </operations>
       <associationEnds xmi:id="_j50U4N62EeerH7ZeGDzLtA" name="myStartedSequences" lowerBound="1" assoc="_j50U4t62EeerH7ZeGDzLtA" featureSelection="_j53YMN62EeerH7ZeGDzLtA"/>
       <associationEnds xmi:id="_cCIxgN63EeerH7ZeGDzLtA" name="myEventHandlers" lowerBound="1" assoc="_cCIxgt63EeerH7ZeGDzLtA" featureSelection="_cCNqAN63EeerH7ZeGDzLtA"/>
       <attributes xmi:id="_d8cFkN64EeerH7ZeGDzLtA" name="currentSequenceNo" static="true" type="__Crvt7gxEeevxsfq8kXl4Q"/>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_kwyKcNuHEeey04PI4Xpm9Q" name="EventHandler" visibility="public" abstract="true">
-      <operations xmi:id="_w6UIENuHEeey04PI4Xpm9Q" name="handleEvent" visibility="public" abstract="true" returnType="__CrvpLgxEeevxsfq8kXl4Q">
+    <classes xsi:type="ram:Class" xmi:id="_kwyKcNuHEeey04PI4Xpm9Q" name="EventHandler" abstract="true">
+      <operations xmi:id="_w6UIENuHEeey04PI4Xpm9Q" name="handleEvent" abstract="true" extendedVisibility="package" returnType="__CrvpLgxEeevxsfq8kXl4Q">
         <parameters xmi:id="_w6UIEduHEeey04PI4Xpm9Q" name="e" type="__Crvl7gxEeevxsfq8kXl4Q"/>
       </operations>
-      <operations xmi:id="_msO7kOBKEee1pN4F7GOfAg" name="canHandleEvent" visibility="public" abstract="true" returnType="__CrvtrgxEeevxsfq8kXl4Q">
+      <operations xmi:id="_msO7kOBKEee1pN4F7GOfAg" name="canHandleEvent" abstract="true" extendedVisibility="package" returnType="__CrvtrgxEeevxsfq8kXl4Q">
         <parameters xmi:id="_OxH7YOBMEeeasKt-4zU8rA" name="e" type="__Crvl7gxEeevxsfq8kXl4Q"/>
       </operations>
     </classes>
@@ -567,7 +567,7 @@
         <value xmi:id="_IExrMd63EeerH7ZeGDzLtA" x="886.7979" y="686.25165"/>
       </value>
       <value xmi:id="_HfSGkN65EeerH7ZeGDzLtA" key="_HfPDQN65EeerH7ZeGDzLtA">
-        <value xmi:id="_HfSGkd65EeerH7ZeGDzLtA" x="664.55304" y="1220.3464"/>
+        <value xmi:id="_HfSGkd65EeerH7ZeGDzLtA" x="878.1039" y="1085.0328"/>
       </value>
       <value xmi:id="_yzavsN9hEeevq5QGJD49mQ" key="_yzYTcN9hEeevq5QGJD49mQ">
         <value xmi:id="_yzavsd9hEeevq5QGJD49mQ" x="647.553" y="1085.0328"/>

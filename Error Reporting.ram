@@ -25,7 +25,7 @@
       <attributes xmi:id="_bmAe0LhaEeetyvHnMFFg9Q" name="userCustomMessage" type="_EiYAmrhZEeetyvHnMFFg9Q"/>
       <attributes xmi:id="_dPxR8LhaEeetyvHnMFFg9Q" name="userEmail" type="_EiYAmrhZEeetyvHnMFFg9Q"/>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_2j8hYLhZEeetyvHnMFFg9Q" name="ExceptionLoggableEvent"/>
+    <classes xsi:type="ram:Class" xmi:id="_2j8hYLhZEeetyvHnMFFg9Q" name="ExceptionLoggableEvent" visibility="public"/>
     <classes xsi:type="ram:Class" xmi:id="_8KUUALhZEeetyvHnMFFg9Q" name="UserSystemInfo" visibility="public" dataType="true">
       <attributes xmi:id="_I_i6ALhaEeetyvHnMFFg9Q" name="osVersion" type="_EiYAmLhZEeetyvHnMFFg9Q"/>
       <attributes xmi:id="_PR3MoLhaEeetyvHnMFFg9Q" name="osType" type="_JpyJ0LhaEeetyvHnMFFg9Q"/>
