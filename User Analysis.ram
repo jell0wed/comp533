@@ -396,9 +396,7 @@
       </operations>
       <operations xmi:id="_G0eKsOBIEeeeIvTHqQ8Vjw" name="getMyLoginEvent" extendedVisibility="package" returnType="_ZeNbYLpIEeebus-KFf5YJQ"/>
       <associationEnds xmi:id="_D7i1wOBIEeeeIvTHqQ8Vjw" name="myLoginEvent" assoc="_D7kq8OBIEeeeIvTHqQ8Vjw" featureSelection="_G0YEEOBIEeeeIvTHqQ8Vjw"/>
-      <attributes xmi:id="_fBndcOBDEeeeIvTHqQ8Vjw" name="level">
-        <type xsi:type="ram:REnum" href="DataCollection.ram#_LNIjALq3Eee7H_mrj5TNuw"/>
-      </attributes>
+      <attributes xmi:id="_fBndcOBDEeeeIvTHqQ8Vjw" name="level" type="_2mOvoOH2EeepneP5ijgkXQ"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_uSS8wOBEEeeeIvTHqQ8Vjw" name="Clock" visibility="public">
       <operations xmi:id="_97SD0OBEEeeeIvTHqQ8Vjw" name="getCurrentTime" visibility="public" returnType="_XcYQgLnaEeebus-KFf5YJQ"/>
@@ -419,9 +417,7 @@
       <operations xmi:id="_hfO9IOBIEeeeIvTHqQ8Vjw" name="getMyExitEvent" extendedVisibility="package" returnType="_iE6VcLnaEeebus-KFf5YJQ"/>
       <operations xmi:id="_jbRMAOBIEeeeIvTHqQ8Vjw" name="exit" visibility="public" returnType="_xAHoFLg7EeeJr8Xnv81ikw"/>
       <associationEnds xmi:id="_f6JOoOBIEeeeIvTHqQ8Vjw" name="myExitEvent" assoc="_f6J1seBIEeeeIvTHqQ8Vjw" featureSelection="_hfKrsOBIEeeeIvTHqQ8Vjw"/>
-      <attributes xmi:id="_eZnQAOBIEeeeIvTHqQ8Vjw" name="level">
-        <type xsi:type="ram:REnum" href="DataCollection.ram#_LNIjALq3Eee7H_mrj5TNuw"/>
-      </attributes>
+      <attributes xmi:id="_eZnQAOBIEeeeIvTHqQ8Vjw" name="level" type="_2mOvoOH2EeepneP5ijgkXQ"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_2pjl0OBIEeeeIvTHqQ8Vjw" name="PageAccess" partiality="concern" visibility="public">
       <operations xmi:id="_JcHlwOBxEeemGqsbOAO2dg" name="create" visibility="public" returnType="_2pjl0OBIEeeeIvTHqQ8Vjw" operationType="Constructor"/>
@@ -436,9 +432,7 @@
       </operations>
       <operations xmi:id="_xzGBoOBSEee5epMUnnmG8A" name="getMyPageAccessEvent" extendedVisibility="package" returnType="_xAHoErg7EeeJr8Xnv81ikw"/>
       <associationEnds xmi:id="_EcdGQOBPEeesK5h3xpJOHg" name="myPageAccessEvent" assoc="_Ece7cOBPEeesK5h3xpJOHg" featureSelection="_xy-s4OBSEee5epMUnnmG8A"/>
-      <attributes xmi:id="_7XvzQOBIEeeeIvTHqQ8Vjw" name="level">
-        <type xsi:type="ram:REnum" href="DataCollection.ram#_LNIjALq3Eee7H_mrj5TNuw"/>
-      </attributes>
+      <attributes xmi:id="_7XvzQOBIEeeeIvTHqQ8Vjw" name="level" type="_2mOvoOH2EeepneP5ijgkXQ"/>
     </classes>
     <associations xmi:id="_D7kq8OBIEeeeIvTHqQ8Vjw" name="Login_LoginEvent" ends="_D7i1wOBIEeeeIvTHqQ8Vjw _D7jc0OBIEeeeIvTHqQ8Vjw"/>
     <associations xmi:id="_f6J1seBIEeeeIvTHqQ8Vjw" name="Exit_ExitEvent" ends="_f6JOoOBIEeeeIvTHqQ8Vjw _f6J1sOBIEeeeIvTHqQ8Vjw"/>
@@ -454,6 +448,7 @@
     <types xsi:type="ram:RFloat" xmi:id="_xAHoG7g7EeeJr8Xnv81ikw"/>
     <types xsi:type="ram:RLong" xmi:id="_xAHoHLg7EeeJr8Xnv81ikw"/>
     <types xsi:type="ram:RByte" xmi:id="_xAHoHbg7EeeJr8Xnv81ikw"/>
+    <types xsi:type="ram:REnum" xmi:id="_2mOvoOH2EeepneP5ijgkXQ" name="EntryLevel"/>
   </structuralView>
   <messageViews xsi:type="ram:MessageView" xmi:id="_SaaS899fEeevq5QGJD49mQ" specifies="_1YA6wN9eEeevq5QGJD49mQ">
     <specification xmi:id="_SaaS9N9fEeevq5QGJD49mQ">
@@ -1768,6 +1763,10 @@
   <instantiations xmi:id="_xAHoHrg7EeeJr8Xnv81ikw">
     <source xsi:type="ram:Aspect" href="Monitoring.ram#_URTakLg4Eeevxsfq8kXl4Q"/>
   </instantiations>
+  <instantiations xmi:id="_oe4acOH2EeepneP5ijgkXQ">
+    <source xsi:type="ram:Aspect" href="DataCollection.ram#__CrvcLgxEeevxsfq8kXl4Q"/>
+    <mappings xsi:type="ram:ClassifierMapping" xmi:id="_q1jW4OH2EeepneP5ijgkXQ"/>
+  </instantiations>
   <layout xmi:id="_xAHoH7g7EeeJr8Xnv81ikw">
     <containers xmi:id="_xAHoILg7EeeJr8Xnv81ikw" key="_xAHoEbg7EeeJr8Xnv81ikw">
       <value xmi:id="_xAHoIbg7EeeJr8Xnv81ikw" key="_xAHoErg7EeeJr8Xnv81ikw">
@@ -1810,7 +1809,7 @@
         <value xmi:id="_7zl-cd9bEeevq5QGJD49mQ" x="1145.2374" y="809.2001"/>
       </value>
       <value xmi:id="_2jpncN9eEeevq5QGJD49mQ" key="_2jnyQN9eEeevq5QGJD49mQ">
-        <value xmi:id="_2jpncd9eEeevq5QGJD49mQ" x="466.7269" y="810.10406"/>
+        <value xmi:id="_2jpncd9eEeevq5QGJD49mQ" x="466.68213" y="796.2001"/>
       </value>
       <value xmi:id="_yRcvcN9_EeeD840TRTWd6A" key="_yRZsIN9_EeeD840TRTWd6A">
         <value xmi:id="_yRcvcd9_EeeD840TRTWd6A" x="200.27902" y="990.00946"/>
@@ -1819,7 +1818,7 @@
         <value xmi:id="_1Lwkcd9_EeeD840TRTWd6A" x="832.307" y="990.0095"/>
       </value>
       <value xmi:id="_ycZtEOBBEeeBr-UoS3iXzg" key="_ycX34OBBEeeBr-UoS3iXzg">
-        <value xmi:id="_ycZtEeBBEeeBr-UoS3iXzg" x="-50.405754" y="85.09573"/>
+        <value xmi:id="_ycZtEeBBEeeBr-UoS3iXzg" x="-50.40564" y="85.095726"/>
       </value>
       <value xmi:id="_uSUx8OBEEeeeIvTHqQ8Vjw" key="_uSS8wOBEEeeeIvTHqQ8Vjw">
         <value xmi:id="_uSUx8eBEEeeeIvTHqQ8Vjw" x="1228.7843" y="586.799"/>
@@ -1831,7 +1830,10 @@
         <value xmi:id="_bzIV8eBIEeeeIvTHqQ8Vjw" x="465.3153" y="495.4489"/>
       </value>
       <value xmi:id="_2pmCEOBIEeeeIvTHqQ8Vjw" key="_2pjl0OBIEeeeIvTHqQ8Vjw">
-        <value xmi:id="_2pmCEeBIEeeeIvTHqQ8Vjw" x="823.314" y="645.95544"/>
+        <value xmi:id="_2pmCEeBIEeeeIvTHqQ8Vjw" x="823.314" y="645.9554"/>
+      </value>
+      <value xmi:id="_2mQk0OH2EeepneP5ijgkXQ" key="_2mOvoOH2EeepneP5ijgkXQ">
+        <value xmi:id="_2mQk0eH2EeepneP5ijgkXQ" x="731.0"/>
       </value>
     </containers>
     <containers xmi:id="_SaaS8N9fEeevq5QGJD49mQ" key="_SaaS899fEeevq5QGJD49mQ">
@@ -1984,7 +1986,7 @@
         <value xmi:id="_4DwsQeBDEeeeIvTHqQ8Vjw" x="564.0002" y="328.0"/>
       </value>
       <value xmi:id="_EjG28uBGEeeeIvTHqQ8Vjw" key="_EjG28eBGEeeeIvTHqQ8Vjw">
-        <value xmi:id="_EjG28-BGEeeeIvTHqQ8Vjw" x="692.0002" y="68.00003"/>
+        <value xmi:id="_EjG28-BGEeeeIvTHqQ8Vjw" x="692.0002" y="68.0"/>
       </value>
       <value xmi:id="_H4r2MOBHEeeeIvTHqQ8Vjw" key="_H4rPIeBHEeeeIvTHqQ8Vjw">
         <value xmi:id="_H4r2MeBHEeeeIvTHqQ8Vjw" x="1042.0" y="68.0"/>
@@ -2150,7 +2152,7 @@
     </containers>
     <containers xmi:id="_XrDJoOBxEeemGqsbOAO2dg" key="_XrDJo-BxEeemGqsbOAO2dg">
       <value xmi:id="_XrDJoeBxEeemGqsbOAO2dg" key="_XrDJp-BxEeemGqsbOAO2dg">
-        <value xmi:id="_XrDJouBxEeemGqsbOAO2dg"/>
+        <value xmi:id="_XrDJouBxEeemGqsbOAO2dg" x="100.0" y="94.0"/>
       </value>
     </containers>
     <containers xmi:id="_XrDJreBxEeemGqsbOAO2dg" key="_XrDJsOBxEeemGqsbOAO2dg">
