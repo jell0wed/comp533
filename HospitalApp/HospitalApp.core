@@ -98,6 +98,19 @@
           <selected href="Reused_Association/Association.core#_A4UO8JFuEeWSP-8jReRTpg"/>
         </configurations>
       </reuses>
+      <reuses xmi:id="_zJgkIOKFEee5If3xAyqV2w" name="DataCollection1" selectedConfiguration="_zJgkIeKFEee5If3xAyqV2w">
+        <reusedConcern href="Reused_comp533/DataCollection.core#__f990LgwEeevxsfq8kXl4Q"/>
+        <configurations xmi:id="_zJgkIeKFEee5If3xAyqV2w" name="DataCollection_LoggingDataCollectionCollectionUser AnalysisMonitoring" reuse="_zJgkIOKFEee5If3xAyqV2w">
+          <source xsi:type="core:COREFeatureModel" href="Reused_comp533/DataCollection.core#__f-k4LgwEeevxsfq8kXl4Q"/>
+          <selected href="Reused_comp533/DataCollection.core#_C15X0LgxEeevxsfq8kXl4Q"/>
+          <selected href="Reused_comp533/DataCollection.core#__f-k4bgwEeevxsfq8kXl4Q"/>
+          <selected href="Reused_comp533/DataCollection.core#_PWJMULgxEeevxsfq8kXl4Q"/>
+          <selected href="Reused_comp533/DataCollection.core#_HXM_0LgxEeevxsfq8kXl4Q"/>
+          <selected href="Reused_comp533/DataCollection.core#_CbbCULgxEeevxsfq8kXl4Q"/>
+          <reexposed href="Reused_comp533/DataCollection.core#_G5BPALgxEeevxsfq8kXl4Q"/>
+          <reexposed href="Reused_comp533/DataCollection.core#_NynkELgxEeevxsfq8kXl4Q"/>
+        </configurations>
+      </reuses>
     </features>
   </featureModel>
 </core:COREConcern>

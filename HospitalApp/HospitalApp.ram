@@ -1,38 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
 <ram:Aspect xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_OKzzMOBVEeeUz6jtFS_IuA" name="HospitalApp">
-  <modelReuses xmi:id="_b31pIOHwEee2Bpkw5iJAmg">
-    <compositions xsi:type="ram:Instantiation" xmi:id="_b31pIeHwEee2Bpkw5iJAmg">
-      <source xsi:type="ram:Aspect" href="Reused_DataCollection/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_b3VS0OHwEee2Bpkw5iJAmg"/>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_58I6EOJ7EeenT-GsyFVhgg" to="_aFbSEOJ5EeejCMbUKiy7FA">
-        <from xsi:type="ram:Class" href="Reused_DataCollection/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_b3VTreHwEee2Bpkw5iJAmg"/>
-        <operationMappings xmi:id="__YXSMOJ7EeenT-GsyFVhgg" to="_f7qssOJ5EeejCMbUKiy7FA">
-          <from xsi:type="ram:Operation" href="Reused_DataCollection/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_b3VTsOHwEee2Bpkw5iJAmg"/>
-        </operationMappings>
-        <operationMappings xmi:id="_MQmv8OJ8EeenT-GsyFVhgg" to="_BRjocOJ8EeenT-GsyFVhgg">
-          <from xsi:type="ram:Operation" href="Reused_DataCollection/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_b3VTruHwEee2Bpkw5iJAmg"/>
-        </operationMappings>
-      </mappings>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_NWSloOJ8EeenT-GsyFVhgg" to="_m3mHkOJ6EeenT-GsyFVhgg">
-        <from xsi:type="ram:Class" href="Reused_DataCollection/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_b3VTl-HwEee2Bpkw5iJAmg"/>
-        <operationMappings xmi:id="_XPKvQOJ8EeenT-GsyFVhgg" to="_Sqii8OJ7EeenT-GsyFVhgg">
-          <from xsi:type="ram:Operation" href="Reused_DataCollection/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_b3VTmeHwEee2Bpkw5iJAmg"/>
-        </operationMappings>
-      </mappings>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_SY68kOJ9EeenT-GsyFVhgg" to="_OKzzMuBVEeeUz6jtFS_IuA">
-        <from xsi:type="ram:Class" href="Reused_DataCollection/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_b3VTSOHwEee2Bpkw5iJAmg"/>
-        <operationMappings xmi:id="_U3BWsOJ9EeenT-GsyFVhgg" to="_Jz948OJ9EeenT-GsyFVhgg">
-          <from xsi:type="ram:Operation" href="Reused_DataCollection/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_b3VTSuHwEee2Bpkw5iJAmg"/>
-        </operationMappings>
-      </mappings>
-      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_XBecEOJ9EeenT-GsyFVhgg" to="_OKzzMuBVEeeUz6jtFS_IuA">
-        <from xsi:type="ram:Class" href="Reused_DataCollection/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_b3VTGOHwEee2Bpkw5iJAmg"/>
-        <operationMappings xmi:id="_Yqu44OJ9EeenT-GsyFVhgg" to="_LP2oIOJ9EeenT-GsyFVhgg">
-          <from xsi:type="ram:Operation" href="Reused_DataCollection/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_b3VTH-HwEee2Bpkw5iJAmg"/>
-        </operationMappings>
-      </mappings>
-    </compositions>
-    <reuse href="HospitalApp.core#_b323QOHwEee2Bpkw5iJAmg"/>
-  </modelReuses>
   <modelReuses xmi:id="_0Hb7EOJ8EeenT-GsyFVhgg">
     <compositions xsi:type="ram:Instantiation" xmi:id="_0Hb7EeJ8EeenT-GsyFVhgg">
       <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_ArrayList_Association_Many_OrderedBidirectional_OrderedToOne_PlainBidirectional_PlainToOne.ram#_0HY3wOJ8EeenT-GsyFVhgg"/>
@@ -236,6 +203,39 @@
       </mappings>
     </compositions>
     <reuse href="HospitalApp.core#_1gAQgOJ8EeenT-GsyFVhgg"/>
+  </modelReuses>
+  <modelReuses xmi:id="_zJfWAOKFEee5If3xAyqV2w">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_zJfWAeKFEee5If3xAyqV2w">
+      <source xsi:type="ram:Aspect" href="Reused_comp533/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_zJFGUOKFEee5If3xAyqV2w"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_0gp9QOKFEee5If3xAyqV2w" to="_aFbSEOJ5EeejCMbUKiy7FA">
+        <from xsi:type="ram:Class" href="Reused_comp533/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_zJFt3uKFEee5If3xAyqV2w"/>
+        <operationMappings xmi:id="_4b8uIOKFEee5If3xAyqV2w" to="_f7qssOJ5EeejCMbUKiy7FA">
+          <from xsi:type="ram:Operation" href="Reused_comp533/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_zJFt4eKFEee5If3xAyqV2w"/>
+        </operationMappings>
+        <operationMappings xmi:id="_5llPsOKFEee5If3xAyqV2w" to="_BRjocOJ8EeenT-GsyFVhgg">
+          <from xsi:type="ram:Operation" href="Reused_comp533/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_zJFt3-KFEee5If3xAyqV2w"/>
+        </operationMappings>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_7fjpEOKFEee5If3xAyqV2w" to="_m3mHkOJ6EeenT-GsyFVhgg">
+        <from xsi:type="ram:Class" href="Reused_comp533/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_zJGUh-KFEee5If3xAyqV2w"/>
+        <operationMappings xmi:id="__nS6gOKFEee5If3xAyqV2w" to="_Sqii8OJ7EeenT-GsyFVhgg">
+          <from xsi:type="ram:Operation" href="Reused_comp533/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_zJGUieKFEee5If3xAyqV2w"/>
+        </operationMappings>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_BQ-1IOKGEee5If3xAyqV2w" to="_OKzzMuBVEeeUz6jtFS_IuA">
+        <from xsi:type="ram:Class" href="Reused_comp533/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_zJGUgeKFEee5If3xAyqV2w"/>
+        <operationMappings xmi:id="_CnXZQOKGEee5If3xAyqV2w" to="_Jz948OJ9EeenT-GsyFVhgg">
+          <from xsi:type="ram:Operation" href="Reused_comp533/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_zJGUg-KFEee5If3xAyqV2w"/>
+        </operationMappings>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_D4oM0OKGEee5If3xAyqV2w" to="_OKzzMuBVEeeUz6jtFS_IuA">
+        <from xsi:type="ram:Class" href="Reused_comp533/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_zJFt6-KFEee5If3xAyqV2w"/>
+        <operationMappings xmi:id="_FHyuoOKGEee5If3xAyqV2w" to="_LP2oIOJ9EeenT-GsyFVhgg">
+          <from xsi:type="ram:Operation" href="Reused_comp533/Woven_DataCollection_Collection_DataCollection_Logging_Monitoring_User%20Analysis.ram#_zJFt7eKFEee5If3xAyqV2w"/>
+        </operationMappings>
+      </mappings>
+    </compositions>
+    <reuse href="HospitalApp.core#_zJgkIOKFEee5If3xAyqV2w"/>
   </modelReuses>
   <realizes href="HospitalApp.core#_CQxqIuBVEeeUz6jtFS_IuA"/>
   <coreConcern href="HospitalApp.core#_CQxqIOBVEeeUz6jtFS_IuA"/>
